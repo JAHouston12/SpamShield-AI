@@ -141,15 +141,15 @@
     "features_after": 3000,
     "top_scores": [
       {
-        "feature": "digit_count",
+        "feature": "[digit count]",
         "chi2": 1001.59
       },
       {
-        "feature": "has_url",
+        "feature": "[has URL]",
         "chi2": 653.83
       },
       {
-        "feature": "currency_count",
+        "feature": "[currency mentions]",
         "chi2": 479.25
       },
       {

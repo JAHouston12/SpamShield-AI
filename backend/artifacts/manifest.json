@@ -1,5 +1,5 @@
 {
-  "trained_at": "2026-10-17T18:51:40+00:00",
+  "trained_at": "2026-10-17T18:56:41+00:00",
   "dataset_source": "uci",
   "default_model": "random_forest",
   "models": [
@@ -20,5 +20,5 @@
     "xgboost": "3.4.1",
     "pandas": "3.0.6"
   },
-  "duration_s": 45.7
+  "duration_s": 44.8
 }

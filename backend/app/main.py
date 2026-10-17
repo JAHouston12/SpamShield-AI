@@ -1,8 +1,10 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import JSONResponse
 
 from app.api.v1.router import api_router
 from app.core.config import get_settings
+from app.services.artifact_store import ArtifactNotFoundError
 
 
 def create_app() -> FastAPI:
@@ -20,6 +22,11 @@ def create_app() -> FastAPI:
         allow_methods=["GET", "POST"],
         allow_headers=["*"],
     )
+
+    @app.exception_handler(ArtifactNotFoundError)
+    async def artifact_missing(_: Request, exc: ArtifactNotFoundError) -> JSONResponse:
+        return JSONResponse(status_code=503, content={"detail": str(exc)})
+
     app.include_router(api_router, prefix=settings.api_prefix)
     return app
 

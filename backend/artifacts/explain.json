@@ -6,7 +6,7 @@
       "signed_by_model": true,
       "features": [
         {
-          "feature": "digit_count",
+          "feature": "[digit count]",
           "raw": "digit_count",
           "kind": "engineered",
           "weight": 15.246267,
@@ -38,7 +38,7 @@
           "direction": "spam"
         },
         {
-          "feature": "char_length",
+          "feature": "[message length]",
           "raw": "char_length",
           "kind": "engineered",
           "weight": 5.265653,
@@ -86,7 +86,7 @@
           "direction": "spam"
         },
         {
-          "feature": "has_url",
+          "feature": "[has URL]",
           "raw": "has_url",
           "kind": "engineered",
           "weight": 4.523318,
@@ -190,7 +190,7 @@
           "direction": "spam"
         },
         {
-          "feature": "special_char_count",
+          "feature": "[special characters]",
           "raw": "special_char_count",
           "kind": "engineered",
           "weight": -3.662171,
@@ -418,7 +418,7 @@
       "signed_by_model": false,
       "features": [
         {
-          "feature": "digit_count",
+          "feature": "[digit count]",
           "raw": "digit_count",
           "kind": "engineered",
           "weight": 0.767306,
@@ -426,7 +426,7 @@
           "direction": "spam"
         },
         {
-          "feature": "has_url",
+          "feature": "[has URL]",
           "raw": "has_url",
           "kind": "engineered",
           "weight": 0.04405,
@@ -442,7 +442,7 @@
           "direction": "spam"
         },
         {
-          "feature": "uppercase_ratio",
+          "feature": "[uppercase ratio]",
           "raw": "uppercase_ratio",
           "kind": "engineered",
           "weight": 0.020743,
@@ -458,7 +458,7 @@
           "direction": "spam"
         },
         {
-          "feature": "char_length",
+          "feature": "[message length]",
           "raw": "char_length",
           "kind": "engineered",
           "weight": 0.00884,
@@ -624,7 +624,7 @@
       "signed_by_model": false,
       "features": [
         {
-          "feature": "digit_count",
+          "feature": "[digit count]",
           "raw": "digit_count",
           "kind": "engineered",
           "weight": 0.114863,
@@ -640,7 +640,7 @@
           "direction": "spam"
         },
         {
-          "feature": "char_length",
+          "feature": "[message length]",
           "raw": "char_length",
           "kind": "engineered",
           "weight": 0.054757,
@@ -656,7 +656,7 @@
           "direction": "spam"
         },
         {
-          "feature": "uppercase_ratio",
+          "feature": "[uppercase ratio]",
           "raw": "uppercase_ratio",
           "kind": "engineered",
           "weight": 0.044037,
@@ -664,7 +664,7 @@
           "direction": "spam"
         },
         {
-          "feature": "word_count",
+          "feature": "[word count]",
           "raw": "word_count",
           "kind": "engineered",
           "weight": 0.037153,
@@ -680,7 +680,7 @@
           "direction": "spam"
         },
         {
-          "feature": "currency_count",
+          "feature": "[currency mentions]",
           "raw": "currency_count",
           "kind": "engineered",
           "weight": 0.023507,
@@ -704,7 +704,7 @@
           "direction": "spam"
         },
         {
-          "feature": "special_char_count",
+          "feature": "[special characters]",
           "raw": "special_char_count",
           "kind": "engineered",
           "weight": 0.021883,
@@ -712,7 +712,7 @@
           "direction": "spam"
         },
         {
-          "feature": "has_url",
+          "feature": "[has URL]",
           "raw": "has_url",
           "kind": "engineered",
           "weight": 0.021436,
@@ -752,7 +752,7 @@
           "direction": "spam"
         },
         {
-          "feature": "exclamation_count",
+          "feature": "[exclamation marks]",
           "raw": "exclamation_count",
           "kind": "engineered",
           "weight": 0.011868,
@@ -831,7 +831,7 @@
       "signed_by_model": true,
       "features": [
         {
-          "feature": "digit_count",
+          "feature": "[digit count]",
           "raw": "digit_count",
           "kind": "engineered",
           "weight": 4.276806,
@@ -951,7 +951,7 @@
           "direction": "spam"
         },
         {
-          "feature": "has_url",
+          "feature": "[has URL]",
           "raw": "has_url",
           "kind": "engineered",
           "weight": 1.420976,
@@ -1037,7 +1037,7 @@
       "signed_by_model": false,
       "features": [
         {
-          "feature": "digit_count",
+          "feature": "[digit count]",
           "raw": "digit_count",
           "kind": "engineered",
           "weight": 0.142262,
@@ -1045,7 +1045,7 @@
           "direction": "spam"
         },
         {
-          "feature": "uppercase_ratio",
+          "feature": "[uppercase ratio]",
           "raw": "uppercase_ratio",
           "kind": "engineered",
           "weight": 0.099863,
@@ -1053,7 +1053,7 @@
           "direction": "spam"
         },
         {
-          "feature": "char_length",
+          "feature": "[message length]",
           "raw": "char_length",
           "kind": "engineered",
           "weight": 0.090861,
@@ -1077,7 +1077,7 @@
           "direction": "spam"
         },
         {
-          "feature": "has_url",
+          "feature": "[has URL]",
           "raw": "has_url",
           "kind": "engineered",
           "weight": 0.045124,
@@ -1085,7 +1085,7 @@
           "direction": "spam"
         },
         {
-          "feature": "word_count",
+          "feature": "[word count]",
           "raw": "word_count",
           "kind": "engineered",
           "weight": 0.044409,
@@ -1109,7 +1109,7 @@
           "direction": "spam"
         },
         {
-          "feature": "special_char_count",
+          "feature": "[special characters]",
           "raw": "special_char_count",
           "kind": "engineered",
           "weight": 0.034503,
@@ -1221,7 +1221,7 @@
           "direction": "spam"
         },
         {
-          "feature": "exclamation_count",
+          "feature": "[exclamation marks]",
           "raw": "exclamation_count",
           "kind": "engineered",
           "weight": 0.01311,
@@ -1243,7 +1243,7 @@
       "signed_by_model": false,
       "features": [
         {
-          "feature": "digit_count",
+          "feature": "[digit count]",
           "raw": "digit_count",
           "kind": "engineered",
           "weight": 0.76875,
@@ -1251,7 +1251,7 @@
           "direction": "spam"
         },
         {
-          "feature": "has_url",
+          "feature": "[has URL]",
           "raw": "has_url",
           "kind": "engineered",
           "weight": 0.015947,
@@ -1259,7 +1259,7 @@
           "direction": "spam"
         },
         {
-          "feature": "uppercase_ratio",
+          "feature": "[uppercase ratio]",
           "raw": "uppercase_ratio",
           "kind": "engineered",
           "weight": 0.015453,
@@ -1299,7 +1299,7 @@
           "direction": "spam"
         },
         {
-          "feature": "word_count",
+          "feature": "[word count]",
           "raw": "word_count",
           "kind": "engineered",
           "weight": 0.008667,
@@ -1323,7 +1323,7 @@
           "direction": "spam"
         },
         {
-          "feature": "special_char_count",
+          "feature": "[special characters]",
           "raw": "special_char_count",
           "kind": "engineered",
           "weight": 0.008198,
@@ -1379,7 +1379,7 @@
           "direction": "spam"
         },
         {
-          "feature": "char_length",
+          "feature": "[message length]",
           "raw": "char_length",
           "kind": "engineered",
           "weight": 0.002678,
@@ -1411,7 +1411,7 @@
           "direction": "spam"
         },
         {
-          "feature": "currency_count",
+          "feature": "[currency mentions]",
           "raw": "currency_count",
           "kind": "engineered",
           "weight": 0.002173,
@@ -1457,7 +1457,7 @@
           "direction": "spam"
         },
         {
-          "feature": "digit_count",
+          "feature": "[digit count]",
           "raw": "digit_count",
           "kind": "engineered",
           "weight": 0.032217,
@@ -1537,7 +1537,7 @@
           "direction": "spam"
         },
         {
-          "feature": "currency_count",
+          "feature": "[currency mentions]",
           "raw": "currency_count",
           "kind": "engineered",
           "weight": 0.013094,
@@ -1663,7 +1663,7 @@
           "direction": "spam"
         },
         {
-          "feature": "digit_count",
+          "feature": "[digit count]",
           "raw": "digit_count",
           "kind": "engineered",
           "weight": 16.960792,
@@ -1767,7 +1767,7 @@
           "direction": "ham"
         },
         {
-          "feature": "word_count",
+          "feature": "[word count]",
           "raw": "word_count",
           "kind": "engineered",
           "weight": 12.117428,
@@ -1775,7 +1775,7 @@
           "direction": "spam"
         },
         {
-          "feature": "char_length",
+          "feature": "[message length]",
           "raw": "char_length",
           "kind": "engineered",
           "weight": 11.997241,
@@ -1865,28 +1865,28 @@
       "base_value": -3.1906,
       "global_summary": [
         {
-          "feature": "digit_count",
+          "feature": "[digit count]",
           "kind": "engineered",
           "mean_abs_shap": 1.146,
           "mean_shap": -0.00728,
           "direction": "spam"
         },
         {
-          "feature": "char_length",
+          "feature": "[message length]",
           "kind": "engineered",
           "mean_abs_shap": 0.25993,
           "mean_shap": -0.00179,
           "direction": "spam"
         },
         {
-          "feature": "has_url",
+          "feature": "[has URL]",
           "kind": "engineered",
           "mean_abs_shap": 0.19276,
           "mean_shap": -0.04819,
           "direction": "spam"
         },
         {
-          "feature": "special_char_count",
+          "feature": "[special characters]",
           "kind": "engineered",
           "mean_abs_shap": 0.1764,
           "mean_shap": 0.00449,
@@ -1900,21 +1900,21 @@
           "direction": "spam"
         },
         {
-          "feature": "currency_count",
+          "feature": "[currency mentions]",
           "kind": "engineered",
           "mean_abs_shap": 0.12313,
           "mean_shap": -0.01259,
           "direction": "spam"
         },
         {
-          "feature": "word_count",
+          "feature": "[word count]",
           "kind": "engineered",
           "mean_abs_shap": 0.1205,
           "mean_shap": 4e-05,
           "direction": "spam"
         },
         {
-          "feature": "exclamation_count",
+          "feature": "[exclamation marks]",
           "kind": "engineered",
           "mean_abs_shap": 0.10328,
           "mean_shap": -0.00465,
@@ -2014,14 +2014,14 @@
           "output_value": 8.2025,
           "contributions": [
             {
-              "feature": "digit_count",
+              "feature": "[digit count]",
               "kind": "engineered",
               "value": 0.4468,
               "contribution": 6.0922,
               "direction": "spam"
             },
             {
-              "feature": "currency_count",
+              "feature": "[currency mentions]",
               "kind": "engineered",
               "value": 0.6667,
               "contribution": 2.0886,
@@ -2049,7 +2049,7 @@
               "direction": "spam"
             },
             {
-              "feature": "char_length",
+              "feature": "[message length]",
               "kind": "engineered",
               "value": 0.1608,
               "contribution": 0.3979,
@@ -2079,7 +2079,7 @@
           "output_value": 6.8414,
           "contributions": [
             {
-              "feature": "digit_count",
+              "feature": "[digit count]",
               "kind": "engineered",
               "value": 0.5106,
               "contribution": 7.0653,
@@ -2093,7 +2093,7 @@
               "direction": "spam"
             },
             {
-              "feature": "char_length",
+              "feature": "[message length]",
               "kind": "engineered",
               "value": 0.1663,
               "contribution": 0.4269,
@@ -2121,7 +2121,7 @@
               "direction": "spam"
             },
             {
-              "feature": "exclamation_count",
+              "feature": "[exclamation marks]",
               "kind": "engineered",
               "value": 0.0909,
               "contribution": 0.1961,
@@ -2158,7 +2158,7 @@
               "direction": "spam"
             },
             {
-              "feature": "char_length",
+              "feature": "[message length]",
               "kind": "engineered",
               "value": 0.1311,
               "contribution": 0.2413,
@@ -2179,7 +2179,7 @@
               "direction": "ham"
             },
             {
-              "feature": "word_count",
+              "feature": "[word count]",
               "kind": "engineered",
               "value": 0.1471,
               "contribution": 0.1516,
@@ -2193,7 +2193,7 @@
               "direction": "ham"
             },
             {
-              "feature": "digit_count",
+              "feature": "[digit count]",
               "kind": "engineered",
               "value": 0.0426,
               "contribution": -0.0712,
@@ -2216,7 +2216,7 @@
               "direction": "ham"
             },
             {
-              "feature": "special_char_count",
+              "feature": "[special characters]",
               "kind": "engineered",
               "value": 0.2034,
               "contribution": -0.487,

@@ -31,10 +31,22 @@ def feature_kind(name: str) -> str:
     return "bigram" if " " in name else "token"
 
 
+META_LABELS = {
+    "char_length": "[message length]",
+    "word_count": "[word count]",
+    "digit_count": "[digit count]",
+    "uppercase_ratio": "[uppercase ratio]",
+    "exclamation_count": "[exclamation marks]",
+    "special_char_count": "[special characters]",
+    "has_url": "[has URL]",
+    "currency_count": "[currency mentions]",
+}
+
+
 def display_name(name: str) -> str:
     if name in SPECIAL_TOKENS:
         return f"<{name.removesuffix('token').upper()}>"
-    return name
+    return META_LABELS.get(name, name)
 
 
 def _dense_mean(x) -> np.ndarray:
