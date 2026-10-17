@@ -5,9 +5,12 @@ __pycache__/
 .pytest_cache/
 .ruff_cache/
 
-# Dataset downloads and trained model binaries (regenerate with `make train`)
+# Dataset downloads (re-downloaded by `make train`). Trained models in backend/artifacts/models/ are
+# committed so serverless deploys (Vercel) can serve predictions without a training step.
 backend/data/raw/
-backend/artifacts/models/
+
+# Vercel
+.vercel/
 
 # Env
 .env

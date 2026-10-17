@@ -13,7 +13,8 @@ def create_app() -> FastAPI:
         title=settings.app_name,
         version=settings.version,
         description="Spam detection API backed by TF-IDF features and ten scikit-learn / XGBoost classifiers.",
-        docs_url="/docs",
+        docs_url=f"{settings.api_prefix}/docs",
+        redoc_url=None,
         openapi_url=f"{settings.api_prefix}/openapi.json",
     )
     app.add_middleware(

@@ -16,9 +16,8 @@ COPY app ./app
 COPY ml ./ml
 COPY artifacts ./artifacts
 
-# Trains all models into the image so the container starts ready to serve. Set TRAIN=0 to skip
-# (the committed JSON artifacts still serve the research endpoints; /predict then returns 503).
-ARG TRAIN=1
+# Committed models are served as-is. Set TRAIN=1 to retrain inside the image (downloads the dataset).
+ARG TRAIN=0
 RUN if [ "$TRAIN" = "1" ]; then uv run --no-dev python -m ml.train; fi
 
 EXPOSE 8417

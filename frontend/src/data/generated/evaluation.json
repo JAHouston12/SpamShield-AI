@@ -306,7 +306,7 @@
           "tp": 122
         }
       },
-      "train_time_s": 0.011,
+      "train_time_s": 0.01,
       "inference_ms": 0.0002,
       "errors": {
         "false_negatives": [
@@ -1377,8 +1377,8 @@
           "tp": 116
         }
       },
-      "train_time_s": 0.719,
-      "inference_ms": 0.0414,
+      "train_time_s": 0.734,
+      "inference_ms": 0.0418,
       "errors": {
         "false_negatives": [
           {
@@ -1723,7 +1723,7 @@
         }
       },
       "train_time_s": 0.001,
-      "inference_ms": 0.0506,
+      "inference_ms": 0.0466,
       "errors": {
         "false_negatives": [
           {
@@ -2083,8 +2083,8 @@
           "tp": 121
         }
       },
-      "train_time_s": 0.809,
-      "inference_ms": 0.032,
+      "train_time_s": 0.838,
+      "inference_ms": 0.0409,
       "errors": {
         "false_negatives": [
           {
@@ -2440,8 +2440,8 @@
           "tp": 118
         }
       },
-      "train_time_s": 1.222,
-      "inference_ms": 0.0413,
+      "train_time_s": 1.208,
+      "inference_ms": 0.0408,
       "errors": {
         "false_negatives": [
           {
@@ -2789,8 +2789,8 @@
           "tp": 121
         }
       },
-      "train_time_s": 1.296,
-      "inference_ms": 0.0015,
+      "train_time_s": 1.326,
+      "inference_ms": 0.002,
       "errors": {
         "false_negatives": [
           {
@@ -2839,22 +2839,22 @@
       "name": "XGBoost",
       "family": "Ensemble (boosting)",
       "role": "candidate",
-      "threshold": 0.56,
+      "threshold": 0.81,
       "metrics": {
-        "accuracy": 0.9903381642512077,
-        "precision": 0.9763779527559056,
-        "recall": 0.9465648854961832,
-        "f1": 0.9612403100775194,
-        "roc_auc": 0.9968925217861244
+        "accuracy": 0.9874396135265701,
+        "precision": 0.9836065573770492,
+        "recall": 0.916030534351145,
+        "f1": 0.9486166007905138,
+        "roc_auc": 0.997019185300277
       },
       "confusion_matrix": {
-        "tn": 901,
-        "fp": 3,
-        "fn": 7,
-        "tp": 124
+        "tn": 902,
+        "fp": 2,
+        "fn": 11,
+        "tp": 120
       },
-      "false_positive_rate": 0.00331858407079646,
-      "false_negative_rate": 0.05343511450381679,
+      "false_positive_rate": 0.0022123893805309734,
+      "false_negative_rate": 0.08396946564885496,
       "roc_curve": [
         {
           "fpr": 0.0,
@@ -2898,15 +2898,15 @@
         },
         {
           "fpr": 0.1695,
-          "tpr": 0.9924
+          "tpr": 1.0
         },
         {
           "fpr": 0.1864,
-          "tpr": 0.9924
+          "tpr": 1.0
         },
         {
           "fpr": 0.2034,
-          "tpr": 0.9924
+          "tpr": 1.0
         },
         {
           "fpr": 0.2203,
@@ -3099,27 +3099,27 @@
       ],
       "classification_report": {
         "ham": {
-          "precision": 0.9922907488986784,
-          "recall": 0.9966814159292036,
-          "f1": 0.9944812362030905,
+          "precision": 0.9879518072289156,
+          "recall": 0.9977876106194691,
+          "f1": 0.9928453494771602,
           "support": 904
         },
         "spam": {
-          "precision": 0.9763779527559056,
-          "recall": 0.9465648854961832,
-          "f1": 0.9612403100775194,
+          "precision": 0.9836065573770492,
+          "recall": 0.916030534351145,
+          "f1": 0.9486166007905138,
           "support": 131
         },
         "macro avg": {
-          "precision": 0.9843343508272919,
-          "recall": 0.9716231507126933,
-          "f1": 0.977860773140305,
+          "precision": 0.9857791823029824,
+          "recall": 0.9569090724853071,
+          "f1": 0.970730975133837,
           "support": 1035
         },
         "weighted avg": {
-          "precision": 0.9902766655221534,
-          "recall": 0.9903381642512077,
-          "f1": 0.9902739305775351,
+          "precision": 0.9874018287452494,
+          "recall": 0.9874396135265701,
+          "f1": 0.9872473146192369,
           "support": 1035
         }
       },
@@ -3129,7 +3129,7 @@
           "precision": 0.9612403100775194,
           "recall": 0.9465648854961832,
           "f1": 0.9538461538461539,
-          "roc_auc": 0.9968925217861244
+          "roc_auc": 0.997019185300277
         },
         "confusion_matrix": {
           "tn": 899,
@@ -3138,47 +3138,43 @@
           "tp": 124
         }
       },
-      "train_time_s": 0.582,
+      "train_time_s": 0.666,
       "inference_ms": 0.0033,
       "errors": {
         "false_negatives": [
           {
             "message": "Would you like to see my XXX pics they are so hot they were nearly banned in the uk!",
-            "spam_probability": 0.0006
+            "spam_probability": 0.001
           },
           {
             "message": "Latest News! Police station toilet stolen, cops have nothing to go on!",
-            "spam_probability": 0.0046
+            "spam_probability": 0.0039
           },
           {
             "message": "Bought one ringtone and now getting texts costing 3 pound offering more tones etc",
-            "spam_probability": 0.0299
+            "spam_probability": 0.011
           },
           {
             "message": "Check Out Choose Your Babe Videos @ sms.shsex.netUN fgkslpoPW fgkslpo",
-            "spam_probability": 0.0313
+            "spam_probability": 0.0179
           },
           {
             "message": "RECPT 1/3. You have ordered a Ringtone. Your order is being processed...",
-            "spam_probability": 0.1063
+            "spam_probability": 0.1351
           },
           {
             "message": "In The Simpsons Movie released in July 2007 name the band that died at the start of the film? A-Green Day, B-Blue Day, C-Red Day. (Send A, B or C)",
-            "spam_probability": 0.1764
+            "spam_probability": 0.2041
           }
         ],
         "false_positives": [
           {
             "message": "7 wonders in My WORLD 7th You 6th Ur style 5th Ur smile 4th Ur Personality 3rd Ur Nature 2nd Ur SMS and 1st \"Ur Lovely Friendship\"... good morning dear",
-            "spam_probability": 0.9809
+            "spam_probability": 0.9778
           },
           {
             "message": "I (Career Tel) have added u as a contact on INDYAROCKS.COM to send FREE SMS. To remove from phonebook - sms NO to  &lt;#&gt;",
-            "spam_probability": 0.8308
-          },
-          {
-            "message": "Aight I've been set free, think you could text me blake's address? It occurs to me I'm not quite as sure what I'm doing as I thought I was",
-            "spam_probability": 0.6683
+            "spam_probability": 0.9223
           }
         ]
       }
@@ -3487,8 +3483,8 @@
           "tp": 118
         }
       },
-      "train_time_s": 1.498,
-      "inference_ms": 0.0011,
+      "train_time_s": 1.611,
+      "inference_ms": 0.0009,
       "errors": {
         "false_negatives": [
           {
@@ -3550,27 +3546,27 @@
     },
     {
       "rank": 2,
-      "key": "xgboost",
-      "name": "XGBoost",
-      "score": 0.9685
-    },
-    {
-      "rank": 3,
       "key": "random_forest",
       "name": "Random Forest",
       "score": 0.9654
     },
     {
-      "rank": 4,
+      "rank": 3,
       "key": "svm",
       "name": "Support Vector Machine",
       "score": 0.9626
     },
     {
-      "rank": 5,
+      "rank": 4,
       "key": "mlp",
       "name": "MLP Neural Network",
       "score": 0.962
+    },
+    {
+      "rank": 5,
+      "key": "xgboost",
+      "name": "XGBoost",
+      "score": 0.9588
     },
     {
       "rank": 6,

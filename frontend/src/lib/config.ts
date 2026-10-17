@@ -1,9 +1,22 @@
-/** Backend origin used by server components and by the Next.js rewrite proxy. */
-export const API_ORIGIN = process.env.API_URL ?? process.env.NEXT_PUBLIC_API_URL ?? "http://127.0.0.1:8417";
+/**
+ * Backend origin used by server components and by the local Next.js rewrite proxy.
+ * On Vercel the backend is a sibling service on the same domain (see vercel.json), so server fetches
+ * target the deployment itself. Protected preview URLs reject these fetches, and pages then fall back
+ * to the bundled snapshot.
+ */
+function vercelOrigin(): string | undefined {
+  const host =
+    process.env.VERCEL_ENV === "production" ? process.env.VERCEL_PROJECT_PRODUCTION_URL : process.env.VERCEL_URL;
+  return host ? `https://${host}` : undefined;
+}
 
-/** Browser requests go through the same-origin rewrite in next.config.mjs, avoiding CORS. */
+export const API_ORIGIN =
+  process.env.API_URL ?? process.env.NEXT_PUBLIC_API_URL ?? vercelOrigin() ?? "http://127.0.0.1:8417";
+
+/** Browser requests stay same-origin: proxied by next.config.mjs locally, routed by vercel.json on Vercel. */
 export const CLIENT_API_BASE = "/api/v1";
 export const SERVER_API_BASE = `${API_ORIGIN}/api/v1`;
+export const API_DOCS_PATH = "/api/v1/docs";
 
 export const SITE = {
   name: "SpamShield AI",

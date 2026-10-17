@@ -7,7 +7,7 @@ import { SourceBadge } from "@/components/sections/source-badge";
 import { Button } from "@/components/ui/button";
 import { buildDocs } from "@/content/docs";
 import { getDataset, getEvaluation, getModels } from "@/lib/api";
-import { API_ORIGIN } from "@/lib/config";
+import { API_DOCS_PATH } from "@/lib/config";
 
 export const metadata: Metadata = { title: "Documentation" };
 
@@ -24,7 +24,7 @@ export default async function DocsPage() {
       >
         <div className="flex flex-wrap items-center gap-3">
           <Button asChild variant="outline" size="sm">
-            <a href={`${API_ORIGIN}/docs`} target="_blank" rel="noreferrer">
+            <a href={API_DOCS_PATH} target="_blank" rel="noreferrer">
               OpenAPI reference
               <ExternalLink className="h-3.5 w-3.5" aria-hidden />
             </a>

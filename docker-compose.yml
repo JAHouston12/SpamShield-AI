@@ -3,7 +3,7 @@ services:
     build:
       context: ./backend
       args:
-        TRAIN: "1"
+        TRAIN: "0"
     environment:
       SPAMSHIELD_CORS_ORIGINS: '["http://localhost:3417","http://127.0.0.1:3417"]'
     ports:

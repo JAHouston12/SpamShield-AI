@@ -11,7 +11,7 @@
         "C": 10.0,
         "class_weight": "balanced"
       },
-      "train_time_s": 0.011
+      "train_time_s": 0.01
     },
     {
       "key": "naive_bayes",
@@ -52,7 +52,7 @@
         "class_weight": "balanced_subsample",
         "max_features": "sqrt"
       },
-      "train_time_s": 0.719
+      "train_time_s": 0.734
     },
     {
       "key": "knn",
@@ -80,7 +80,7 @@
         "kernel": "linear",
         "class_weight": "balanced"
       },
-      "train_time_s": 0.809
+      "train_time_s": 0.838
     },
     {
       "key": "adaboost",
@@ -93,7 +93,7 @@
         "n_estimators": 300,
         "learning_rate": 0.5
       },
-      "train_time_s": 1.222
+      "train_time_s": 1.208
     },
     {
       "key": "gradient_boosting",
@@ -109,7 +109,7 @@
         "max_features": null,
         "subsample": 0.9
       },
-      "train_time_s": 1.296
+      "train_time_s": 1.326
     },
     {
       "key": "xgboost",
@@ -117,7 +117,7 @@
       "family": "Ensemble (boosting)",
       "role": "candidate",
       "imbalance_strategy": "scale_pos_weight",
-      "threshold": 0.56,
+      "threshold": 0.81,
       "params": {
         "max_depth": 6,
         "n_estimators": 400,
@@ -125,7 +125,7 @@
         "subsample": 0.9,
         "colsample_bytree": 0.5
       },
-      "train_time_s": 0.582
+      "train_time_s": 0.666
     },
     {
       "key": "mlp",
@@ -141,7 +141,7 @@
           128
         ]
       },
-      "train_time_s": 1.498
+      "train_time_s": 1.611
     }
   ],
   "feature_count": 3000

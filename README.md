@@ -29,9 +29,9 @@ make train     # download dataset, train 10 models (~45 s), write artifacts + fr
 make dev       # API → http://127.0.0.1:8417  ·  Web → http://127.0.0.1:3417
 ```
 
-Or run each half in its own terminal with `make api` and `make web`. Interactive API docs: <http://127.0.0.1:8417/docs>.
+Or run each half in its own terminal with `make api` and `make web`. Interactive API docs: <http://127.0.0.1:8417/api/v1/docs>.
 
-With Docker (trains inside the image):
+With Docker:
 
 ```bash
 docker compose up --build
@@ -67,7 +67,7 @@ backend/                       Python · FastAPI · scikit-learn · XGBoost
     services/predictor.py      Model loading, hybrid scoring, explanations
     services/signals.py        Threat-signal heuristics (links, credential lures, urgency…)
     schemas/                   Pydantic request/response models
-  artifacts/                   *.json results (committed) · models/*.joblib (generated, git-ignored)
+  artifacts/                   *.json results and models/*.joblib (both committed; regenerate with make train)
   tests/                       API contract tests
 
 frontend/                      Next.js 14 App Router · TypeScript · Tailwind · shadcn/ui · Recharts
@@ -118,8 +118,24 @@ No secrets are required.
 
 ## Deployment notes
 
-- **Frontend:** `output: "standalone"`. Deploy `frontend/` to Vercel or any Node host (`frontend/Dockerfile`). Set `API_URL` at build time.
-- **Backend:** `backend/Dockerfile` trains during the build, so the image is self-contained (~45 s of training). It runs on Fly.io, Render, Railway, Cloud Run, or any container host. It is stateless, so it scales horizontally.
+### Vercel (recommended)
+
+`vercel.json` deploys both halves as one project using Vercel Services. `/api/*` goes to the FastAPI service in `backend/`, and everything else goes to the Next.js service in `frontend/`. Both share one domain, so there's no CORS and no `API_URL` to set.
+
+1. In Vercel, **Add New → Project** and import the GitHub repository. Leave the Root Directory as the repository root, since `vercel.json` defines the services.
+2. Deploy. No environment variables or secrets are required.
+
+Things to know:
+
+- **Committed models.** The trained models in `backend/artifacts/models/` (about 16 MB) are committed, so Vercel serves predictions without a training step. After `make train`, commit the updated artifacts and models.
+- **Bundle size.** The backend uses `xgboost-cpu` rather than `xgboost`, which keeps the Python bundle around 320 MB. The standard `xgboost` wheel pulls in about 345 MB of CUDA libraries and exceeds Vercel's 500 MB function limit.
+- **Previews.** On protected preview deployments, server-rendered pages can't call their own API, so they show the bundled snapshot (same data). The live detector still works, because it calls the API from the browser.
+- **API docs.** The interactive API docs are at `/api/v1/docs` on the deployed domain.
+
+### Containers
+
+- **Frontend:** `frontend/Dockerfile` builds a Node server using `output: "standalone"`. Set `API_URL` at build time.
+- **Backend:** `backend/Dockerfile` serves the committed models. Pass `--build-arg TRAIN=1` to retrain inside the image (about 45 s). It runs on Fly.io, Render, Railway, Cloud Run, or any container host. It is stateless, so it scales horizontally.
 - **Database (future):** none is needed today; all state is read-only artifacts. To log predictions and analyst feedback for retraining, add PostgreSQL (e.g. Neon or Supabase) behind a `services/` repository module. Store decisions and scores rather than message bodies, to limit personal data retention.
 - **Model storage:** for larger models, move `artifacts/models/` to object storage (S3/GCS) and load at startup, keyed by the manifest's `trained_at`.
 

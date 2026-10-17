@@ -53,7 +53,7 @@ export function buildDocs({
           code: `backend/
   app/            FastAPI service (routes, schemas, predictor, threat signals)
   ml/             Training pipeline: data, preprocessing, registry, evaluate, explain, eda, train
-  artifacts/      JSON results (committed) and models/*.joblib (generated)
+  artifacts/      JSON results and models/*.joblib (committed; regenerate with make train)
   tests/          pytest suite for the API
 frontend/
   src/app/        One folder per page (Next.js App Router)
@@ -153,7 +153,7 @@ make build            # production Next.js build`,
         {
           type: "code",
           title: "docker",
-          code: `docker compose up --build   # trains inside the backend image, then serves both apps`,
+          code: `docker compose up --build   # serves the committed models; set TRAIN: "1" in docker-compose.yml to retrain`,
         },
         {
           type: "kv",
@@ -174,7 +174,7 @@ make build            # production Next.js build`,
       id: "api",
       title: "API Usage",
       blocks: [
-        { type: "p", text: "Interactive OpenAPI docs are served at http://127.0.0.1:8417/docs. All endpoints are versioned under /api/v1." },
+        { type: "p", text: "Interactive OpenAPI docs are served at /api/v1/docs (locally http://127.0.0.1:8417/api/v1/docs, or through the web app on port 3417). All endpoints are versioned under /api/v1." },
         { type: "table", head: ["Method", "Path", "Description"], rows: API_ENDPOINTS.map((e) => [e.method, e.path, e.description]) },
         {
           type: "code",
