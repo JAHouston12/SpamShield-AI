@@ -17,6 +17,7 @@
 | Live Detector | Classify any message, with hybrid threat signals, word attribution, and the votes of all ten models |
 | Docs | Installation, API reference, extending the project |
 | Report | Proposal, final report, and presentation outline (printable to PDF) |
+| Assignments | Course assignments with the original PDFs, newest first |
 
 ## Quick start
 
@@ -98,6 +99,7 @@ The structure is designed so each kind of update touches one obvious place.
 | **Change the baseline / improved model** | Set `role` in the registry and update `PROJECT.baseline/improved` in `frontend/src/content/site.ts`. |
 | **Edit any text** | `frontend/src/content/*.ts` (site, preprocessing, models, security, explainability, detector, docs, report). |
 | **Add a report section or slide** | Append a `DocSection` / `Slide` in `frontend/src/content/report.ts`. |
+| **Add an assignment** | Put the PDF in `frontend/public/assignments/` and append an entry to `frontend/src/content/assignments.ts`. The list and detail pages are generated from it. |
 | **Add a page** | Create `frontend/src/app/<route>/page.tsx` and add one entry to `NAV_ITEMS` in `frontend/src/lib/nav.ts` (sidebar, mobile nav, and home cards update). |
 | **Add an API endpoint** | Add a route module under `backend/app/api/v1/routes/` and include it in `router.py`. Add a test in `backend/tests/`. |
 | **Add a threat signal** | Add one `sig(...)` line in `backend/app/services/signals.py`. |

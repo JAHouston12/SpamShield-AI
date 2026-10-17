@@ -4,6 +4,7 @@ import {
   BrainCircuit,
   Database,
   FileText,
+  FolderOpen,
   Gauge,
   Home,
   type LucideIcon,
@@ -111,6 +112,14 @@ export const NAV_ITEMS: NavItem[] = [
     short: "Report",
     description: "Proposal, final report, and presentation outline.",
     icon: FileText,
+    group: "Tools",
+  },
+  {
+    href: "/assignments",
+    title: "Assignments",
+    short: "Assignments",
+    description: "Past and upcoming course assignments with the original PDFs.",
+    icon: FolderOpen,
     group: "Tools",
   },
 ];
