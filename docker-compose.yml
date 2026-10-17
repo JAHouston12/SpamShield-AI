@@ -1,0 +1,25 @@
+services:
+  api:
+    build:
+      context: ./backend
+      args:
+        TRAIN: "1"
+    environment:
+      SPAMSHIELD_CORS_ORIGINS: '["http://localhost:3417","http://127.0.0.1:3417"]'
+    ports:
+      - "8417:8417"
+    restart: unless-stopped
+
+  web:
+    build:
+      context: ./frontend
+      args:
+        API_URL: http://api:8417
+    environment:
+      API_URL: http://api:8417
+    ports:
+      - "3417:3417"
+    depends_on:
+      api:
+        condition: service_healthy
+    restart: unless-stopped

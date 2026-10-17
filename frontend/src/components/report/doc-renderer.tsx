@@ -5,11 +5,11 @@ import { cn } from "@/lib/utils";
 function Block({ block }: { block: DocBlock }) {
   switch (block.type) {
     case "p":
-      return <p className="leading-relaxed text-foreground/90">{block.text}</p>;
+      return <p className="break-words leading-relaxed text-foreground/90">{block.text}</p>;
     case "list": {
       const Tag = block.ordered ? "ol" : "ul";
       return (
-        <Tag className={cn("space-y-1.5 pl-5 leading-relaxed text-foreground/90", block.ordered ? "list-decimal" : "list-disc")}>
+        <Tag className={cn("space-y-1.5 break-words pl-5 leading-relaxed text-foreground/90", block.ordered ? "list-decimal" : "list-disc")}>
           {block.items.map((item) => (
             <li key={item} className="pl-1 marker:text-primary">
               {item}
