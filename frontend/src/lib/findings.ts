@@ -6,10 +6,14 @@ export interface Findings {
   improved: ModelResult;
   best: ModelResult;
   fpReduction: number;
+  correctDelta: number;
   headline: string;
   points: string[];
   answer: string;
+  caveat: string;
 }
+
+const correct = (r: ModelResult) => r.confusion_matrix.tp + r.confusion_matrix.tn;
 
 /** Derive narrative findings from evaluation numbers so copy stays truthful after every retrain. */
 export function deriveFindings(ev: EvaluationArtifact): Findings {
@@ -22,6 +26,7 @@ export function deriveFindings(ev: EvaluationArtifact): Findings {
   const fpB = baseline.confusion_matrix.fp;
   const fpI = improved.confusion_matrix.fp;
   const fpReduction = fpB > 0 ? (fpB - fpI) / fpB : 0;
+  const correctDelta = correct(improved) - correct(baseline);
 
   const points: string[] = [];
   if (fpI < fpB) {
@@ -38,27 +43,34 @@ export function deriveFindings(ev: EvaluationArtifact): Findings {
     points.push(`Spam identification (recall) improved from ${pct(b.recall)} to ${pct(i.recall)}.`);
   } else {
     points.push(
-      `Spam recall was ${pct(i.recall)} versus ${pct(b.recall)} for the baseline: ${improved.name} trades a few missed spam messages for far fewer false alarms.`,
+      `Spam recall was ${pct(i.recall)} versus ${pct(b.recall)} for the baseline: ${improved.name} trades ${improved.confusion_matrix.fn - baseline.confusion_matrix.fn} additional missed spam message(s) for fewer false alarms.`,
     );
   }
-  if (best.key !== improved.key) {
+  if (best.key !== improved.key && best.key !== baseline.key) {
     points.push(
-      `${best.name} ranked first overall (F1 ${pct(best.metrics.f1)}, ROC-AUC ${best.metrics.roc_auc.toFixed(4)}), showing that advanced ensembles can outperform the baseline.`,
+      `${best.name} ranked first overall (F1 ${pct(best.metrics.f1)}, ROC-AUC ${best.metrics.roc_auc.toFixed(4)}).`,
     );
   }
 
-  const advancedBeatBaseline = ev.ranking[0].key !== ev.baseline;
-  const answer = advancedBeatBaseline
-    ? `Yes. Advanced models outperform the Logistic Regression baseline: ${best.name} achieved the best overall score, and ${improved.name} delivered the highest precision-oriented improvement by reducing false positives.`
-    : `Partially. The baseline remained competitive on F1, but ${improved.name} improved precision and reduced false positives.`;
+  const baselineWins = ev.ranking[0].key === ev.baseline;
+  const answer = baselineWins
+    ? `Partially. On F1 the tuned Logistic Regression baseline remains the strongest single model, which is common for linear models on sparse TF-IDF text. ${improved.name} improves precision and ROC-AUC${fpI < fpB ? ` and reduces false positives by ${pct(fpReduction, 0)}` : ""}, the property that matters most when blocking legitimate messages is costly.`
+    : `Yes. ${best.name} achieved the best overall score, outperforming the ${baseline.name} baseline${fpI < fpB ? `, and ${improved.name} reduced false positives by ${pct(fpReduction, 0)}` : ""}.`;
+
+  const caveat = `All ten models are separated by small margins: ${improved.name} and the baseline differ by ${Math.abs(correctDelta)} correctly classified message(s) out of ${ev.test_size}. Cross-validation spreads (± std) are of the same order, so the ranking should be read as a trade-off profile rather than a decisive winner.`;
 
   return {
     baseline,
     improved,
     best,
     fpReduction,
-    headline: `${improved.name} reduces false positives by ${pct(fpReduction, 0)} versus the baseline`,
+    correctDelta,
+    headline:
+      fpI < fpB
+        ? `${improved.name} reduces false positives by ${pct(fpReduction, 0)} versus the baseline`
+        : `${best.name} leads ${ev.results.length} evaluated models`,
     points,
     answer,
+    caveat,
   };
 }

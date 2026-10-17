@@ -19,7 +19,7 @@ import type {
   PreprocessingArtifact,
 } from "@/types/artifacts";
 
-const REVALIDATE_SECONDS = 300;
+const REVALIDATE_SECONDS = 60;
 const TIMEOUT_MS = 2500;
 
 /**
