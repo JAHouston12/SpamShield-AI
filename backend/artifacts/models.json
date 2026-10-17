@@ -11,7 +11,7 @@
         "C": 10.0,
         "class_weight": "balanced"
       },
-      "train_time_s": 0.01
+      "train_time_s": 0.011
     },
     {
       "key": "naive_bayes",
@@ -37,7 +37,7 @@
         "class_weight": "balanced",
         "max_features": null
       },
-      "train_time_s": 0.045
+      "train_time_s": 0.046
     },
     {
       "key": "random_forest",
@@ -52,7 +52,7 @@
         "class_weight": "balanced_subsample",
         "max_features": "sqrt"
       },
-      "train_time_s": 0.73
+      "train_time_s": 0.719
     },
     {
       "key": "knn",
@@ -93,7 +93,7 @@
         "n_estimators": 300,
         "learning_rate": 0.5
       },
-      "train_time_s": 1.211
+      "train_time_s": 1.222
     },
     {
       "key": "gradient_boosting",
@@ -109,7 +109,7 @@
         "max_features": null,
         "subsample": 0.9
       },
-      "train_time_s": 1.286
+      "train_time_s": 1.296
     },
     {
       "key": "xgboost",
@@ -125,7 +125,7 @@
         "subsample": 0.9,
         "colsample_bytree": 0.5
       },
-      "train_time_s": 0.716
+      "train_time_s": 0.582
     },
     {
       "key": "mlp",
@@ -141,7 +141,7 @@
           128
         ]
       },
-      "train_time_s": 1.548
+      "train_time_s": 1.498
     }
   ],
   "feature_count": 3000

@@ -44,9 +44,9 @@ META_LABELS = {
 
 
 def display_name(name: str) -> str:
-    if name in SPECIAL_TOKENS:
-        return f"<{name.removesuffix('token').upper()}>"
-    return META_LABELS.get(name, name)
+    if name in META_LABELS:
+        return META_LABELS[name]
+    return " ".join(f"<{p.removesuffix('token').upper()}>" if p in SPECIAL_TOKENS else p for p in name.split(" "))
 
 
 def _dense_mean(x) -> np.ndarray:

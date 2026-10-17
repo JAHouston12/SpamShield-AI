@@ -228,7 +228,7 @@
           "direction": "spam"
         },
         {
-          "feature": "call phonetoken",
+          "feature": "call <PHONE>",
           "raw": "call phonetoken",
           "kind": "bigram",
           "weight": 5.347432,
@@ -236,7 +236,7 @@
           "direction": "spam"
         },
         {
-          "feature": "phonetoken now",
+          "feature": "<PHONE> now",
           "raw": "phonetoken now",
           "kind": "bigram",
           "weight": 5.170616,
@@ -268,7 +268,7 @@
           "direction": "spam"
         },
         {
-          "feature": "numtoken prize",
+          "feature": "<NUM> prize",
           "raw": "numtoken prize",
           "kind": "bigram",
           "weight": 4.905589,
@@ -276,7 +276,7 @@
           "direction": "spam"
         },
         {
-          "feature": "numtoken cash",
+          "feature": "<NUM> cash",
           "raw": "numtoken cash",
           "kind": "bigram",
           "weight": 4.905505,
@@ -324,7 +324,7 @@
           "direction": "ham"
         },
         {
-          "feature": "won currencytoken",
+          "feature": "won <CURRENCY>",
           "raw": "won currencytoken",
           "kind": "bigram",
           "weight": 4.614701,
@@ -404,7 +404,7 @@
           "direction": "ham"
         },
         {
-          "feature": "box numtoken",
+          "feature": "box <NUM>",
           "raw": "box numtoken",
           "kind": "bigram",
           "weight": 4.393851,
@@ -696,7 +696,7 @@
           "direction": "spam"
         },
         {
-          "feature": "call phonetoken",
+          "feature": "call <PHONE>",
           "raw": "call phonetoken",
           "kind": "bigram",
           "weight": 0.019963,
@@ -728,7 +728,7 @@
           "direction": "spam"
         },
         {
-          "feature": "currencytoken numtoken",
+          "feature": "<CURRENCY> <NUM>",
           "raw": "currencytoken numtoken",
           "kind": "bigram",
           "weight": 0.015604,
@@ -744,7 +744,7 @@
           "direction": "spam"
         },
         {
-          "feature": "numtoken numtoken",
+          "feature": "<NUM> <NUM>",
           "raw": "numtoken numtoken",
           "kind": "bigram",
           "weight": 0.012844,
@@ -871,7 +871,7 @@
           "direction": "spam"
         },
         {
-          "feature": "number numtoken",
+          "feature": "number <NUM>",
           "raw": "number numtoken",
           "kind": "bigram",
           "weight": 1.87783,
@@ -1505,7 +1505,7 @@
           "direction": "spam"
         },
         {
-          "feature": "call phonetoken",
+          "feature": "call <PHONE>",
           "raw": "call phonetoken",
           "kind": "bigram",
           "weight": 0.017057,
@@ -1679,7 +1679,7 @@
           "direction": "spam"
         },
         {
-          "feature": "call phonetoken",
+          "feature": "call <PHONE>",
           "raw": "call phonetoken",
           "kind": "bigram",
           "weight": 13.603934,
@@ -1743,7 +1743,7 @@
           "direction": "spam"
         },
         {
-          "feature": "phonetoken now",
+          "feature": "<PHONE> now",
           "raw": "phonetoken now",
           "kind": "bigram",
           "weight": 11.638119,
@@ -1759,7 +1759,7 @@
           "direction": "spam"
         },
         {
-          "feature": "numtoken free",
+          "feature": "<NUM> free",
           "raw": "numtoken free",
           "kind": "bigram",
           "weight": 10.959708,
@@ -1831,7 +1831,7 @@
           "direction": "ham"
         },
         {
-          "feature": "box numtoken",
+          "feature": "box <NUM>",
           "raw": "box numtoken",
           "kind": "bigram",
           "weight": 9.994197,
@@ -2056,7 +2056,7 @@
               "direction": "spam"
             },
             {
-              "feature": "call phonetoken",
+              "feature": "call <PHONE>",
               "kind": "bigram",
               "value": 0.1184,
               "contribution": 0.2497,
@@ -2100,14 +2100,14 @@
               "direction": "spam"
             },
             {
-              "feature": "box numtoken",
+              "feature": "box <NUM>",
               "kind": "bigram",
               "value": 0.1643,
               "contribution": 0.298,
               "direction": "spam"
             },
             {
-              "feature": "call phonetoken",
+              "feature": "call <PHONE>",
               "kind": "bigram",
               "value": 0.111,
               "contribution": 0.2334,

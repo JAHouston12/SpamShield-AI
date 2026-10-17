@@ -157,11 +157,11 @@
         "chi2": 315.31
       },
       {
-        "feature": "currencytoken numtoken",
+        "feature": "<CURRENCY> <NUM>",
         "chi2": 150.4
       },
       {
-        "feature": "call phonetoken",
+        "feature": "call <PHONE>",
         "chi2": 148.01
       },
       {
@@ -177,7 +177,7 @@
         "chi2": 104.5
       },
       {
-        "feature": "numtoken numtoken",
+        "feature": "<NUM> <NUM>",
         "chi2": 88.25
       },
       {
