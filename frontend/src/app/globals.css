@@ -90,11 +90,42 @@
 }
 
 @media print {
+  @page {
+    margin: 18mm 16mm;
+  }
+  html.dark {
+    --background: 0 0% 100%;
+    --foreground: 222 47% 11%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+    --muted: 210 20% 96%;
+    --muted-foreground: 215 16% 35%;
+    --border: 214 20% 85%;
+    --primary: 192 85% 30%;
+  }
   .no-print {
     display: none !important;
   }
+  .print-only {
+    display: block !important;
+  }
   body {
-    background: white;
+    background: white !important;
     color: black;
+    font-size: 11pt;
+  }
+  main {
+    padding-left: 0 !important;
+  }
+  .bg-grid {
+    background-image: none !important;
+  }
+  .print-keep,
+  .print-slide {
+    break-inside: avoid;
+  }
+  .print-slide {
+    aspect-ratio: auto !important;
+    margin-bottom: 12mm;
   }
 }
