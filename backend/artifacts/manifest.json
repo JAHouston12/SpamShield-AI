@@ -1,0 +1,24 @@
+{
+  "trained_at": "2026-10-17T18:51:40+00:00",
+  "dataset_source": "uci",
+  "default_model": "random_forest",
+  "models": [
+    "logistic_regression",
+    "naive_bayes",
+    "decision_tree",
+    "random_forest",
+    "knn",
+    "svm",
+    "adaboost",
+    "gradient_boosting",
+    "xgboost",
+    "mlp"
+  ],
+  "versions": {
+    "python": "3.12.3",
+    "scikit_learn": "1.9.1",
+    "xgboost": "3.4.1",
+    "pandas": "3.0.6"
+  },
+  "duration_s": 45.7
+}

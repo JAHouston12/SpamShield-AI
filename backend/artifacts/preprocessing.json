@@ -1,0 +1,284 @@
+{
+  "missing": {
+    "raw_records": 5574,
+    "records_after": 5574,
+    "removed": 0,
+    "dropped_columns": []
+  },
+  "duplicates": {
+    "before": 5574,
+    "after": 5171,
+    "removed": 403
+  },
+  "cleaning_examples": [
+    {
+      "original": "Free entry in 2 a wkly comp to win FA Cup final tkts 21st May 2005. Text FA to 87121 to receive entry question(std txt rate)T&C's apply 08452810075over18's",
+      "cleaned": "free entry numtoken wkly comp win fa cup final tkts st numtoken text fa phonetoken receive entry question std txt rate apply"
+    },
+    {
+      "original": "FreeMsg Hey there darling it's been 3 week's now and no word back! I'd like some fun you up for it still? Tb ok! XxX std chgs to send, £1.50 to rcv",
+      "cleaned": "freemsg hey darling numtoken week now word like fun tb ok xxx std chgs send currencytoken numtoken numtoken rcv"
+    },
+    {
+      "original": "Nah I don't think he goes to usf, he lives around here though",
+      "cleaned": "nah don think goes usf lives"
+    },
+    {
+      "original": "Eh u remember how 2 spell his name... Yes i did. He v naughty make until i v wet.",
+      "cleaned": "eh remember numtoken spell yes did naughty make wet"
+    }
+  ],
+  "tfidf": {
+    "ngram_range": [
+      1,
+      2
+    ],
+    "min_df": 2,
+    "max_df": 0.95,
+    "max_features": 6000,
+    "sublinear_tf": true,
+    "vocabulary_size": 5679,
+    "example_message": "Free entry in 2 a wkly comp to win FA Cup final tkts 21st May 2005. Text FA to 87121 to receive entry question(std txt rate)T&C's apply 08452810075over18's",
+    "example_terms": [
+      {
+        "term": "entry",
+        "weight": 0.3071
+      },
+      {
+        "term": "cup final",
+        "weight": 0.2298
+      },
+      {
+        "term": "tkts",
+        "weight": 0.2298
+      },
+      {
+        "term": "rate apply",
+        "weight": 0.2218
+      },
+      {
+        "term": "std txt",
+        "weight": 0.2218
+      },
+      {
+        "term": "txt rate",
+        "weight": 0.2218
+      },
+      {
+        "term": "wkly comp",
+        "weight": 0.2218
+      },
+      {
+        "term": "cup",
+        "weight": 0.2061
+      },
+      {
+        "term": "numtoken text",
+        "weight": 0.2061
+      },
+      {
+        "term": "numtoken wkly",
+        "weight": 0.2061
+      },
+      {
+        "term": "comp",
+        "weight": 0.2024
+      },
+      {
+        "term": "std",
+        "weight": 0.2024
+      }
+    ]
+  },
+  "scaling": {
+    "method": "MinMaxScaler(clip=True) on engineered numeric features; TF-IDF rows are L2-normalized",
+    "features": [
+      {
+        "feature": "char_length",
+        "min": 2.0,
+        "max": 910.0
+      },
+      {
+        "feature": "word_count",
+        "min": 1.0,
+        "max": 171.0
+      },
+      {
+        "feature": "digit_count",
+        "min": 0.0,
+        "max": 47.0
+      },
+      {
+        "feature": "uppercase_ratio",
+        "min": 0.0,
+        "max": 1.0
+      },
+      {
+        "feature": "exclamation_count",
+        "min": 0.0,
+        "max": 11.0
+      },
+      {
+        "feature": "special_char_count",
+        "min": 0.0,
+        "max": 59.0
+      },
+      {
+        "feature": "has_url",
+        "min": 0.0,
+        "max": 1.0
+      },
+      {
+        "feature": "currency_count",
+        "min": 0.0,
+        "max": 3.0
+      }
+    ]
+  },
+  "selection": {
+    "method": "SelectKBest(chi2)",
+    "features_before": 5687,
+    "features_after": 3000,
+    "top_scores": [
+      {
+        "feature": "digit_count",
+        "chi2": 1001.59
+      },
+      {
+        "feature": "has_url",
+        "chi2": 653.83
+      },
+      {
+        "feature": "currency_count",
+        "chi2": 479.25
+      },
+      {
+        "feature": "<PHONE>",
+        "chi2": 315.34
+      },
+      {
+        "feature": "currencytoken numtoken",
+        "chi2": 150.53
+      },
+      {
+        "feature": "call phonetoken",
+        "chi2": 148.01
+      },
+      {
+        "feature": "<CURRENCY>",
+        "chi2": 146.79
+      },
+      {
+        "feature": "<NUM>",
+        "chi2": 110.05
+      },
+      {
+        "feature": "<URL>",
+        "chi2": 104.78
+      },
+      {
+        "feature": "numtoken numtoken",
+        "chi2": 89.24
+      },
+      {
+        "feature": "txt",
+        "chi2": 77.32
+      },
+      {
+        "feature": "claim",
+        "chi2": 73.32
+      },
+      {
+        "feature": "prize",
+        "chi2": 69.87
+      },
+      {
+        "feature": "mobile",
+        "chi2": 69.46
+      },
+      {
+        "feature": "free",
+        "chi2": 69.1
+      }
+    ]
+  },
+  "imbalance": {
+    "spam_ratio": 0.1262,
+    "ham_to_spam_ratio": 6.923,
+    "class_weights": {
+      "ham": 0.572,
+      "spam": 3.962
+    },
+    "strategies": [
+      {
+        "key": "logistic_regression",
+        "name": "Logistic Regression",
+        "strategy": "class_weight='balanced'"
+      },
+      {
+        "key": "naive_bayes",
+        "name": "Naive Bayes",
+        "strategy": "Class priors learned from data"
+      },
+      {
+        "key": "decision_tree",
+        "name": "Decision Tree",
+        "strategy": "class_weight='balanced'"
+      },
+      {
+        "key": "random_forest",
+        "name": "Random Forest",
+        "strategy": "class_weight='balanced_subsample'"
+      },
+      {
+        "key": "knn",
+        "name": "K-Nearest Neighbors",
+        "strategy": "Distance weighting"
+      },
+      {
+        "key": "svm",
+        "name": "Support Vector Machine",
+        "strategy": "class_weight='balanced'"
+      },
+      {
+        "key": "adaboost",
+        "name": "AdaBoost",
+        "strategy": "Sample re-weighting on errors"
+      },
+      {
+        "key": "gradient_boosting",
+        "name": "Gradient Boosting",
+        "strategy": "none"
+      },
+      {
+        "key": "xgboost",
+        "name": "XGBoost",
+        "strategy": "scale_pos_weight"
+      },
+      {
+        "key": "mlp",
+        "name": "MLP Neural Network",
+        "strategy": "none"
+      }
+    ]
+  },
+  "split": {
+    "test_size": 0.2,
+    "random_state": 42,
+    "stratified": true,
+    "train": {
+      "total": 4136,
+      "ham": 3614,
+      "spam": 522
+    },
+    "test": {
+      "total": 1035,
+      "ham": 904,
+      "spam": 131
+    }
+  },
+  "feature_matrix_shape": [
+    4136,
+    3000
+  ]
+}

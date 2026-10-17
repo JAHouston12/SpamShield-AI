@@ -1,0 +1,208 @@
+{
+  "name": "SMS Spam Collection Dataset",
+  "source": "uci",
+  "records": 5574,
+  "records_usable": 5574,
+  "raw_columns": [
+    "label",
+    "message"
+  ],
+  "num_raw_features": 1,
+  "num_engineered_features": 8,
+  "target": "label",
+  "classes": {
+    "ham": 4827,
+    "spam": 747
+  },
+  "spam_ratio": 0.134,
+  "avg_chars": 80.5,
+  "avg_words": 15.6,
+  "vocabulary_size": 7418,
+  "language": "English",
+  "engineered_features": [
+    {
+      "name": "char_length",
+      "description": "Total characters in the message"
+    },
+    {
+      "name": "word_count",
+      "description": "Number of whitespace-separated tokens"
+    },
+    {
+      "name": "digit_count",
+      "description": "Number of digit characters"
+    },
+    {
+      "name": "uppercase_ratio",
+      "description": "Share of letters that are uppercase"
+    },
+    {
+      "name": "exclamation_count",
+      "description": "Number of '!' characters"
+    },
+    {
+      "name": "special_char_count",
+      "description": "Non-alphanumeric, non-space characters"
+    },
+    {
+      "name": "has_url",
+      "description": "1 if the message contains a link"
+    },
+    {
+      "name": "currency_count",
+      "description": "Currency symbols or money words"
+    }
+  ],
+  "sample": [
+    {
+      "id": 2664,
+      "label": "spam",
+      "message": "8007 FREE for 1st week! No1 Nokia tone 4 ur mob every week just txt NOKIA to 8007 Get txting and tell ur mates www.getzed.co.uk POBox 36504 W4 5WQ norm 150p/tone 16+",
+      "length": 165
+    },
+    {
+      "id": 5379,
+      "label": "spam",
+      "message": "The current leading bid is 151. To pause this auction send OUT. Customer Care: 08718726270",
+      "length": 90
+    },
+    {
+      "id": 1282,
+      "label": "ham",
+      "message": "Am I the only one who doesn't stalk profiles?",
+      "length": 45
+    },
+    {
+      "id": 1182,
+      "label": "ham",
+      "message": "You flippin your shit yet?",
+      "length": 26
+    },
+    {
+      "id": 1536,
+      "label": "spam",
+      "message": "You have won a Nokia 7250i. This is what you get when you win our FREE auction. To take part send Nokia to 86021 now. HG/Suite342/2Lands Row/W1JHL 16+",
+      "length": 150
+    },
+    {
+      "id": 4504,
+      "label": "ham",
+      "message": "Stupid.its not possible",
+      "length": 23
+    },
+    {
+      "id": 2918,
+      "label": "ham",
+      "message": "Yes. that will be fine. Love you. Be safe.",
+      "length": 42
+    },
+    {
+      "id": 2061,
+      "label": "ham",
+      "message": "I did. One slice and one breadstick. Lol",
+      "length": 40
+    },
+    {
+      "id": 5169,
+      "label": "ham",
+      "message": "Oh did you charge camera",
+      "length": 24
+    },
+    {
+      "id": 1699,
+      "label": "spam",
+      "message": "Free msg. Sorry, a service you ordered from 81303 could not be delivered as you do not have sufficient credit. Please top up to receive the service.",
+      "length": 148
+    },
+    {
+      "id": 2839,
+      "label": "ham",
+      "message": "Were trying to find a Chinese food place around here",
+      "length": 52
+    },
+    {
+      "id": 5100,
+      "label": "spam",
+      "message": "TheMob>Hit the link to get a premium Pink Panther game, the new no. 1 from Sugababes, a crazy Zebra animation or a badass Hoody wallpaper-all 4 FREE!",
+      "length": 149
+    },
+    {
+      "id": 4919,
+      "label": "ham",
+      "message": "Sitting in mu waiting for everyone to get out of my suite so I can take a shower",
+      "length": 80
+    },
+    {
+      "id": 762,
+      "label": "ham",
+      "message": "We are at grandmas. Oh dear, u still ill? I felt Shit this morning but i think i am just hungover! Another night then. We leave on sat.",
+      "length": 135
+    },
+    {
+      "id": 2008,
+      "label": "ham",
+      "message": "Hi here. have birth at on the  to  at 8lb 7oz. Mother and baby doing brilliantly.",
+      "length": 81
+    },
+    {
+      "id": 4181,
+      "label": "ham",
+      "message": "swhrt how u dey,hope ur ok, tot about u 2day.love n miss.take care.",
+      "length": 67
+    },
+    {
+      "id": 2623,
+      "label": "ham",
+      "message": "Ok lor...",
+      "length": 9
+    },
+    {
+      "id": 1532,
+      "label": "ham",
+      "message": "Oh dang! I didn't mean o send that to you! Lol!",
+      "length": 47
+    },
+    {
+      "id": 476,
+      "label": "ham",
+      "message": "Ok I'm gonna head up to usf in like fifteen minutes",
+      "length": 51
+    },
+    {
+      "id": 1985,
+      "label": "spam",
+      "message": "Urgent! Please call 09061743810 from landline. Your ABTA complimentary 4* Tenerife Holiday or #5000 cash await collection SAE T&Cs Box 326 CW25WX 150 ppm",
+      "length": 153
+    },
+    {
+      "id": 437,
+      "label": "ham",
+      "message": "Ask g or iouri, I've told the story like ten times already",
+      "length": 58
+    },
+    {
+      "id": 5239,
+      "label": "spam",
+      "message": "Someonone you know is trying to contact you via our dating service! To find out who it could be call from your mobile or landline 09064015307 BOX334SK38ch ",
+      "length": 155
+    },
+    {
+      "id": 3856,
+      "label": "spam",
+      "message": "Free msg: Single? Find a partner in your area! 1000s of real people are waiting to chat now!Send CHAT to 62220Cncl send STOPCS 08717890890£1.50 per msg",
+      "length": 151
+    },
+    {
+      "id": 1427,
+      "label": "ham",
+      "message": "Ok...",
+      "length": 5
+    }
+  ],
+  "length_quantiles": {
+    "0.25": 36,
+    "0.5": 62,
+    "0.75": 122,
+    "0.95": 160
+  }
+}

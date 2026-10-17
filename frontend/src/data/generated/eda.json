@@ -1,0 +1,586 @@
+{
+  "class_distribution": [
+    {
+      "label": "ham",
+      "count": 4827,
+      "percent": 86.6
+    },
+    {
+      "label": "spam",
+      "count": 747,
+      "percent": 13.4
+    }
+  ],
+  "length_histogram": [
+    {
+      "bin": "0-19",
+      "start": 0,
+      "ham": 152,
+      "spam": 2
+    },
+    {
+      "bin": "20-39",
+      "start": 20,
+      "ham": 1519,
+      "spam": 6
+    },
+    {
+      "bin": "40-59",
+      "start": 40,
+      "ham": 1032,
+      "spam": 16
+    },
+    {
+      "bin": "60-79",
+      "start": 60,
+      "ham": 609,
+      "spam": 24
+    },
+    {
+      "bin": "80-99",
+      "start": 80,
+      "ham": 413,
+      "spam": 26
+    },
+    {
+      "bin": "100-119",
+      "start": 100,
+      "ham": 266,
+      "spam": 57
+    },
+    {
+      "bin": "120-139",
+      "start": 120,
+      "ham": 266,
+      "spam": 121
+    },
+    {
+      "bin": "140-159",
+      "start": 140,
+      "ham": 333,
+      "spam": 401
+    },
+    {
+      "bin": "160-179",
+      "start": 160,
+      "ham": 94,
+      "spam": 89
+    },
+    {
+      "bin": "180-199",
+      "start": 180,
+      "ham": 30,
+      "spam": 4
+    },
+    {
+      "bin": "200-219",
+      "start": 200,
+      "ham": 19,
+      "spam": 0
+    },
+    {
+      "bin": "220-239",
+      "start": 220,
+      "ham": 17,
+      "spam": 1
+    },
+    {
+      "bin": "240-259",
+      "start": 240,
+      "ham": 13,
+      "spam": 0
+    },
+    {
+      "bin": "260-279",
+      "start": 260,
+      "ham": 9,
+      "spam": 0
+    },
+    {
+      "bin": "280+",
+      "start": 280,
+      "ham": 55,
+      "spam": 0
+    }
+  ],
+  "length_stats": [
+    {
+      "label": "ham",
+      "mean_chars": 71.5,
+      "median_chars": 52.0,
+      "max_chars": 910,
+      "mean_words": 14.3,
+      "median_words": 11.0
+    },
+    {
+      "label": "spam",
+      "mean_chars": 138.7,
+      "median_chars": 149.0,
+      "max_chars": 223,
+      "mean_words": 23.9,
+      "median_words": 25.0
+    }
+  ],
+  "top_words": {
+    "ham": [
+      {
+        "word": "gt",
+        "count": 318
+      },
+      {
+        "word": "lt",
+        "count": 316
+      },
+      {
+        "word": "now",
+        "count": 300
+      },
+      {
+        "word": "just",
+        "count": 297
+      },
+      {
+        "word": "ok",
+        "count": 288
+      },
+      {
+        "word": "ll",
+        "count": 266
+      },
+      {
+        "word": "ur",
+        "count": 247
+      },
+      {
+        "word": "call",
+        "count": 238
+      },
+      {
+        "word": "know",
+        "count": 237
+      },
+      {
+        "word": "good",
+        "count": 235
+      },
+      {
+        "word": "got",
+        "count": 234
+      },
+      {
+        "word": "like",
+        "count": 234
+      },
+      {
+        "word": "come",
+        "count": 231
+      },
+      {
+        "word": "day",
+        "count": 218
+      },
+      {
+        "word": "love",
+        "count": 205
+      },
+      {
+        "word": "time",
+        "count": 202
+      },
+      {
+        "word": "going",
+        "count": 169
+      },
+      {
+        "word": "want",
+        "count": 166
+      },
+      {
+        "word": "home",
+        "count": 165
+      },
+      {
+        "word": "lor",
+        "count": 162
+      }
+    ],
+    "spam": [
+      {
+        "word": "call",
+        "count": 370
+      },
+      {
+        "word": "free",
+        "count": 228
+      },
+      {
+        "word": "now",
+        "count": 203
+      },
+      {
+        "word": "txt",
+        "count": 164
+      },
+      {
+        "word": "ur",
+        "count": 144
+      },
+      {
+        "word": "mobile",
+        "count": 129
+      },
+      {
+        "word": "stop",
+        "count": 128
+      },
+      {
+        "word": "text",
+        "count": 125
+      },
+      {
+        "word": "claim",
+        "count": 113
+      },
+      {
+        "word": "reply",
+        "count": 104
+      },
+      {
+        "word": "prize",
+        "count": 93
+      },
+      {
+        "word": "just",
+        "count": 79
+      },
+      {
+        "word": "cash",
+        "count": 76
+      },
+      {
+        "word": "won",
+        "count": 76
+      },
+      {
+        "word": "send",
+        "count": 71
+      },
+      {
+        "word": "nokia",
+        "count": 71
+      },
+      {
+        "word": "new",
+        "count": 69
+      },
+      {
+        "word": "win",
+        "count": 63
+      },
+      {
+        "word": "urgent",
+        "count": 63
+      },
+      {
+        "word": "week",
+        "count": 60
+      }
+    ]
+  },
+  "pattern_prevalence": [
+    {
+      "pattern": "Contains a URL",
+      "token": "urltoken",
+      "ham_percent": 0.3,
+      "spam_percent": 18.6
+    },
+    {
+      "pattern": "Contains an email address",
+      "token": "emailtoken",
+      "ham_percent": 0.0,
+      "spam_percent": 0.1
+    },
+    {
+      "pattern": "Contains a long phone / short-code number",
+      "token": "phonetoken",
+      "ham_percent": 0.1,
+      "spam_percent": 74.8
+    },
+    {
+      "pattern": "Mentions money or a currency symbol",
+      "token": "currencytoken",
+      "ham_percent": 0.6,
+      "spam_percent": 37.8
+    },
+    {
+      "pattern": "Contains a number",
+      "token": "numtoken",
+      "ham_percent": 12.2,
+      "spam_percent": 80.6
+    }
+  ],
+  "missing_values": [
+    {
+      "column": "label",
+      "missing": 0,
+      "present": 5574,
+      "percent_missing": 0.0,
+      "used": true
+    },
+    {
+      "column": "message",
+      "missing": 0,
+      "present": 5574,
+      "percent_missing": 0.0,
+      "used": true
+    }
+  ],
+  "duplicates": {
+    "total_records": 5574,
+    "duplicate_records": 403,
+    "unique_records": 5171,
+    "percent_duplicate": 7.23,
+    "by_class": [
+      {
+        "label": "ham",
+        "duplicates": 309,
+        "unique": 4518
+      },
+      {
+        "label": "spam",
+        "duplicates": 94,
+        "unique": 653
+      }
+    ],
+    "most_repeated": [
+      {
+        "message": "Sorry, I'll call later",
+        "label": "ham",
+        "count": 30
+      },
+      {
+        "message": "I cant pick the phone right now. Pls send a message",
+        "label": "ham",
+        "count": 12
+      },
+      {
+        "message": "Ok...",
+        "label": "ham",
+        "count": 10
+      },
+      {
+        "message": "Okie",
+        "label": "ham",
+        "count": 4
+      },
+      {
+        "message": "Wen ur lovable bcums angry wid u, dnt take it seriously.. Coz being angry is d most childish n true way of showing deep affection, care n lu",
+        "label": "ham",
+        "count": 4
+      },
+      {
+        "message": "Ok.",
+        "label": "ham",
+        "count": 4
+      }
+    ]
+  },
+  "correlation": {
+    "features": [
+      "char_length",
+      "word_count",
+      "digit_count",
+      "uppercase_ratio",
+      "exclamation_count",
+      "special_char_count",
+      "has_url",
+      "currency_count",
+      "is_spam"
+    ],
+    "matrix": [
+      [
+        1.0,
+        0.974,
+        0.387,
+        0.065,
+        0.27,
+        0.655,
+        0.167,
+        0.243,
+        0.383
+      ],
+      [
+        0.974,
+        1.0,
+        0.292,
+        0.044,
+        0.252,
+        0.609,
+        0.104,
+        0.187,
+        0.287
+      ],
+      [
+        0.387,
+        0.292,
+        1.0,
+        0.218,
+        0.273,
+        0.2,
+        0.251,
+        0.588,
+        0.845
+      ],
+      [
+        0.065,
+        0.044,
+        0.218,
+        1.0,
+        0.2,
+        0.065,
+        0.082,
+        0.125,
+        0.202
+      ],
+      [
+        0.27,
+        0.252,
+        0.273,
+        0.2,
+        1.0,
+        0.269,
+        0.047,
+        0.189,
+        0.274
+      ],
+      [
+        0.655,
+        0.609,
+        0.2,
+        0.065,
+        0.269,
+        1.0,
+        0.137,
+        0.152,
+        0.159
+      ],
+      [
+        0.167,
+        0.104,
+        0.251,
+        0.082,
+        0.047,
+        0.137,
+        1.0,
+        0.137,
+        0.382
+      ],
+      [
+        0.243,
+        0.187,
+        0.588,
+        0.125,
+        0.189,
+        0.152,
+        0.137,
+        1.0,
+        0.519
+      ],
+      [
+        0.383,
+        0.287,
+        0.845,
+        0.202,
+        0.274,
+        0.159,
+        0.382,
+        0.519,
+        1.0
+      ]
+    ],
+    "target_correlation": [
+      {
+        "feature": "digit_count",
+        "r": 0.845
+      },
+      {
+        "feature": "currency_count",
+        "r": 0.519
+      },
+      {
+        "feature": "char_length",
+        "r": 0.383
+      },
+      {
+        "feature": "has_url",
+        "r": 0.382
+      },
+      {
+        "feature": "word_count",
+        "r": 0.287
+      },
+      {
+        "feature": "exclamation_count",
+        "r": 0.274
+      },
+      {
+        "feature": "uppercase_ratio",
+        "r": 0.202
+      },
+      {
+        "feature": "special_char_count",
+        "r": 0.159
+      }
+    ]
+  },
+  "feature_by_class": [
+    {
+      "feature": "char_length",
+      "description": "Total characters in the message",
+      "ham_mean": 71.472,
+      "spam_mean": 138.676
+    },
+    {
+      "feature": "word_count",
+      "description": "Number of whitespace-separated tokens",
+      "ham_mean": 14.304,
+      "spam_mean": 23.912
+    },
+    {
+      "feature": "digit_count",
+      "description": "Number of digit characters",
+      "ham_mean": 0.305,
+      "spam_mean": 15.813
+    },
+    {
+      "feature": "uppercase_ratio",
+      "description": "Share of letters that are uppercase",
+      "ham_mean": 0.079,
+      "spam_mean": 0.167
+    },
+    {
+      "feature": "exclamation_count",
+      "description": "Number of '!' characters",
+      "ham_mean": 0.177,
+      "spam_mean": 0.73
+    },
+    {
+      "feature": "special_char_count",
+      "description": "Non-alphanumeric, non-space characters",
+      "ham_mean": 3.984,
+      "spam_mean": 6.161
+    },
+    {
+      "feature": "has_url",
+      "description": "1 if the message contains a link",
+      "ham_mean": 0.003,
+      "spam_mean": 0.186
+    },
+    {
+      "feature": "currency_count",
+      "description": "Currency symbols or money words",
+      "ham_mean": 0.007,
+      "spam_mean": 0.474
+    }
+  ]
+}
