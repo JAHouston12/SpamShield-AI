@@ -124,14 +124,6 @@
   "top_words": {
     "ham": [
       {
-        "word": "gt",
-        "count": 318
-      },
-      {
-        "word": "lt",
-        "count": 316
-      },
-      {
         "word": "now",
         "count": 300
       },
@@ -202,6 +194,14 @@
       {
         "word": "lor",
         "count": 162
+      },
+      {
+        "word": "don",
+        "count": 159
+      },
+      {
+        "word": "need",
+        "count": 159
       }
     ],
     "spam": [

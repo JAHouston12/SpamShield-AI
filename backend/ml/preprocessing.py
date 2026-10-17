@@ -6,6 +6,7 @@ message strings directly. That keeps training-time and inference-time preprocess
 
 from __future__ import annotations
 
+import html
 import re
 from collections.abc import Iterable
 
@@ -55,7 +56,7 @@ META_FEATURES: dict[str, str] = {
 
 
 def clean_text(text: str) -> str:
-    text = text.lower()
+    text = html.unescape(text).lower()
     text = URL_RE.sub(" urltoken ", text)
     text = EMAIL_RE.sub(" emailtoken ", text)
     text = PHONE_RE.sub(" phonetoken ", text)

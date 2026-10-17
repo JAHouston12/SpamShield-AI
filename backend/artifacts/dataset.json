@@ -17,7 +17,7 @@
   "spam_ratio": 0.134,
   "avg_chars": 80.5,
   "avg_words": 15.6,
-  "vocabulary_size": 7418,
+  "vocabulary_size": 7417,
   "language": "English",
   "engineered_features": [
     {

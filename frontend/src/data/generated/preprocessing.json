@@ -37,7 +37,7 @@
     "max_df": 0.95,
     "max_features": 6000,
     "sublinear_tf": true,
-    "vocabulary_size": 5679,
+    "vocabulary_size": 5639,
     "example_message": "Free entry in 2 a wkly comp to win FA Cup final tkts 21st May 2005. Text FA to 87121 to receive entry question(std txt rate)T&C's apply 08452810075over18's",
     "example_terms": [
       {
@@ -137,7 +137,7 @@
   },
   "selection": {
     "method": "SelectKBest(chi2)",
-    "features_before": 5687,
+    "features_before": 5647,
     "features_after": 3000,
     "top_scores": [
       {
@@ -154,11 +154,11 @@
       },
       {
         "feature": "<PHONE>",
-        "chi2": 315.34
+        "chi2": 315.31
       },
       {
         "feature": "currencytoken numtoken",
-        "chi2": 150.53
+        "chi2": 150.4
       },
       {
         "feature": "call phonetoken",
@@ -166,23 +166,23 @@
       },
       {
         "feature": "<CURRENCY>",
-        "chi2": 146.79
+        "chi2": 144.98
       },
       {
         "feature": "<NUM>",
-        "chi2": 110.05
+        "chi2": 109.06
       },
       {
         "feature": "<URL>",
-        "chi2": 104.78
+        "chi2": 104.5
       },
       {
         "feature": "numtoken numtoken",
-        "chi2": 89.24
+        "chi2": 88.25
       },
       {
         "feature": "txt",
-        "chi2": 77.32
+        "chi2": 77.27
       },
       {
         "feature": "claim",
@@ -194,11 +194,11 @@
       },
       {
         "feature": "mobile",
-        "chi2": 69.46
+        "chi2": 69.07
       },
       {
         "feature": "free",
-        "chi2": 69.1
+        "chi2": 68.84
       }
     ]
   },
