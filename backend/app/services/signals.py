@@ -24,6 +24,11 @@ CTA_RE = re.compile(r"\b(click|call|text|reply|txt|send|visit|tap|subscribe|rede
 CREDENTIAL_RE = re.compile(
     r"\b(password|verify|verification|account|bank|login|pin|ssn|security code|suspend(ed)?|locked)\b", re.I
 )
+DELIVERY_RE = re.compile(
+    r"\b(parcel|package|courier|shipment|undelivered|delivery|redeliver|reschedule|tracking|customs fee"
+    r"|dhl|ups|usps|fedex|royal mail|evri|hermes)\b",
+    re.I,
+)
 
 SEVERITY_WEIGHT = {"high": 1.5, "medium": 0.9, "low": 0.5}
 MAX_HEURISTIC_LOGIT = 3.5
@@ -48,6 +53,7 @@ def extract_signals(text: str) -> list[dict]:
 
     links, phones, money = found(LINK_RE), found(PHONE_RE), found(CURRENCY_RE)
     urgency, prize, cta, creds = found(URGENCY_RE), found(PRIZE_RE), found(CTA_RE), found(CREDENTIAL_RE)
+    delivery = found(DELIVERY_RE)
 
     def sig(id_: str, label: str, hit: bool, detail: str, severity: str) -> Signal:
         return Signal(id_, label, hit, detail, severity, SEVERITY_WEIGHT[severity] if hit else 0.0)
@@ -55,6 +61,7 @@ def extract_signals(text: str) -> list[dict]:
     signals = [
         sig("link", "Embedded link", bool(links), ", ".join(links[:3]) or "No links found", "high"),
         sig("credentials", "Account / credential lure", bool(creds), ", ".join(creds[:4]) or "None", "high"),
+        sig("delivery", "Courier impersonation", bool(delivery), ", ".join(delivery[:4]) or "None", "medium"),
         sig("prize", "Prize or reward language", bool(prize), ", ".join(prize[:4]) or "None", "medium"),
         sig("urgency", "Urgency pressure", bool(urgency), ", ".join(urgency[:4]) or "None", "medium"),
         sig("money", "Money or currency", bool(money), ", ".join(money[:3]) or "None", "medium"),

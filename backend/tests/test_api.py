@@ -57,9 +57,18 @@ def test_predict_spam():
     assert res.status_code == 200, res.text
     body = res.json()
     assert body["label"] == "spam"
-    assert 0.5 <= body["confidence"] <= 1
+    assert body["threshold"] <= body["spam_probability"] <= 1
     assert body["explanation"]
     assert any(s["detected"] for s in body["signals"])
+
+
+@needs_models
+def test_predict_delivery_smishing_signal():
+    text = "Your parcel could not be delivered. Reschedule here: dhl-parcel.top/x8k2 before it is returned."
+    body = client.post("/api/v1/predict", json={"text": text}).json()
+    hits = {s["id"] for s in body["signals"] if s["detected"]}
+    assert {"link", "delivery"} <= hits
+    assert body["label"] == "spam"
 
 
 @needs_models
