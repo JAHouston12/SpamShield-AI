@@ -136,7 +136,7 @@ export function buildReport({ dataset, eda, preprocessing, evaluation, explain, 
       ],
     },
     { id: "dataset", title: "Dataset", blocks: [
-      { type: "p", text: `The study uses the ${PROJECT.dataset} (Almeida et al., 2011), a public corpus of English SMS messages labeled as legitimate (ham) or spam, distributed through the UCI Machine Learning Repository and Kaggle.` },
+      { type: "p", text: `The study uses the ${PROJECT.dataset} (Almeida et al., 2011), a public corpus of English SMS messages labeled as legitimate (ham) or spam, obtained from Kaggle (spam.csv).` },
       datasetKv,
     ] },
     { id: "problem", title: "Security Problem", blocks: [
@@ -176,10 +176,11 @@ export function buildReport({ dataset, eda, preprocessing, evaluation, explain, 
     { id: "dataset", title: "3. Dataset Description", blocks: [
       datasetKv,
       { type: "p", text: `The corpus is imbalanced: ${pct(dataset.spam_ratio)} of messages are spam. Spam messages are markedly longer (median ${lengths.spam?.median_chars} characters versus ${lengths.ham?.median_chars} for ham) and contain more digits, currency symbols, and calls to action.` },
-      { type: "p", text: `The UCI release contains no missing values in its two fields. ${num(dup.removed)} exact duplicate messages (${pct(dup.removed / dup.before)}) were found, mostly repeated spam broadcasts.` },
+      { type: "p", text: `The label and message columns contain no missing values. The Kaggle CSV's three overflow columns are over 99% empty; they hold the tail of ${num(preprocessing.missing.rows_rejoined)} messages that contained commas, which were rejoined. ${num(preprocessing.missing.rows_encoding_repaired)} messages with mis-encoded characters were repaired. ${num(dup.removed)} exact duplicate messages (${pct(dup.removed / dup.before)}) were found, mostly repeated spam broadcasts.` },
     ] },
     { id: "preprocessing", title: "4. Data Preprocessing", blocks: [
       { type: "list", ordered: true, items: [
+        `Rejoining comma-split message fragments and repairing mis-encoded characters in the Kaggle CSV.`,
         `De-duplication before splitting (${num(dup.before)} → ${num(dup.after)} messages) to prevent train/test leakage.`,
         "Text normalization: HTML-entity decoding, lower-casing, and masking of URLs, e-mail addresses, phone numbers, currency amounts, and other numbers with placeholder tokens.",
         `TF-IDF vectorization of unigrams and bigrams with sublinear term frequency (${num(preprocessing.selection.features_before - dataset.num_engineered_features)} terms retained).`,

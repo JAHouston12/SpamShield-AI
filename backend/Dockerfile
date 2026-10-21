@@ -14,9 +14,10 @@ RUN uv sync --frozen --no-dev
 
 COPY app ./app
 COPY ml ./ml
+COPY data ./data
 COPY artifacts ./artifacts
 
-# Committed models are served as-is. Set TRAIN=1 to retrain inside the image (downloads the dataset).
+# Committed models are served as-is. Set TRAIN=1 to retrain inside the image from data/spam.csv.
 ARG TRAIN=0
 RUN if [ "$TRAIN" = "1" ]; then uv run --no-dev python -m ml.train; fi
 

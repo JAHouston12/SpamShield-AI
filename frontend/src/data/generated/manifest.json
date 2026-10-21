@@ -1,6 +1,6 @@
 {
-  "trained_at": "2026-10-17T21:43:58+00:00",
-  "dataset_source": "uci",
+  "trained_at": "2026-10-21T20:53:21+00:00",
+  "dataset_source": "kaggle",
   "default_model": "random_forest",
   "models": [
     "logistic_regression",
@@ -20,5 +20,5 @@
     "xgboost": "3.4.1",
     "pandas": "3.0.6"
   },
-  "duration_s": 44.9
+  "duration_s": 46.3
 }

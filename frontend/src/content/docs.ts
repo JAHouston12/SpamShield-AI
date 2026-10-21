@@ -90,11 +90,11 @@ make install          # uv sync (backend) + npm install (frontend)`,
       blocks: [
         {
           type: "p",
-          text: `${PROJECT.dataset}: ${num(dataset.records)} English SMS messages labeled ham or spam (${pct(dataset.spam_ratio)} spam). The trainer downloads the UCI release automatically. To use the Kaggle CSV instead, place it at backend/data/raw/spam.csv (columns v1 = label, v2 = message) and retrain.`,
+          text: `${PROJECT.dataset}: ${num(dataset.records)} English SMS messages labeled ham or spam (${pct(dataset.spam_ratio)} spam). The project uses only the Kaggle export, committed at backend/data/spam.csv (columns v1 = label, v2 = message, plus three overflow columns). To use a fresh download, replace that file and retrain.`,
         },
         {
           type: "list",
-          items: [`UCI: ${SITE.uciUrl}`, `Kaggle: ${SITE.kaggleUrl}`, "Raw data is git-ignored; only derived statistics are committed."],
+          items: [`Kaggle: ${SITE.kaggleUrl}`, "The loader rejoins messages that commas split across the overflow columns and repairs the file's mis-encoded characters (e.g. “å£” → “£”)."],
         },
       ],
     },

@@ -9,7 +9,7 @@
           "feature": "[digit count]",
           "raw": "digit_count",
           "kind": "engineered",
-          "weight": 15.411489,
+          "weight": 15.035621,
           "normalized": 1.0,
           "direction": "spam"
         },
@@ -17,192 +17,192 @@
           "feature": "<PHONE>",
           "raw": "phonetoken",
           "kind": "pattern",
-          "weight": 6.375959,
-          "normalized": 0.4137,
+          "weight": 7.243043,
+          "normalized": 0.4817,
           "direction": "spam"
         },
         {
           "feature": "reply",
           "raw": "reply",
           "kind": "token",
-          "weight": 5.975105,
-          "normalized": 0.3877,
-          "direction": "spam"
-        },
-        {
-          "feature": "mobile",
-          "raw": "mobile",
-          "kind": "token",
-          "weight": 5.794063,
-          "normalized": 0.376,
-          "direction": "spam"
-        },
-        {
-          "feature": "arsenal",
-          "raw": "arsenal",
-          "kind": "token",
-          "weight": 5.306115,
-          "normalized": 0.3443,
-          "direction": "spam"
-        },
-        {
-          "feature": "[message length]",
-          "raw": "char_length",
-          "kind": "engineered",
-          "weight": 5.16364,
-          "normalized": 0.3351,
-          "direction": "spam"
-        },
-        {
-          "feature": "brought",
-          "raw": "brought",
-          "kind": "token",
-          "weight": 4.87242,
-          "normalized": 0.3162,
+          "weight": 5.957752,
+          "normalized": 0.3962,
           "direction": "spam"
         },
         {
           "feature": "text",
           "raw": "text",
           "kind": "token",
-          "weight": 4.713104,
-          "normalized": 0.3058,
+          "weight": 5.604681,
+          "normalized": 0.3728,
+          "direction": "spam"
+        },
+        {
+          "feature": "arsenal",
+          "raw": "arsenal",
+          "kind": "token",
+          "weight": 5.145746,
+          "normalized": 0.3422,
           "direction": "spam"
         },
         {
           "feature": "[special characters]",
           "raw": "special_char_count",
           "kind": "engineered",
-          "weight": -4.662973,
-          "normalized": 0.3026,
+          "weight": -4.97937,
+          "normalized": 0.3312,
           "direction": "ham"
         },
         {
-          "feature": "[has URL]",
-          "raw": "has_url",
-          "kind": "engineered",
-          "weight": 4.491387,
-          "normalized": 0.2914,
+          "feature": "mobile",
+          "raw": "mobile",
+          "kind": "token",
+          "weight": 4.900928,
+          "normalized": 0.326,
           "direction": "spam"
         },
         {
-          "feature": "divorce",
-          "raw": "divorce",
+          "feature": "brought",
+          "raw": "brought",
           "kind": "token",
-          "weight": 4.484853,
-          "normalized": 0.291,
+          "weight": 4.729143,
+          "normalized": 0.3145,
           "direction": "spam"
         },
         {
-          "feature": "user",
-          "raw": "user",
+          "feature": "choose",
+          "raw": "choose",
           "kind": "token",
-          "weight": 4.442569,
-          "normalized": 0.2883,
+          "weight": 4.594291,
+          "normalized": 0.3056,
           "direction": "spam"
         },
         {
-          "feature": "new",
-          "raw": "new",
+          "feature": "sms",
+          "raw": "sms",
           "kind": "token",
-          "weight": 4.42841,
-          "normalized": 0.2873,
-          "direction": "spam"
-        },
-        {
-          "feature": "rgds",
-          "raw": "rgds",
-          "kind": "token",
-          "weight": 4.412346,
-          "normalized": 0.2863,
-          "direction": "spam"
-        },
-        {
-          "feature": "txt",
-          "raw": "txt",
-          "kind": "token",
-          "weight": 4.374739,
-          "normalized": 0.2839,
-          "direction": "spam"
-        },
-        {
-          "feature": "asap",
-          "raw": "asap",
-          "kind": "token",
-          "weight": 4.301211,
-          "normalized": 0.2791,
+          "weight": 4.488284,
+          "normalized": 0.2985,
           "direction": "spam"
         },
         {
           "feature": "service",
           "raw": "service",
           "kind": "token",
-          "weight": 4.295652,
-          "normalized": 0.2787,
+          "weight": 4.402325,
+          "normalized": 0.2928,
           "direction": "spam"
         },
         {
-          "feature": "free",
-          "raw": "free",
-          "kind": "token",
-          "weight": 4.2923,
-          "normalized": 0.2785,
+          "feature": "[message length]",
+          "raw": "char_length",
+          "kind": "engineered",
+          "weight": 4.297234,
+          "normalized": 0.2858,
           "direction": "spam"
         },
         {
           "feature": "faster",
           "raw": "faster",
           "kind": "token",
-          "weight": 4.221453,
-          "normalized": 0.2739,
-          "direction": "spam"
-        },
-        {
-          "feature": "tf",
-          "raw": "tf",
-          "kind": "token",
-          "weight": 4.126424,
-          "normalized": 0.2677,
+          "weight": 4.291925,
+          "normalized": 0.2855,
           "direction": "spam"
         },
         {
           "feature": "ringtone",
           "raw": "ringtone",
           "kind": "token",
-          "weight": 3.844481,
-          "normalized": 0.2495,
+          "weight": 4.285697,
+          "normalized": 0.285,
           "direction": "spam"
         },
         {
-          "feature": "tones",
-          "raw": "tones",
+          "feature": "[has URL]",
+          "raw": "has_url",
+          "kind": "engineered",
+          "weight": 4.245607,
+          "normalized": 0.2824,
+          "direction": "spam"
+        },
+        {
+          "feature": "user",
+          "raw": "user",
           "kind": "token",
-          "weight": 3.780966,
-          "normalized": 0.2453,
+          "weight": 4.040028,
+          "normalized": 0.2687,
+          "direction": "spam"
+        },
+        {
+          "feature": "birds",
+          "raw": "birds",
+          "kind": "token",
+          "weight": 4.010814,
+          "normalized": 0.2668,
+          "direction": "spam"
+        },
+        {
+          "feature": "tf",
+          "raw": "tf",
+          "kind": "token",
+          "weight": 3.985655,
+          "normalized": 0.2651,
+          "direction": "spam"
+        },
+        {
+          "feature": "comes",
+          "raw": "comes",
+          "kind": "token",
+          "weight": 3.973783,
+          "normalized": 0.2643,
+          "direction": "spam"
+        },
+        {
+          "feature": "free",
+          "raw": "free",
+          "kind": "token",
+          "weight": 3.968516,
+          "normalized": 0.2639,
+          "direction": "spam"
+        },
+        {
+          "feature": "divorce",
+          "raw": "divorce",
+          "kind": "token",
+          "weight": 3.968217,
+          "normalized": 0.2639,
+          "direction": "spam"
+        },
+        {
+          "feature": "txt",
+          "raw": "txt",
+          "kind": "token",
+          "weight": 3.966932,
+          "normalized": 0.2638,
+          "direction": "spam"
+        },
+        {
+          "feature": "sale",
+          "raw": "sale",
+          "kind": "token",
+          "weight": 3.77349,
+          "normalized": 0.251,
+          "direction": "spam"
+        },
+        {
+          "feature": "july",
+          "raw": "july",
+          "kind": "token",
+          "weight": 3.741211,
+          "normalized": 0.2488,
           "direction": "spam"
         },
         {
           "feature": "girls waiting",
           "raw": "girls waiting",
           "kind": "bigram",
-          "weight": 3.776183,
-          "normalized": 0.245,
-          "direction": "spam"
-        },
-        {
-          "feature": "content",
-          "raw": "content",
-          "kind": "token",
-          "weight": 3.735675,
-          "normalized": 0.2424,
-          "direction": "spam"
-        },
-        {
-          "feature": "enjoy",
-          "raw": "enjoy",
-          "kind": "token",
-          "weight": 3.724438,
-          "normalized": 0.2417,
+          "weight": 3.736804,
+          "normalized": 0.2485,
           "direction": "spam"
         }
       ]
@@ -215,7 +215,7 @@
           "feature": "claim",
           "raw": "claim",
           "kind": "token",
-          "weight": 5.482969,
+          "weight": 5.521095,
           "normalized": 1.0,
           "direction": "spam"
         },
@@ -223,193 +223,193 @@
           "feature": "prize",
           "raw": "prize",
           "kind": "token",
-          "weight": 5.435252,
-          "normalized": 0.9913,
+          "weight": 5.438672,
+          "normalized": 0.9851,
           "direction": "spam"
         },
         {
           "feature": "call <PHONE>",
           "raw": "call phonetoken",
           "kind": "bigram",
-          "weight": 5.347432,
-          "normalized": 0.9753,
+          "weight": 5.395532,
+          "normalized": 0.9773,
           "direction": "spam"
         },
         {
           "feature": "<PHONE> now",
           "raw": "phonetoken now",
           "kind": "bigram",
-          "weight": 5.170616,
-          "normalized": 0.943,
+          "weight": 5.250122,
+          "normalized": 0.9509,
           "direction": "spam"
-        },
-        {
-          "feature": "lor",
-          "raw": "lor",
-          "kind": "token",
-          "weight": -5.075412,
-          "normalized": 0.9257,
-          "direction": "ham"
         },
         {
           "feature": "<PHONE>",
           "raw": "phonetoken",
           "kind": "pattern",
-          "weight": 5.057988,
-          "normalized": 0.9225,
+          "weight": 5.131671,
+          "normalized": 0.9295,
           "direction": "spam"
         },
         {
           "feature": "nokia",
           "raw": "nokia",
           "kind": "token",
-          "weight": 5.002638,
-          "normalized": 0.9124,
+          "weight": 5.060526,
+          "normalized": 0.9166,
           "direction": "spam"
+        },
+        {
+          "feature": "lor",
+          "raw": "lor",
+          "kind": "token",
+          "weight": -4.994024,
+          "normalized": 0.9045,
+          "direction": "ham"
         },
         {
           "feature": "<NUM> prize",
           "raw": "numtoken prize",
           "kind": "bigram",
-          "weight": 4.905589,
-          "normalized": 0.8947,
-          "direction": "spam"
-        },
-        {
-          "feature": "<NUM> cash",
-          "raw": "numtoken cash",
-          "kind": "bigram",
-          "weight": 4.905505,
-          "normalized": 0.8947,
+          "weight": 4.972243,
+          "normalized": 0.9006,
           "direction": "spam"
         },
         {
           "feature": "guaranteed",
           "raw": "guaranteed",
           "kind": "token",
-          "weight": 4.811555,
-          "normalized": 0.8775,
+          "weight": 4.888067,
+          "normalized": 0.8853,
           "direction": "spam"
         },
         {
-          "feature": "tone",
-          "raw": "tone",
-          "kind": "token",
-          "weight": 4.728136,
-          "normalized": 0.8623,
-          "direction": "spam"
-        },
-        {
-          "feature": "ringtone",
-          "raw": "ringtone",
-          "kind": "token",
-          "weight": 4.722074,
-          "normalized": 0.8612,
+          "feature": "<NUM> cash",
+          "raw": "numtoken cash",
+          "kind": "bigram",
+          "weight": 4.880483,
+          "normalized": 0.884,
           "direction": "spam"
         },
         {
           "feature": "ppm",
           "raw": "ppm",
           "kind": "token",
-          "weight": 4.709781,
-          "normalized": 0.859,
+          "weight": 4.801408,
+          "normalized": 0.8696,
           "direction": "spam"
         },
         {
-          "feature": "later",
-          "raw": "later",
+          "feature": "ringtone",
+          "raw": "ringtone",
           "kind": "token",
-          "weight": -4.693707,
-          "normalized": 0.8561,
-          "direction": "ham"
+          "weight": 4.792711,
+          "normalized": 0.8681,
+          "direction": "spam"
+        },
+        {
+          "feature": "tone",
+          "raw": "tone",
+          "kind": "token",
+          "weight": 4.77905,
+          "normalized": 0.8656,
+          "direction": "spam"
         },
         {
           "feature": "won <CURRENCY>",
           "raw": "won currencytoken",
           "kind": "bigram",
-          "weight": 4.614701,
-          "normalized": 0.8416,
+          "weight": 4.701495,
+          "normalized": 0.8516,
           "direction": "spam"
         },
         {
           "feature": "cs",
           "raw": "cs",
           "kind": "token",
-          "weight": 4.594082,
-          "normalized": 0.8379,
+          "weight": 4.632259,
+          "normalized": 0.839,
+          "direction": "spam"
+        },
+        {
+          "feature": "awarded",
+          "raw": "awarded",
+          "kind": "token",
+          "weight": 4.611849,
+          "normalized": 0.8353,
           "direction": "spam"
         },
         {
           "feature": "doing",
           "raw": "doing",
           "kind": "token",
-          "weight": -4.580347,
-          "normalized": 0.8354,
+          "weight": -4.602812,
+          "normalized": 0.8337,
           "direction": "ham"
         },
         {
           "feature": "lol",
           "raw": "lol",
           "kind": "token",
-          "weight": -4.571895,
-          "normalized": 0.8338,
+          "weight": -4.579632,
+          "normalized": 0.8295,
           "direction": "ham"
         },
         {
-          "feature": "awarded",
-          "raw": "awarded",
+          "feature": "later",
+          "raw": "later",
           "kind": "token",
-          "weight": 4.552729,
-          "normalized": 0.8303,
-          "direction": "spam"
+          "weight": -4.565573,
+          "normalized": 0.8269,
+          "direction": "ham"
         },
         {
           "feature": "tones",
           "raw": "tones",
           "kind": "token",
-          "weight": 4.481551,
-          "normalized": 0.8174,
-          "direction": "spam"
-        },
-        {
-          "feature": "attempt",
-          "raw": "attempt",
-          "kind": "token",
-          "weight": 4.445779,
-          "normalized": 0.8108,
+          "weight": 4.559191,
+          "normalized": 0.8258,
           "direction": "spam"
         },
         {
           "feature": "pobox",
           "raw": "pobox",
           "kind": "token",
-          "weight": 4.4364,
-          "normalized": 0.8091,
+          "weight": 4.55449,
+          "normalized": 0.8249,
           "direction": "spam"
         },
         {
-          "feature": "landline",
-          "raw": "landline",
+          "feature": "attempt",
+          "raw": "attempt",
           "kind": "token",
-          "weight": 4.425248,
-          "normalized": 0.8071,
+          "weight": 4.472225,
+          "normalized": 0.81,
           "direction": "spam"
-        },
-        {
-          "feature": "really",
-          "raw": "really",
-          "kind": "token",
-          "weight": -4.396104,
-          "normalized": 0.8018,
-          "direction": "ham"
         },
         {
           "feature": "box <NUM>",
           "raw": "box numtoken",
           "kind": "bigram",
-          "weight": 4.393851,
-          "normalized": 0.8014,
+          "weight": 4.414034,
+          "normalized": 0.7995,
           "direction": "spam"
+        },
+        {
+          "feature": "stop <PHONE>",
+          "raw": "stop phonetoken",
+          "kind": "bigram",
+          "weight": 4.380125,
+          "normalized": 0.7933,
+          "direction": "spam"
+        },
+        {
+          "feature": "sure",
+          "raw": "sure",
+          "kind": "token",
+          "weight": -4.374069,
+          "normalized": 0.7922,
+          "direction": "ham"
         }
       ]
     },
@@ -421,175 +421,95 @@
           "feature": "[digit count]",
           "raw": "digit_count",
           "kind": "engineered",
-          "weight": 0.766471,
+          "weight": 0.79272,
           "normalized": 1.0,
           "direction": "spam"
         },
         {
-          "feature": "[has URL]",
-          "raw": "has_url",
-          "kind": "engineered",
-          "weight": 0.044002,
-          "normalized": 0.0574,
-          "direction": "spam"
-        },
-        {
-          "feature": "mobile",
-          "raw": "mobile",
-          "kind": "token",
-          "weight": 0.03653,
-          "normalized": 0.0477,
+          "feature": "<URL>",
+          "raw": "urltoken",
+          "kind": "pattern",
+          "weight": 0.038713,
+          "normalized": 0.0488,
           "direction": "spam"
         },
         {
           "feature": "[uppercase ratio]",
           "raw": "uppercase_ratio",
           "kind": "engineered",
-          "weight": 0.021749,
-          "normalized": 0.0284,
+          "weight": 0.029881,
+          "normalized": 0.0377,
+          "direction": "spam"
+        },
+        {
+          "feature": "mobile",
+          "raw": "mobile",
+          "kind": "token",
+          "weight": 0.018443,
+          "normalized": 0.0233,
           "direction": "spam"
         },
         {
           "feature": "reply",
           "raw": "reply",
           "kind": "token",
-          "weight": 0.020498,
-          "normalized": 0.0267,
+          "weight": 0.011679,
+          "normalized": 0.0147,
           "direction": "spam"
         },
         {
           "feature": "[message length]",
           "raw": "char_length",
           "kind": "engineered",
-          "weight": 0.019906,
-          "normalized": 0.026,
+          "weight": 0.009193,
+          "normalized": 0.0116,
           "direction": "spam"
         },
         {
-          "feature": "shortly",
-          "raw": "shortly",
+          "feature": "sms",
+          "raw": "sms",
           "kind": "token",
-          "weight": 0.007175,
-          "normalized": 0.0094,
-          "direction": "spam"
-        },
-        {
-          "feature": "<CURRENCY>",
-          "raw": "currencytoken",
-          "kind": "pattern",
-          "weight": 0.007147,
-          "normalized": 0.0093,
+          "weight": 0.009022,
+          "normalized": 0.0114,
           "direction": "spam"
         },
         {
           "feature": "girls waiting",
           "raw": "girls waiting",
           "kind": "bigram",
-          "weight": 0.00712,
-          "normalized": 0.0093,
-          "direction": "spam"
-        },
-        {
-          "feature": "number",
-          "raw": "number",
-          "kind": "token",
-          "weight": 0.005869,
-          "normalized": 0.0077,
+          "weight": 0.007315,
+          "normalized": 0.0092,
           "direction": "spam"
         },
         {
           "feature": "[word count]",
           "raw": "word_count",
           "kind": "engineered",
-          "weight": 0.00463,
-          "normalized": 0.006,
+          "weight": 0.006131,
+          "normalized": 0.0077,
           "direction": "spam"
         },
         {
-          "feature": "free",
-          "raw": "free",
+          "feature": "number",
+          "raw": "number",
           "kind": "token",
-          "weight": 0.003861,
-          "normalized": 0.005,
+          "weight": 0.005192,
+          "normalized": 0.0065,
           "direction": "spam"
         },
         {
-          "feature": "[special characters]",
-          "raw": "special_char_count",
-          "kind": "engineered",
-          "weight": 0.003612,
-          "normalized": 0.0047,
-          "direction": "spam"
-        },
-        {
-          "feature": "rgds",
-          "raw": "rgds",
+          "feature": "comes",
+          "raw": "comes",
           "kind": "token",
-          "weight": 0.003382,
-          "normalized": 0.0044,
+          "weight": 0.005016,
+          "normalized": 0.0063,
           "direction": "spam"
         },
         {
-          "feature": "sent text",
-          "raw": "sent text",
+          "feature": "tell look",
+          "raw": "tell look",
           "kind": "bigram",
-          "weight": 0.003366,
-          "normalized": 0.0044,
-          "direction": "spam"
-        },
-        {
-          "feature": "divorce",
-          "raw": "divorce",
-          "kind": "token",
-          "weight": 0.003351,
-          "normalized": 0.0044,
-          "direction": "spam"
-        },
-        {
-          "feature": "brought",
-          "raw": "brought",
-          "kind": "token",
-          "weight": 0.003335,
-          "normalized": 0.0044,
-          "direction": "spam"
-        },
-        {
-          "feature": "service",
-          "raw": "service",
-          "kind": "token",
-          "weight": 0.00332,
-          "normalized": 0.0043,
-          "direction": "spam"
-        },
-        {
-          "feature": "bringing",
-          "raw": "bringing",
-          "kind": "token",
-          "weight": 0.003305,
-          "normalized": 0.0043,
-          "direction": "spam"
-        },
-        {
-          "feature": "prem",
-          "raw": "prem",
-          "kind": "token",
-          "weight": 0.003289,
-          "normalized": 0.0043,
-          "direction": "spam"
-        },
-        {
-          "feature": "afraid",
-          "raw": "afraid",
-          "kind": "token",
-          "weight": 0.003274,
-          "normalized": 0.0043,
-          "direction": "spam"
-        },
-        {
-          "feature": "idiot",
-          "raw": "idiot",
-          "kind": "token",
-          "weight": 0.003259,
+          "weight": 0.003401,
           "normalized": 0.0043,
           "direction": "spam"
         },
@@ -597,24 +517,104 @@
           "feature": "sale",
           "raw": "sale",
           "kind": "token",
-          "weight": 0.003245,
+          "weight": 0.003385,
+          "normalized": 0.0043,
+          "direction": "spam"
+        },
+        {
+          "feature": "brought",
+          "raw": "brought",
+          "kind": "token",
+          "weight": 0.003369,
           "normalized": 0.0042,
           "direction": "spam"
         },
         {
-          "feature": "hello",
-          "raw": "hello",
+          "feature": "service",
+          "raw": "service",
           "kind": "token",
-          "weight": -0.003241,
+          "weight": 0.003353,
           "normalized": 0.0042,
-          "direction": "ham"
+          "direction": "spam"
         },
         {
-          "feature": "thousands",
-          "raw": "thousands",
+          "feature": "faster",
+          "raw": "faster",
           "kind": "token",
-          "weight": 0.00323,
+          "weight": 0.003337,
           "normalized": 0.0042,
+          "direction": "spam"
+        },
+        {
+          "feature": "shortly",
+          "raw": "shortly",
+          "kind": "token",
+          "weight": 0.003322,
+          "normalized": 0.0042,
+          "direction": "spam"
+        },
+        {
+          "feature": "birds",
+          "raw": "birds",
+          "kind": "token",
+          "weight": 0.003306,
+          "normalized": 0.0042,
+          "direction": "spam"
+        },
+        {
+          "feature": "access",
+          "raw": "access",
+          "kind": "token",
+          "weight": 0.003291,
+          "normalized": 0.0042,
+          "direction": "spam"
+        },
+        {
+          "feature": "nos",
+          "raw": "nos",
+          "kind": "token",
+          "weight": 0.003276,
+          "normalized": 0.0041,
+          "direction": "spam"
+        },
+        {
+          "feature": "text",
+          "raw": "text",
+          "kind": "token",
+          "weight": 0.003261,
+          "normalized": 0.0041,
+          "direction": "spam"
+        },
+        {
+          "feature": "sport",
+          "raw": "sport",
+          "kind": "token",
+          "weight": 0.003246,
+          "normalized": 0.0041,
+          "direction": "spam"
+        },
+        {
+          "feature": "[special characters]",
+          "raw": "special_char_count",
+          "kind": "engineered",
+          "weight": 0.003239,
+          "normalized": 0.0041,
+          "direction": "spam"
+        },
+        {
+          "feature": "warm",
+          "raw": "warm",
+          "kind": "token",
+          "weight": 0.003231,
+          "normalized": 0.0041,
+          "direction": "spam"
+        },
+        {
+          "feature": "child",
+          "raw": "child",
+          "kind": "token",
+          "weight": 0.003216,
+          "normalized": 0.0041,
           "direction": "spam"
         }
       ]
@@ -627,7 +627,7 @@
           "feature": "[digit count]",
           "raw": "digit_count",
           "kind": "engineered",
-          "weight": 0.120276,
+          "weight": 0.106909,
           "normalized": 1.0,
           "direction": "spam"
         },
@@ -635,192 +635,192 @@
           "feature": "<PHONE>",
           "raw": "phonetoken",
           "kind": "pattern",
-          "weight": 0.075407,
-          "normalized": 0.6269,
+          "weight": 0.082159,
+          "normalized": 0.7685,
           "direction": "spam"
         },
         {
           "feature": "[message length]",
           "raw": "char_length",
           "kind": "engineered",
-          "weight": 0.067833,
-          "normalized": 0.564,
+          "weight": 0.063133,
+          "normalized": 0.5905,
           "direction": "spam"
         },
         {
           "feature": "<NUM>",
           "raw": "numtoken",
           "kind": "pattern",
-          "weight": 0.049356,
-          "normalized": 0.4104,
+          "weight": 0.054258,
+          "normalized": 0.5075,
           "direction": "spam"
         },
         {
           "feature": "[uppercase ratio]",
           "raw": "uppercase_ratio",
           "kind": "engineered",
-          "weight": 0.046182,
-          "normalized": 0.384,
+          "weight": 0.045136,
+          "normalized": 0.4222,
           "direction": "spam"
         },
         {
           "feature": "[word count]",
           "raw": "word_count",
           "kind": "engineered",
-          "weight": 0.040317,
-          "normalized": 0.3352,
-          "direction": "spam"
-        },
-        {
-          "feature": "<CURRENCY>",
-          "raw": "currencytoken",
-          "kind": "pattern",
-          "weight": 0.024899,
-          "normalized": 0.207,
-          "direction": "spam"
-        },
-        {
-          "feature": "call",
-          "raw": "call",
-          "kind": "token",
-          "weight": 0.022836,
-          "normalized": 0.1899,
-          "direction": "spam"
-        },
-        {
-          "feature": "[has URL]",
-          "raw": "has_url",
-          "kind": "engineered",
-          "weight": 0.021092,
-          "normalized": 0.1754,
-          "direction": "spam"
-        },
-        {
-          "feature": "call <PHONE>",
-          "raw": "call phonetoken",
-          "kind": "bigram",
-          "weight": 0.019963,
-          "normalized": 0.166,
+          "weight": 0.043613,
+          "normalized": 0.4079,
           "direction": "spam"
         },
         {
           "feature": "[currency mentions]",
           "raw": "currency_count",
           "kind": "engineered",
-          "weight": 0.019511,
-          "normalized": 0.1622,
+          "weight": 0.022957,
+          "normalized": 0.2147,
+          "direction": "spam"
+        },
+        {
+          "feature": "call",
+          "raw": "call",
+          "kind": "token",
+          "weight": 0.022198,
+          "normalized": 0.2076,
+          "direction": "spam"
+        },
+        {
+          "feature": "[has URL]",
+          "raw": "has_url",
+          "kind": "engineered",
+          "weight": 0.021412,
+          "normalized": 0.2003,
+          "direction": "spam"
+        },
+        {
+          "feature": "call <PHONE>",
+          "raw": "call phonetoken",
+          "kind": "bigram",
+          "weight": 0.02089,
+          "normalized": 0.1954,
+          "direction": "spam"
+        },
+        {
+          "feature": "<CURRENCY>",
+          "raw": "currencytoken",
+          "kind": "pattern",
+          "weight": 0.019668,
+          "normalized": 0.184,
           "direction": "spam"
         },
         {
           "feature": "<URL>",
           "raw": "urltoken",
           "kind": "pattern",
-          "weight": 0.019319,
-          "normalized": 0.1606,
-          "direction": "spam"
-        },
-        {
-          "feature": "[special characters]",
-          "raw": "special_char_count",
-          "kind": "engineered",
-          "weight": 0.017206,
-          "normalized": 0.1431,
-          "direction": "spam"
-        },
-        {
-          "feature": "<CURRENCY> <NUM>",
-          "raw": "currencytoken numtoken",
-          "kind": "bigram",
-          "weight": 0.015604,
-          "normalized": 0.1297,
+          "weight": 0.01905,
+          "normalized": 0.1782,
           "direction": "spam"
         },
         {
           "feature": "free",
           "raw": "free",
           "kind": "token",
-          "weight": 0.014047,
-          "normalized": 0.1168,
+          "weight": 0.017108,
+          "normalized": 0.16,
           "direction": "spam"
         },
         {
-          "feature": "<NUM> <NUM>",
-          "raw": "numtoken numtoken",
+          "feature": "[special characters]",
+          "raw": "special_char_count",
+          "kind": "engineered",
+          "weight": 0.016652,
+          "normalized": 0.1558,
+          "direction": "spam"
+        },
+        {
+          "feature": "<CURRENCY> <NUM>",
+          "raw": "currencytoken numtoken",
           "kind": "bigram",
-          "weight": 0.012844,
-          "normalized": 0.1068,
+          "weight": 0.015786,
+          "normalized": 0.1477,
           "direction": "spam"
         },
         {
           "feature": "[exclamation marks]",
           "raw": "exclamation_count",
           "kind": "engineered",
-          "weight": 0.011754,
-          "normalized": 0.0977,
-          "direction": "spam"
-        },
-        {
-          "feature": "mobile",
-          "raw": "mobile",
-          "kind": "token",
-          "weight": 0.011455,
-          "normalized": 0.0952,
+          "weight": 0.014193,
+          "normalized": 0.1328,
           "direction": "spam"
         },
         {
           "feature": "txt",
           "raw": "txt",
           "kind": "token",
-          "weight": 0.010379,
-          "normalized": 0.0863,
+          "weight": 0.011399,
+          "normalized": 0.1066,
+          "direction": "spam"
+        },
+        {
+          "feature": "<NUM> <NUM>",
+          "raw": "numtoken numtoken",
+          "kind": "bigram",
+          "weight": 0.011322,
+          "normalized": 0.1059,
           "direction": "spam"
         },
         {
           "feature": "reply",
           "raw": "reply",
           "kind": "token",
-          "weight": 0.009617,
-          "normalized": 0.08,
+          "weight": 0.009187,
+          "normalized": 0.0859,
+          "direction": "spam"
+        },
+        {
+          "feature": "mobile",
+          "raw": "mobile",
+          "kind": "token",
+          "weight": 0.008697,
+          "normalized": 0.0814,
           "direction": "spam"
         },
         {
           "feature": "text",
           "raw": "text",
           "kind": "token",
-          "weight": 0.009235,
-          "normalized": 0.0768,
+          "weight": 0.007633,
+          "normalized": 0.0714,
           "direction": "spam"
         },
         {
           "feature": "stop",
           "raw": "stop",
           "kind": "token",
-          "weight": 0.008568,
-          "normalized": 0.0712,
-          "direction": "spam"
-        },
-        {
-          "feature": "now",
-          "raw": "now",
-          "kind": "token",
-          "weight": 0.005364,
-          "normalized": 0.0446,
+          "weight": 0.006502,
+          "normalized": 0.0608,
           "direction": "spam"
         },
         {
           "feature": "claim",
           "raw": "claim",
           "kind": "token",
-          "weight": 0.004609,
-          "normalized": 0.0383,
+          "weight": 0.005928,
+          "normalized": 0.0554,
           "direction": "spam"
         },
         {
-          "feature": "new",
-          "raw": "new",
+          "feature": "service",
+          "raw": "service",
           "kind": "token",
-          "weight": 0.004563,
-          "normalized": 0.0379,
+          "weight": 0.005911,
+          "normalized": 0.0553,
+          "direction": "spam"
+        },
+        {
+          "feature": "now",
+          "raw": "now",
+          "kind": "token",
+          "weight": 0.005896,
+          "normalized": 0.0551,
           "direction": "spam"
         }
       ]
@@ -834,7 +834,7 @@
           "feature": "[digit count]",
           "raw": "digit_count",
           "kind": "engineered",
-          "weight": 4.298497,
+          "weight": 4.289226,
           "normalized": 1.0,
           "direction": "spam"
         },
@@ -842,193 +842,193 @@
           "feature": "brought",
           "raw": "brought",
           "kind": "token",
-          "weight": 2.206885,
-          "normalized": 0.5134,
-          "direction": "spam"
-        },
-        {
-          "feature": "arsenal",
-          "raw": "arsenal",
-          "kind": "token",
-          "weight": 2.202882,
-          "normalized": 0.5125,
+          "weight": 2.156384,
+          "normalized": 0.5027,
           "direction": "spam"
         },
         {
           "feature": "<PHONE>",
           "raw": "phonetoken",
           "kind": "pattern",
-          "weight": 2.011716,
-          "normalized": 0.468,
+          "weight": 2.080668,
+          "normalized": 0.4851,
           "direction": "spam"
         },
         {
-          "feature": "mobile",
-          "raw": "mobile",
+          "feature": "arsenal",
+          "raw": "arsenal",
           "kind": "token",
-          "weight": 1.993919,
-          "normalized": 0.4639,
-          "direction": "spam"
-        },
-        {
-          "feature": "number <NUM>",
-          "raw": "number numtoken",
-          "kind": "bigram",
-          "weight": 1.87783,
-          "normalized": 0.4369,
-          "direction": "spam"
-        },
-        {
-          "feature": "rgds",
-          "raw": "rgds",
-          "kind": "token",
-          "weight": 1.845151,
-          "normalized": 0.4293,
-          "direction": "spam"
-        },
-        {
-          "feature": "tf",
-          "raw": "tf",
-          "kind": "token",
-          "weight": 1.753941,
-          "normalized": 0.408,
-          "direction": "spam"
-        },
-        {
-          "feature": "faster",
-          "raw": "faster",
-          "kind": "token",
-          "weight": 1.730662,
-          "normalized": 0.4026,
-          "direction": "spam"
-        },
-        {
-          "feature": "divorce",
-          "raw": "divorce",
-          "kind": "token",
-          "weight": 1.72309,
-          "normalized": 0.4009,
-          "direction": "spam"
-        },
-        {
-          "feature": "girls waiting",
-          "raw": "girls waiting",
-          "kind": "bigram",
-          "weight": 1.616409,
-          "normalized": 0.376,
-          "direction": "spam"
-        },
-        {
-          "feature": "networks",
-          "raw": "networks",
-          "kind": "token",
-          "weight": 1.580546,
-          "normalized": 0.3677,
-          "direction": "spam"
-        },
-        {
-          "feature": "reply",
-          "raw": "reply",
-          "kind": "token",
-          "weight": 1.531433,
-          "normalized": 0.3563,
-          "direction": "spam"
-        },
-        {
-          "feature": "sunshine",
-          "raw": "sunshine",
-          "kind": "token",
-          "weight": 1.525004,
-          "normalized": 0.3548,
-          "direction": "spam"
-        },
-        {
-          "feature": "tones",
-          "raw": "tones",
-          "kind": "token",
-          "weight": 1.474748,
-          "normalized": 0.3431,
+          "weight": 2.074581,
+          "normalized": 0.4837,
           "direction": "spam"
         },
         {
           "feature": "sms",
           "raw": "sms",
           "kind": "token",
-          "weight": 1.474532,
-          "normalized": 0.343,
+          "weight": 1.920122,
+          "normalized": 0.4477,
           "direction": "spam"
         },
         {
-          "feature": "dark",
-          "raw": "dark",
+          "feature": "number <NUM>",
+          "raw": "number numtoken",
+          "kind": "bigram",
+          "weight": 1.822619,
+          "normalized": 0.4249,
+          "direction": "spam"
+        },
+        {
+          "feature": "reply",
+          "raw": "reply",
           "kind": "token",
-          "weight": 1.449926,
-          "normalized": 0.3373,
+          "weight": 1.815227,
+          "normalized": 0.4232,
           "direction": "spam"
         },
         {
-          "feature": "ringtone",
-          "raw": "ringtone",
+          "feature": "choose",
+          "raw": "choose",
           "kind": "token",
-          "weight": 1.447924,
-          "normalized": 0.3368,
+          "weight": 1.80251,
+          "normalized": 0.4202,
           "direction": "spam"
         },
         {
-          "feature": "[has URL]",
-          "raw": "has_url",
-          "kind": "engineered",
-          "weight": 1.43979,
-          "normalized": 0.335,
-          "direction": "spam"
-        },
-        {
-          "feature": "sport",
-          "raw": "sport",
+          "feature": "faster",
+          "raw": "faster",
           "kind": "token",
-          "weight": 1.396646,
-          "normalized": 0.3249,
+          "weight": 1.802302,
+          "normalized": 0.4202,
           "direction": "spam"
         },
         {
-          "feature": "user",
-          "raw": "user",
+          "feature": "divorce",
+          "raw": "divorce",
           "kind": "token",
-          "weight": 1.389544,
-          "normalized": 0.3233,
+          "weight": 1.701484,
+          "normalized": 0.3967,
           "direction": "spam"
         },
         {
-          "feature": "low",
-          "raw": "low",
+          "feature": "text",
+          "raw": "text",
           "kind": "token",
-          "weight": 1.376567,
-          "normalized": 0.3202,
+          "weight": 1.627046,
+          "normalized": 0.3793,
           "direction": "spam"
         },
         {
-          "feature": "thousands",
-          "raw": "thousands",
+          "feature": "tf",
+          "raw": "tf",
           "kind": "token",
-          "weight": 1.367944,
-          "normalized": 0.3182,
+          "weight": 1.607007,
+          "normalized": 0.3747,
+          "direction": "spam"
+        },
+        {
+          "feature": "notice",
+          "raw": "notice",
+          "kind": "token",
+          "weight": 1.563301,
+          "normalized": 0.3645,
+          "direction": "spam"
+        },
+        {
+          "feature": "sunshine",
+          "raw": "sunshine",
+          "kind": "token",
+          "weight": 1.534267,
+          "normalized": 0.3577,
+          "direction": "spam"
+        },
+        {
+          "feature": "girls waiting",
+          "raw": "girls waiting",
+          "kind": "bigram",
+          "weight": 1.527437,
+          "normalized": 0.3561,
+          "direction": "spam"
+        },
+        {
+          "feature": "mobile",
+          "raw": "mobile",
+          "kind": "token",
+          "weight": 1.49509,
+          "normalized": 0.3486,
           "direction": "spam"
         },
         {
           "feature": "service",
           "raw": "service",
           "kind": "token",
-          "weight": 1.36369,
-          "normalized": 0.3172,
+          "weight": 1.492754,
+          "normalized": 0.348,
           "direction": "spam"
         },
         {
-          "feature": "[special characters]",
-          "raw": "special_char_count",
+          "feature": "ringtone",
+          "raw": "ringtone",
+          "kind": "token",
+          "weight": 1.487305,
+          "normalized": 0.3468,
+          "direction": "spam"
+        },
+        {
+          "feature": "tell look",
+          "raw": "tell look",
+          "kind": "bigram",
+          "weight": 1.460667,
+          "normalized": 0.3405,
+          "direction": "spam"
+        },
+        {
+          "feature": "comes",
+          "raw": "comes",
+          "kind": "token",
+          "weight": 1.422288,
+          "normalized": 0.3316,
+          "direction": "spam"
+        },
+        {
+          "feature": "[has URL]",
+          "raw": "has_url",
           "kind": "engineered",
-          "weight": -1.357299,
-          "normalized": 0.3158,
-          "direction": "ham"
+          "weight": 1.373767,
+          "normalized": 0.3203,
+          "direction": "spam"
+        },
+        {
+          "feature": "user",
+          "raw": "user",
+          "kind": "token",
+          "weight": 1.359533,
+          "normalized": 0.317,
+          "direction": "spam"
+        },
+        {
+          "feature": "thousands",
+          "raw": "thousands",
+          "kind": "token",
+          "weight": 1.35938,
+          "normalized": 0.3169,
+          "direction": "spam"
+        },
+        {
+          "feature": "low",
+          "raw": "low",
+          "kind": "token",
+          "weight": 1.359286,
+          "normalized": 0.3169,
+          "direction": "spam"
+        },
+        {
+          "feature": "dont tell",
+          "raw": "dont tell",
+          "kind": "bigram",
+          "weight": 1.336445,
+          "normalized": 0.3116,
+          "direction": "spam"
         }
       ]
     },
@@ -1040,200 +1040,200 @@
           "feature": "[digit count]",
           "raw": "digit_count",
           "kind": "engineered",
-          "weight": 0.13763,
+          "weight": 0.140487,
           "normalized": 1.0,
-          "direction": "spam"
-        },
-        {
-          "feature": "[uppercase ratio]",
-          "raw": "uppercase_ratio",
-          "kind": "engineered",
-          "weight": 0.108739,
-          "normalized": 0.7901,
           "direction": "spam"
         },
         {
           "feature": "[message length]",
           "raw": "char_length",
           "kind": "engineered",
-          "weight": 0.093097,
-          "normalized": 0.6764,
+          "weight": 0.118105,
+          "normalized": 0.8407,
           "direction": "spam"
         },
         {
-          "feature": "[has URL]",
-          "raw": "has_url",
+          "feature": "[uppercase ratio]",
+          "raw": "uppercase_ratio",
           "kind": "engineered",
-          "weight": 0.052381,
-          "normalized": 0.3806,
-          "direction": "spam"
-        },
-        {
-          "feature": "[special characters]",
-          "raw": "special_char_count",
-          "kind": "engineered",
-          "weight": 0.051554,
-          "normalized": 0.3746,
-          "direction": "spam"
-        },
-        {
-          "feature": "mobile",
-          "raw": "mobile",
-          "kind": "token",
-          "weight": 0.049822,
-          "normalized": 0.362,
+          "weight": 0.104576,
+          "normalized": 0.7444,
           "direction": "spam"
         },
         {
           "feature": "content",
           "raw": "content",
           "kind": "token",
-          "weight": 0.046879,
-          "normalized": 0.3406,
+          "weight": 0.058773,
+          "normalized": 0.4184,
+          "direction": "spam"
+        },
+        {
+          "feature": "[special characters]",
+          "raw": "special_char_count",
+          "kind": "engineered",
+          "weight": 0.044132,
+          "normalized": 0.3141,
           "direction": "spam"
         },
         {
           "feature": "[word count]",
           "raw": "word_count",
           "kind": "engineered",
-          "weight": 0.046227,
-          "normalized": 0.3359,
+          "weight": 0.043365,
+          "normalized": 0.3087,
+          "direction": "spam"
+        },
+        {
+          "feature": "[has URL]",
+          "raw": "has_url",
+          "kind": "engineered",
+          "weight": 0.042498,
+          "normalized": 0.3025,
           "direction": "spam"
         },
         {
           "feature": "<PHONE>",
           "raw": "phonetoken",
           "kind": "pattern",
-          "weight": 0.035059,
-          "normalized": 0.2547,
+          "weight": 0.041125,
+          "normalized": 0.2927,
           "direction": "spam"
         },
         {
-          "feature": "text",
-          "raw": "text",
+          "feature": "mobile",
+          "raw": "mobile",
           "kind": "token",
-          "weight": 0.032567,
-          "normalized": 0.2366,
+          "weight": 0.035208,
+          "normalized": 0.2506,
           "direction": "spam"
         },
         {
           "feature": "<URL>",
           "raw": "urltoken",
           "kind": "pattern",
-          "weight": 0.029532,
-          "normalized": 0.2146,
-          "direction": "spam"
-        },
-        {
-          "feature": "ringtone",
-          "raw": "ringtone",
-          "kind": "token",
-          "weight": 0.029064,
-          "normalized": 0.2112,
+          "weight": 0.03322,
+          "normalized": 0.2365,
           "direction": "spam"
         },
         {
           "feature": "arsenal",
           "raw": "arsenal",
           "kind": "token",
-          "weight": 0.027333,
-          "normalized": 0.1986,
+          "weight": 0.031899,
+          "normalized": 0.2271,
           "direction": "spam"
-        },
-        {
-          "feature": "hello",
-          "raw": "hello",
-          "kind": "token",
-          "weight": -0.024346,
-          "normalized": 0.1769,
-          "direction": "ham"
         },
         {
           "feature": "free",
           "raw": "free",
           "kind": "token",
-          "weight": 0.021099,
-          "normalized": 0.1533,
-          "direction": "spam"
-        },
-        {
-          "feature": "<CURRENCY>",
-          "raw": "currencytoken",
-          "kind": "pattern",
-          "weight": 0.021029,
-          "normalized": 0.1528,
-          "direction": "spam"
-        },
-        {
-          "feature": "enjoy",
-          "raw": "enjoy",
-          "kind": "token",
-          "weight": 0.020838,
-          "normalized": 0.1514,
+          "weight": 0.028446,
+          "normalized": 0.2025,
           "direction": "spam"
         },
         {
           "feature": "reply",
           "raw": "reply",
           "kind": "token",
-          "weight": 0.020818,
-          "normalized": 0.1513,
+          "weight": 0.028099,
+          "normalized": 0.2,
           "direction": "spam"
         },
         {
-          "feature": "new",
-          "raw": "new",
+          "feature": "text",
+          "raw": "text",
           "kind": "token",
-          "weight": 0.019992,
-          "normalized": 0.1453,
+          "weight": 0.028067,
+          "normalized": 0.1998,
+          "direction": "spam"
+        },
+        {
+          "feature": "enjoy",
+          "raw": "enjoy",
+          "kind": "token",
+          "weight": 0.026717,
+          "normalized": 0.1902,
+          "direction": "spam"
+        },
+        {
+          "feature": "ringtone",
+          "raw": "ringtone",
+          "kind": "token",
+          "weight": 0.024591,
+          "normalized": 0.175,
           "direction": "spam"
         },
         {
           "feature": "got",
           "raw": "got",
           "kind": "token",
-          "weight": -0.018496,
-          "normalized": 0.1344,
+          "weight": -0.020166,
+          "normalized": 0.1435,
           "direction": "ham"
         },
         {
-          "feature": "tones",
-          "raw": "tones",
-          "kind": "token",
-          "weight": 0.018297,
-          "normalized": 0.1329,
+          "feature": "<CURRENCY>",
+          "raw": "currencytoken",
+          "kind": "pattern",
+          "weight": 0.018314,
+          "normalized": 0.1304,
           "direction": "spam"
         },
         {
           "feature": "won",
           "raw": "won",
           "kind": "token",
-          "weight": 0.014261,
-          "normalized": 0.1036,
+          "weight": 0.014789,
+          "normalized": 0.1053,
+          "direction": "spam"
+        },
+        {
+          "feature": "message",
+          "raw": "message",
+          "kind": "token",
+          "weight": 0.014227,
+          "normalized": 0.1013,
           "direction": "spam"
         },
         {
           "feature": "[exclamation marks]",
           "raw": "exclamation_count",
           "kind": "engineered",
-          "weight": 0.013812,
-          "normalized": 0.1004,
+          "weight": 0.012598,
+          "normalized": 0.0897,
           "direction": "spam"
         },
         {
-          "feature": "day",
-          "raw": "day",
+          "feature": "ur",
+          "raw": "ur",
           "kind": "token",
-          "weight": -0.013338,
-          "normalized": 0.0969,
-          "direction": "ham"
+          "weight": 0.012451,
+          "normalized": 0.0886,
+          "direction": "spam"
+        },
+        {
+          "feature": "service",
+          "raw": "service",
+          "kind": "token",
+          "weight": 0.011477,
+          "normalized": 0.0817,
+          "direction": "spam"
         },
         {
           "feature": "number",
           "raw": "number",
           "kind": "token",
-          "weight": 0.013299,
-          "normalized": 0.0966,
+          "weight": 0.011058,
+          "normalized": 0.0787,
+          "direction": "spam"
+        },
+        {
+          "feature": "new",
+          "raw": "new",
+          "kind": "token",
+          "weight": 0.010257,
+          "normalized": 0.073,
           "direction": "spam"
         }
       ]
@@ -1246,200 +1246,200 @@
           "feature": "[digit count]",
           "raw": "digit_count",
           "kind": "engineered",
-          "weight": 0.769494,
+          "weight": 0.7812,
           "normalized": 1.0,
-          "direction": "spam"
-        },
-        {
-          "feature": "[uppercase ratio]",
-          "raw": "uppercase_ratio",
-          "kind": "engineered",
-          "weight": 0.018572,
-          "normalized": 0.0241,
           "direction": "spam"
         },
         {
           "feature": "<URL>",
           "raw": "urltoken",
           "kind": "pattern",
-          "weight": 0.016405,
-          "normalized": 0.0213,
+          "weight": 0.025152,
+          "normalized": 0.0322,
           "direction": "spam"
         },
         {
-          "feature": "<NUM>",
-          "raw": "numtoken",
-          "kind": "pattern",
-          "weight": 0.014871,
-          "normalized": 0.0193,
+          "feature": "[uppercase ratio]",
+          "raw": "uppercase_ratio",
+          "kind": "engineered",
+          "weight": 0.017031,
+          "normalized": 0.0218,
           "direction": "spam"
         },
         {
           "feature": "mobile",
           "raw": "mobile",
           "kind": "token",
-          "weight": 0.014314,
-          "normalized": 0.0186,
+          "weight": 0.013219,
+          "normalized": 0.0169,
           "direction": "spam"
         },
         {
-          "feature": "[has URL]",
-          "raw": "has_url",
-          "kind": "engineered",
-          "weight": 0.012926,
-          "normalized": 0.0168,
+          "feature": "<NUM>",
+          "raw": "numtoken",
+          "kind": "pattern",
+          "weight": 0.00981,
+          "normalized": 0.0126,
           "direction": "spam"
         },
         {
           "feature": "<PHONE>",
           "raw": "phonetoken",
           "kind": "pattern",
-          "weight": 0.011697,
-          "normalized": 0.0152,
-          "direction": "spam"
-        },
-        {
-          "feature": "[word count]",
-          "raw": "word_count",
-          "kind": "engineered",
-          "weight": 0.011446,
-          "normalized": 0.0149,
-          "direction": "spam"
-        },
-        {
-          "feature": "[special characters]",
-          "raw": "special_char_count",
-          "kind": "engineered",
-          "weight": 0.009187,
-          "normalized": 0.0119,
-          "direction": "spam"
-        },
-        {
-          "feature": "ringtone",
-          "raw": "ringtone",
-          "kind": "token",
-          "weight": 0.008277,
-          "normalized": 0.0108,
-          "direction": "spam"
-        },
-        {
-          "feature": "content",
-          "raw": "content",
-          "kind": "token",
-          "weight": 0.007441,
-          "normalized": 0.0097,
-          "direction": "spam"
-        },
-        {
-          "feature": "reply",
-          "raw": "reply",
-          "kind": "token",
-          "weight": 0.007355,
-          "normalized": 0.0096,
+          "weight": 0.009413,
+          "normalized": 0.012,
           "direction": "spam"
         },
         {
           "feature": "got",
           "raw": "got",
           "kind": "token",
-          "weight": -0.005335,
-          "normalized": 0.0069,
+          "weight": -0.00828,
+          "normalized": 0.0106,
           "direction": "ham"
         },
         {
-          "feature": "girls waiting",
-          "raw": "girls waiting",
-          "kind": "bigram",
-          "weight": 0.004655,
-          "normalized": 0.006,
+          "feature": "ringtone",
+          "raw": "ringtone",
+          "kind": "token",
+          "weight": 0.008036,
+          "normalized": 0.0103,
+          "direction": "spam"
+        },
+        {
+          "feature": "reply",
+          "raw": "reply",
+          "kind": "token",
+          "weight": 0.007588,
+          "normalized": 0.0097,
+          "direction": "spam"
+        },
+        {
+          "feature": "content",
+          "raw": "content",
+          "kind": "token",
+          "weight": 0.006573,
+          "normalized": 0.0084,
           "direction": "spam"
         },
         {
           "feature": "[message length]",
           "raw": "char_length",
           "kind": "engineered",
-          "weight": 0.003676,
-          "normalized": 0.0048,
+          "weight": 0.006045,
+          "normalized": 0.0077,
           "direction": "spam"
         },
         {
-          "feature": "tones",
-          "raw": "tones",
-          "kind": "token",
-          "weight": 0.00323,
-          "normalized": 0.0042,
+          "feature": "girls waiting",
+          "raw": "girls waiting",
+          "kind": "bigram",
+          "weight": 0.004988,
+          "normalized": 0.0064,
           "direction": "spam"
         },
         {
-          "feature": "arsenal",
-          "raw": "arsenal",
-          "kind": "token",
-          "weight": 0.003096,
-          "normalized": 0.004,
-          "direction": "spam"
-        },
-        {
-          "feature": "adult",
-          "raw": "adult",
-          "kind": "token",
-          "weight": 0.002765,
-          "normalized": 0.0036,
+          "feature": "[has URL]",
+          "raw": "has_url",
+          "kind": "engineered",
+          "weight": 0.004404,
+          "normalized": 0.0056,
           "direction": "spam"
         },
         {
           "feature": "sms",
           "raw": "sms",
           "kind": "token",
-          "weight": 0.002614,
-          "normalized": 0.0034,
+          "weight": 0.004377,
+          "normalized": 0.0056,
           "direction": "spam"
         },
         {
-          "feature": "text",
-          "raw": "text",
-          "kind": "token",
-          "weight": 0.002592,
-          "normalized": 0.0034,
-          "direction": "spam"
-        },
-        {
-          "feature": "[currency mentions]",
-          "raw": "currency_count",
+          "feature": "[special characters]",
+          "raw": "special_char_count",
           "kind": "engineered",
-          "weight": 0.002043,
-          "normalized": 0.0027,
-          "direction": "spam"
-        },
-        {
-          "feature": "divorce",
-          "raw": "divorce",
-          "kind": "token",
-          "weight": 0.001971,
-          "normalized": 0.0026,
+          "weight": 0.004222,
+          "normalized": 0.0054,
           "direction": "spam"
         },
         {
           "feature": "free",
           "raw": "free",
           "kind": "token",
-          "weight": 0.00191,
-          "normalized": 0.0025,
+          "weight": 0.002883,
+          "normalized": 0.0037,
           "direction": "spam"
         },
         {
-          "feature": "dear",
-          "raw": "dear",
+          "feature": "ur",
+          "raw": "ur",
           "kind": "token",
-          "weight": -0.001801,
-          "normalized": 0.0023,
-          "direction": "ham"
+          "weight": 0.002866,
+          "normalized": 0.0037,
+          "direction": "spam"
         },
         {
-          "feature": "thousands",
-          "raw": "thousands",
+          "feature": "text",
+          "raw": "text",
           "kind": "token",
-          "weight": 0.001793,
-          "normalized": 0.0023,
+          "weight": 0.002824,
+          "normalized": 0.0036,
+          "direction": "spam"
+        },
+        {
+          "feature": "[exclamation marks]",
+          "raw": "exclamation_count",
+          "kind": "engineered",
+          "weight": 0.002605,
+          "normalized": 0.0033,
+          "direction": "spam"
+        },
+        {
+          "feature": "tones",
+          "raw": "tones",
+          "kind": "token",
+          "weight": 0.002515,
+          "normalized": 0.0032,
+          "direction": "spam"
+        },
+        {
+          "feature": "receiving",
+          "raw": "receiving",
+          "kind": "token",
+          "weight": 0.00245,
+          "normalized": 0.0031,
+          "direction": "spam"
+        },
+        {
+          "feature": "adult",
+          "raw": "adult",
+          "kind": "token",
+          "weight": 0.002444,
+          "normalized": 0.0031,
+          "direction": "spam"
+        },
+        {
+          "feature": "choose",
+          "raw": "choose",
+          "kind": "token",
+          "weight": 0.002432,
+          "normalized": 0.0031,
+          "direction": "spam"
+        },
+        {
+          "feature": "std",
+          "raw": "std",
+          "kind": "token",
+          "weight": 0.002417,
+          "normalized": 0.0031,
+          "direction": "spam"
+        },
+        {
+          "feature": "service",
+          "raw": "service",
+          "kind": "token",
+          "weight": 0.002218,
+          "normalized": 0.0028,
           "direction": "spam"
         }
       ]
@@ -1452,200 +1452,200 @@
           "feature": "<PHONE>",
           "raw": "phonetoken",
           "kind": "pattern",
-          "weight": 0.126304,
+          "weight": 0.102225,
           "normalized": 1.0,
           "direction": "spam"
         },
         {
-          "feature": "call <PHONE>",
-          "raw": "call phonetoken",
-          "kind": "bigram",
-          "weight": 0.063196,
-          "normalized": 0.5003,
-          "direction": "spam"
-        },
-        {
-          "feature": "just text",
-          "raw": "just text",
-          "kind": "bigram",
-          "weight": 0.030554,
-          "normalized": 0.2419,
+          "feature": "call",
+          "raw": "call",
+          "kind": "token",
+          "weight": 0.045687,
+          "normalized": 0.4469,
           "direction": "spam"
         },
         {
           "feature": "[digit count]",
           "raw": "digit_count",
           "kind": "engineered",
-          "weight": 0.027821,
-          "normalized": 0.2203,
+          "weight": 0.036564,
+          "normalized": 0.3577,
           "direction": "spam"
         },
         {
-          "feature": "ringtone",
-          "raw": "ringtone",
+          "feature": "hope",
+          "raw": "hope",
           "kind": "token",
-          "weight": 0.026324,
-          "normalized": 0.2084,
-          "direction": "spam"
-        },
-        {
-          "feature": "chat",
-          "raw": "chat",
-          "kind": "token",
-          "weight": 0.025218,
-          "normalized": 0.1997,
-          "direction": "spam"
-        },
-        {
-          "feature": "im",
-          "raw": "im",
-          "kind": "token",
-          "weight": -0.021275,
-          "normalized": 0.1684,
+          "weight": -0.023153,
+          "normalized": 0.2265,
           "direction": "ham"
         },
         {
-          "feature": "thk",
-          "raw": "thk",
+          "feature": "customer",
+          "raw": "customer",
           "kind": "token",
-          "weight": -0.019039,
-          "normalized": 0.1507,
+          "weight": 0.0229,
+          "normalized": 0.224,
+          "direction": "spam"
+        },
+        {
+          "feature": "lor",
+          "raw": "lor",
+          "kind": "token",
+          "weight": -0.019402,
+          "normalized": 0.1898,
           "direction": "ham"
         },
         {
-          "feature": "dating service",
-          "raw": "dating service",
-          "kind": "bigram",
-          "weight": 0.018601,
-          "normalized": 0.1473,
-          "direction": "spam"
-        },
-        {
-          "feature": "end reply",
-          "raw": "end reply",
-          "kind": "bigram",
-          "weight": 0.017988,
-          "normalized": 0.1424,
-          "direction": "spam"
-        },
-        {
-          "feature": "information",
-          "raw": "information",
+          "feature": "regular",
+          "raw": "regular",
           "kind": "token",
-          "weight": 0.017567,
-          "normalized": 0.1391,
+          "weight": 0.019392,
+          "normalized": 0.1897,
           "direction": "spam"
         },
         {
-          "feature": "choose",
-          "raw": "choose",
+          "feature": "min",
+          "raw": "min",
           "kind": "token",
-          "weight": 0.016669,
-          "normalized": 0.132,
+          "weight": 0.01748,
+          "normalized": 0.171,
           "direction": "spam"
         },
         {
-          "feature": "club",
-          "raw": "club",
+          "feature": "home",
+          "raw": "home",
           "kind": "token",
-          "weight": 0.016592,
-          "normalized": 0.1314,
-          "direction": "spam"
-        },
-        {
-          "feature": "shortly",
-          "raw": "shortly",
-          "kind": "token",
-          "weight": 0.014124,
-          "normalized": 0.1118,
-          "direction": "spam"
-        },
-        {
-          "feature": "account",
-          "raw": "account",
-          "kind": "token",
-          "weight": 0.013771,
-          "normalized": 0.109,
-          "direction": "spam"
-        },
-        {
-          "feature": "mobile",
-          "raw": "mobile",
-          "kind": "token",
-          "weight": 0.01246,
-          "normalized": 0.0986,
-          "direction": "spam"
-        },
-        {
-          "feature": "<NUM>",
-          "raw": "numtoken",
-          "kind": "pattern",
-          "weight": 0.012071,
-          "normalized": 0.0956,
-          "direction": "spam"
-        },
-        {
-          "feature": "announcement premier",
-          "raw": "announcement premier",
-          "kind": "bigram",
-          "weight": 0.011618,
-          "normalized": 0.092,
-          "direction": "spam"
-        },
-        {
-          "feature": "tones",
-          "raw": "tones",
-          "kind": "token",
-          "weight": 0.010801,
-          "normalized": 0.0855,
-          "direction": "spam"
-        },
-        {
-          "feature": "hear",
-          "raw": "hear",
-          "kind": "token",
-          "weight": -0.010114,
-          "normalized": 0.0801,
+          "weight": -0.016611,
+          "normalized": 0.1625,
           "direction": "ham"
         },
         {
-          "feature": "auction",
-          "raw": "auction",
-          "kind": "token",
-          "weight": 0.009506,
-          "normalized": 0.0753,
-          "direction": "spam"
-        },
-        {
-          "feature": "[has URL]",
-          "raw": "has_url",
+          "feature": "[currency mentions]",
+          "raw": "currency_count",
           "kind": "engineered",
-          "weight": 0.009042,
-          "normalized": 0.0716,
-          "direction": "spam"
-        },
-        {
-          "feature": "<URL>",
-          "raw": "urltoken",
-          "kind": "pattern",
-          "weight": 0.008906,
-          "normalized": 0.0705,
-          "direction": "spam"
-        },
-        {
-          "feature": "receiving",
-          "raw": "receiving",
-          "kind": "token",
-          "weight": 0.008771,
-          "normalized": 0.0694,
+          "weight": 0.015689,
+          "normalized": 0.1535,
           "direction": "spam"
         },
         {
           "feature": "service",
           "raw": "service",
           "kind": "token",
-          "weight": 0.008733,
-          "normalized": 0.0691,
+          "weight": 0.015152,
+          "normalized": 0.1482,
+          "direction": "spam"
+        },
+        {
+          "feature": "ringtone",
+          "raw": "ringtone",
+          "kind": "token",
+          "weight": 0.015079,
+          "normalized": 0.1475,
+          "direction": "spam"
+        },
+        {
+          "feature": "[has URL]",
+          "raw": "has_url",
+          "kind": "engineered",
+          "weight": 0.014836,
+          "normalized": 0.1451,
+          "direction": "spam"
+        },
+        {
+          "feature": "choose",
+          "raw": "choose",
+          "kind": "token",
+          "weight": 0.014229,
+          "normalized": 0.1392,
+          "direction": "spam"
+        },
+        {
+          "feature": "girls waiting",
+          "raw": "girls waiting",
+          "kind": "bigram",
+          "weight": 0.013855,
+          "normalized": 0.1355,
+          "direction": "spam"
+        },
+        {
+          "feature": "dating",
+          "raw": "dating",
+          "kind": "token",
+          "weight": 0.01324,
+          "normalized": 0.1295,
+          "direction": "spam"
+        },
+        {
+          "feature": "free",
+          "raw": "free",
+          "kind": "token",
+          "weight": 0.012675,
+          "normalized": 0.124,
+          "direction": "spam"
+        },
+        {
+          "feature": "mobile content",
+          "raw": "mobile content",
+          "kind": "bigram",
+          "weight": 0.011887,
+          "normalized": 0.1163,
+          "direction": "spam"
+        },
+        {
+          "feature": "reply",
+          "raw": "reply",
+          "kind": "token",
+          "weight": 0.01179,
+          "normalized": 0.1153,
+          "direction": "spam"
+        },
+        {
+          "feature": "asap",
+          "raw": "asap",
+          "kind": "token",
+          "weight": 0.011747,
+          "normalized": 0.1149,
+          "direction": "spam"
+        },
+        {
+          "feature": "receiving",
+          "raw": "receiving",
+          "kind": "token",
+          "weight": 0.011643,
+          "normalized": 0.1139,
+          "direction": "spam"
+        },
+        {
+          "feature": "shortly",
+          "raw": "shortly",
+          "kind": "token",
+          "weight": 0.011458,
+          "normalized": 0.1121,
+          "direction": "spam"
+        },
+        {
+          "feature": "<CURRENCY>",
+          "raw": "currencytoken",
+          "kind": "pattern",
+          "weight": 0.011407,
+          "normalized": 0.1116,
+          "direction": "spam"
+        },
+        {
+          "feature": "announcement",
+          "raw": "announcement",
+          "kind": "token",
+          "weight": 0.011177,
+          "normalized": 0.1093,
+          "direction": "spam"
+        },
+        {
+          "feature": "mobile",
+          "raw": "mobile",
+          "kind": "token",
+          "weight": 0.010899,
+          "normalized": 0.1066,
           "direction": "spam"
         }
       ]
@@ -1658,7 +1658,7 @@
           "feature": "<PHONE>",
           "raw": "phonetoken",
           "kind": "pattern",
-          "weight": 16.570104,
+          "weight": 13.373113,
           "normalized": 1.0,
           "direction": "spam"
         },
@@ -1666,192 +1666,192 @@
           "feature": "[digit count]",
           "raw": "digit_count",
           "kind": "engineered",
-          "weight": 15.582679,
-          "normalized": 0.9404,
-          "direction": "spam"
-        },
-        {
-          "feature": "txt",
-          "raw": "txt",
-          "kind": "token",
-          "weight": 14.329044,
-          "normalized": 0.8648,
+          "weight": 12.43859,
+          "normalized": 0.9301,
           "direction": "spam"
         },
         {
           "feature": "call <PHONE>",
           "raw": "call phonetoken",
           "kind": "bigram",
-          "weight": 13.603934,
-          "normalized": 0.821,
+          "weight": 10.9165,
+          "normalized": 0.8163,
+          "direction": "spam"
+        },
+        {
+          "feature": "txt",
+          "raw": "txt",
+          "kind": "token",
+          "weight": 10.253862,
+          "normalized": 0.7668,
           "direction": "spam"
         },
         {
           "feature": "service",
           "raw": "service",
           "kind": "token",
-          "weight": 13.179627,
-          "normalized": 0.7954,
-          "direction": "spam"
-        },
-        {
-          "feature": "reply",
-          "raw": "reply",
-          "kind": "token",
-          "weight": 12.232603,
-          "normalized": 0.7382,
+          "weight": 9.890688,
+          "normalized": 0.7396,
           "direction": "spam"
         },
         {
           "feature": "mobile",
           "raw": "mobile",
           "kind": "token",
-          "weight": 12.153962,
-          "normalized": 0.7335,
+          "weight": 9.844736,
+          "normalized": 0.7362,
           "direction": "spam"
         },
         {
-          "feature": "mob",
-          "raw": "mob",
-          "kind": "token",
-          "weight": 11.990774,
-          "normalized": 0.7236,
-          "direction": "spam"
-        },
-        {
-          "feature": "ringtone",
-          "raw": "ringtone",
-          "kind": "token",
-          "weight": 11.90792,
-          "normalized": 0.7186,
-          "direction": "spam"
-        },
-        {
-          "feature": "freemsg",
-          "raw": "freemsg",
-          "kind": "token",
-          "weight": 11.875993,
-          "normalized": 0.7167,
-          "direction": "spam"
-        },
-        {
-          "feature": "video",
-          "raw": "video",
-          "kind": "token",
-          "weight": 11.759526,
-          "normalized": 0.7097,
-          "direction": "spam"
-        },
-        {
-          "feature": "<PHONE> now",
-          "raw": "phonetoken now",
-          "kind": "bigram",
-          "weight": 11.638119,
-          "normalized": 0.7024,
-          "direction": "spam"
-        },
-        {
-          "feature": "[word count]",
-          "raw": "word_count",
-          "kind": "engineered",
-          "weight": 11.027826,
-          "normalized": 0.6655,
-          "direction": "spam"
-        },
-        {
-          "feature": "<NUM> free",
-          "raw": "numtoken free",
-          "kind": "bigram",
-          "weight": 10.959708,
-          "normalized": 0.6614,
-          "direction": "spam"
-        },
-        {
-          "feature": "[message length]",
-          "raw": "char_length",
-          "kind": "engineered",
-          "weight": 10.896563,
-          "normalized": 0.6576,
-          "direction": "spam"
-        },
-        {
-          "feature": "content",
-          "raw": "content",
-          "kind": "token",
-          "weight": 10.614979,
-          "normalized": 0.6406,
-          "direction": "spam"
-        },
-        {
-          "feature": "claim",
-          "raw": "claim",
-          "kind": "token",
-          "weight": 10.46198,
-          "normalized": 0.6314,
-          "direction": "spam"
-        },
-        {
-          "feature": "tones",
-          "raw": "tones",
-          "kind": "token",
-          "weight": 10.458827,
-          "normalized": 0.6312,
-          "direction": "spam"
-        },
-        {
-          "feature": "ok",
-          "raw": "ok",
-          "kind": "token",
-          "weight": -10.377038,
-          "normalized": 0.6263,
-          "direction": "ham"
-        },
-        {
-          "feature": "send stop",
-          "raw": "send stop",
-          "kind": "bigram",
-          "weight": 10.33682,
-          "normalized": 0.6238,
+          "feature": "<URL>",
+          "raw": "urltoken",
+          "kind": "pattern",
+          "weight": 9.648429,
+          "normalized": 0.7215,
           "direction": "spam"
         },
         {
           "feature": "[has URL]",
           "raw": "has_url",
           "kind": "engineered",
-          "weight": 10.066313,
-          "normalized": 0.6075,
+          "weight": 9.403623,
+          "normalized": 0.7032,
           "direction": "spam"
         },
         {
-          "feature": "home",
-          "raw": "home",
+          "feature": "reply",
+          "raw": "reply",
           "kind": "token",
-          "weight": -10.029533,
-          "normalized": 0.6053,
-          "direction": "ham"
-        },
-        {
-          "feature": "box <NUM>",
-          "raw": "box numtoken",
-          "kind": "bigram",
-          "weight": 9.994197,
-          "normalized": 0.6031,
+          "weight": 9.351049,
+          "normalized": 0.6992,
           "direction": "spam"
         },
         {
           "feature": "[currency mentions]",
           "raw": "currency_count",
           "kind": "engineered",
-          "weight": 9.902927,
-          "normalized": 0.5976,
+          "weight": 9.316287,
+          "normalized": 0.6966,
           "direction": "spam"
         },
         {
-          "feature": "txts",
-          "raw": "txts",
+          "feature": "<PHONE> now",
+          "raw": "phonetoken now",
+          "kind": "bigram",
+          "weight": 9.260483,
+          "normalized": 0.6925,
+          "direction": "spam"
+        },
+        {
+          "feature": "ringtone",
+          "raw": "ringtone",
           "kind": "token",
-          "weight": 9.830008,
-          "normalized": 0.5932,
+          "weight": 8.990812,
+          "normalized": 0.6723,
+          "direction": "spam"
+        },
+        {
+          "feature": "ok",
+          "raw": "ok",
+          "kind": "token",
+          "weight": -8.880504,
+          "normalized": 0.6641,
+          "direction": "ham"
+        },
+        {
+          "feature": "<NUM> <NUM>",
+          "raw": "numtoken numtoken",
+          "kind": "bigram",
+          "weight": 8.821207,
+          "normalized": 0.6596,
+          "direction": "spam"
+        },
+        {
+          "feature": "[word count]",
+          "raw": "word_count",
+          "kind": "engineered",
+          "weight": 8.741837,
+          "normalized": 0.6537,
+          "direction": "spam"
+        },
+        {
+          "feature": "[message length]",
+          "raw": "char_length",
+          "kind": "engineered",
+          "weight": 8.655431,
+          "normalized": 0.6472,
+          "direction": "spam"
+        },
+        {
+          "feature": "mob",
+          "raw": "mob",
+          "kind": "token",
+          "weight": 8.354279,
+          "normalized": 0.6247,
+          "direction": "spam"
+        },
+        {
+          "feature": "video",
+          "raw": "video",
+          "kind": "token",
+          "weight": 8.350131,
+          "normalized": 0.6244,
+          "direction": "spam"
+        },
+        {
+          "feature": "[uppercase ratio]",
+          "raw": "uppercase_ratio",
+          "kind": "engineered",
+          "weight": 8.245442,
+          "normalized": 0.6166,
+          "direction": "spam"
+        },
+        {
+          "feature": "claim",
+          "raw": "claim",
+          "kind": "token",
+          "weight": 8.212486,
+          "normalized": 0.6141,
+          "direction": "spam"
+        },
+        {
+          "feature": "<CURRENCY>",
+          "raw": "currencytoken",
+          "kind": "pattern",
+          "weight": 8.108241,
+          "normalized": 0.6063,
+          "direction": "spam"
+        },
+        {
+          "feature": "got",
+          "raw": "got",
+          "kind": "token",
+          "weight": -8.102091,
+          "normalized": 0.6058,
+          "direction": "ham"
+        },
+        {
+          "feature": "said",
+          "raw": "said",
+          "kind": "token",
+          "weight": -8.001389,
+          "normalized": 0.5983,
+          "direction": "ham"
+        },
+        {
+          "feature": "<CURRENCY> <NUM>",
+          "raw": "currencytoken numtoken",
+          "kind": "bigram",
+          "weight": 7.952332,
+          "normalized": 0.5947,
+          "direction": "spam"
+        },
+        {
+          "feature": "tone",
+          "raw": "tone",
+          "kind": "token",
+          "weight": 7.949138,
+          "normalized": 0.5944,
           "direction": "spam"
         }
       ]
@@ -1862,406 +1862,399 @@
       "model": "logistic_regression",
       "status": "computed",
       "explainer": "Exact linear SHAP (w * (x - E[x]))",
-      "base_value": -3.1596,
+      "base_value": -3.1716,
       "global_summary": [
         {
           "feature": "[digit count]",
           "kind": "engineered",
-          "mean_abs_shap": 1.15841,
-          "mean_shap": -0.00736,
+          "mean_abs_shap": 1.14091,
+          "mean_shap": 0.0142,
           "direction": "spam"
         },
         {
           "feature": "[message length]",
           "kind": "engineered",
-          "mean_abs_shap": 0.25489,
-          "mean_shap": -0.00176,
+          "mean_abs_shap": 0.30295,
+          "mean_shap": 0.0168,
           "direction": "spam"
-        },
-        {
-          "feature": "[special characters]",
-          "kind": "engineered",
-          "mean_abs_shap": 0.22461,
-          "mean_shap": 0.00572,
-          "direction": "ham"
         },
         {
           "feature": "[has URL]",
           "kind": "engineered",
-          "mean_abs_shap": 0.1914,
-          "mean_shap": -0.04785,
+          "mean_abs_shap": 0.18973,
+          "mean_shap": -0.02982,
           "direction": "spam"
         },
         {
           "feature": "<PHONE>",
           "kind": "pattern",
-          "mean_abs_shap": 0.14784,
-          "mean_shap": 0.01785,
-          "direction": "spam"
-        },
-        {
-          "feature": "[word count]",
-          "kind": "engineered",
-          "mean_abs_shap": 0.12757,
-          "mean_shap": 4e-05,
-          "direction": "spam"
-        },
-        {
-          "feature": "[currency mentions]",
-          "kind": "engineered",
-          "mean_abs_shap": 0.12312,
-          "mean_shap": -0.01259,
-          "direction": "spam"
-        },
-        {
-          "feature": "[exclamation marks]",
-          "kind": "engineered",
-          "mean_abs_shap": 0.11402,
-          "mean_shap": -0.00514,
+          "mean_abs_shap": 0.15901,
+          "mean_shap": 0.00648,
           "direction": "spam"
         },
         {
           "feature": "<NUM>",
           "kind": "pattern",
-          "mean_abs_shap": 0.08183,
-          "mean_shap": -0.00287,
+          "mean_abs_shap": 0.11407,
+          "mean_shap": 0.00297,
           "direction": "spam"
         },
         {
-          "feature": "got",
-          "kind": "token",
-          "mean_abs_shap": 0.06402,
-          "mean_shap": -0.01414,
+          "feature": "[currency mentions]",
+          "kind": "engineered",
+          "mean_abs_shap": 0.11009,
+          "mean_shap": -0.00759,
+          "direction": "spam"
+        },
+        {
+          "feature": "[special characters]",
+          "kind": "engineered",
+          "mean_abs_shap": 0.10749,
+          "mean_shap": 9e-05,
           "direction": "ham"
         },
         {
-          "feature": "free",
-          "kind": "token",
-          "mean_abs_shap": 0.06347,
-          "mean_shap": 0.00377,
+          "feature": "[exclamation marks]",
+          "kind": "engineered",
+          "mean_abs_shap": 0.09408,
+          "mean_shap": -0.00466,
           "direction": "spam"
         },
         {
           "feature": "text",
           "kind": "token",
-          "mean_abs_shap": 0.06063,
-          "mean_shap": -0.00287,
+          "mean_abs_shap": 0.07221,
+          "mean_shap": -0.00555,
           "direction": "spam"
         },
         {
-          "feature": "call",
+          "feature": "got",
           "kind": "token",
-          "mean_abs_shap": 0.05828,
-          "mean_shap": 0.00799,
+          "mean_abs_shap": 0.06936,
+          "mean_shap": -0.01166,
+          "direction": "ham"
+        },
+        {
+          "feature": "[word count]",
+          "kind": "engineered",
+          "mean_abs_shap": 0.06296,
+          "mean_shap": 0.00396,
           "direction": "spam"
         },
         {
           "feature": "reply",
           "kind": "token",
-          "mean_abs_shap": 0.04979,
-          "mean_shap": -0.00262,
+          "mean_abs_shap": 0.06219,
+          "mean_shap": 0.0154,
           "direction": "spam"
         },
         {
-          "feature": "new",
+          "feature": "free",
           "kind": "token",
-          "mean_abs_shap": 0.04931,
-          "mean_shap": 0.00906,
+          "mean_abs_shap": 0.05688,
+          "mean_shap": 0.00055,
+          "direction": "spam"
+        },
+        {
+          "feature": "ok",
+          "kind": "token",
+          "mean_abs_shap": 0.05288,
+          "mean_shap": 0.00678,
+          "direction": "ham"
+        },
+        {
+          "feature": "call",
+          "kind": "token",
+          "mean_abs_shap": 0.05194,
+          "mean_shap": 0.00631,
           "direction": "spam"
         },
         {
           "feature": "know",
           "kind": "token",
-          "mean_abs_shap": 0.04536,
-          "mean_shap": 1e-05,
+          "mean_abs_shap": 0.05078,
+          "mean_shap": -0.00632,
           "direction": "ham"
-        },
-        {
-          "feature": "ok",
-          "kind": "token",
-          "mean_abs_shap": 0.04348,
-          "mean_shap": -4e-05,
-          "direction": "ham"
-        },
-        {
-          "feature": "mobile",
-          "kind": "token",
-          "mean_abs_shap": 0.04151,
-          "mean_shap": -0.00037,
-          "direction": "spam"
-        },
-        {
-          "feature": "<CURRENCY>",
-          "kind": "pattern",
-          "mean_abs_shap": 0.04064,
-          "mean_shap": -0.00195,
-          "direction": "spam"
         },
         {
           "feature": "[uppercase ratio]",
           "kind": "engineered",
-          "mean_abs_shap": 0.04047,
-          "mean_shap": 0.00143,
+          "mean_abs_shap": 0.05021,
+          "mean_shap": 0.00349,
+          "direction": "spam"
+        },
+        {
+          "feature": "now",
+          "kind": "token",
+          "mean_abs_shap": 0.04805,
+          "mean_shap": 0.00084,
+          "direction": "spam"
+        },
+        {
+          "feature": "mobile",
+          "kind": "token",
+          "mean_abs_shap": 0.03984,
+          "mean_shap": 0.0066,
+          "direction": "spam"
+        },
+        {
+          "feature": "new",
+          "kind": "token",
+          "mean_abs_shap": 0.03595,
+          "mean_shap": 5e-05,
           "direction": "spam"
         }
       ],
       "local_examples": [
         {
-          "message": "Todays Vodafone numbers ending with 4882 are selected to a receive a £350 award. If your number matches call 09064019014 to receive your £350 award.",
+          "message": "I am hot n horny and willing I live local to you - text a reply to hear strt back from me 150p per msg Netcollex LtdHelpDesk: 02085076972 reply Stop to end",
           "actual": "spam",
-          "spam_probability": 0.9997,
-          "base_value": -3.1596,
-          "output_value": 8.2474,
+          "spam_probability": 0.9992,
+          "base_value": -3.1716,
+          "output_value": 7.1887,
           "contributions": [
             {
               "feature": "[digit count]",
               "kind": "engineered",
-              "value": 0.4468,
-              "contribution": 6.1582,
+              "value": 0.2979,
+              "contribution": 3.7726,
               "direction": "spam"
             },
             {
-              "feature": "[currency mentions]",
-              "kind": "engineered",
-              "value": 0.6667,
-              "contribution": 2.0886,
+              "feature": "reply",
+              "kind": "token",
+              "value": 0.3028,
+              "contribution": 1.7801,
+              "direction": "spam"
+            },
+            {
+              "feature": "text",
+              "kind": "token",
+              "value": 0.1647,
+              "contribution": 0.883,
               "direction": "spam"
             },
             {
               "feature": "<PHONE>",
               "kind": "pattern",
-              "value": 0.0939,
-              "contribution": 0.5267,
-              "direction": "spam"
-            },
-            {
-              "feature": "<CURRENCY>",
-              "kind": "pattern",
-              "value": 0.1838,
-              "contribution": 0.5085,
-              "direction": "spam"
-            },
-            {
-              "feature": "vodafone",
-              "kind": "token",
-              "value": 0.2198,
-              "contribution": 0.4996,
+              "value": 0.1253,
+              "contribution": 0.8232,
               "direction": "spam"
             },
             {
               "feature": "[message length]",
               "kind": "engineered",
-              "value": 0.1608,
-              "contribution": 0.3901,
+              "value": 0.2429,
+              "contribution": 0.5196,
               "direction": "spam"
             },
             {
-              "feature": "call <PHONE>",
-              "kind": "bigram",
-              "value": 0.1184,
-              "contribution": 0.2497,
+              "feature": "netcollex",
+              "kind": "token",
+              "value": 0.3049,
+              "contribution": 0.4343,
               "direction": "spam"
             },
             {
-              "feature": "<NUM>",
-              "kind": "pattern",
-              "value": 0.1483,
-              "contribution": 0.1951,
+              "feature": "stop",
+              "kind": "token",
+              "value": 0.1765,
+              "contribution": 0.3786,
+              "direction": "spam"
+            },
+            {
+              "feature": "msg",
+              "kind": "token",
+              "value": 0.1882,
+              "contribution": 0.3627,
               "direction": "spam"
             }
           ]
         },
         {
-          "message": "Urgent! Please call 09061743810 from landline. Your ABTA complimentary 4* Tenerife Holiday or #5000 cash await collection SAE T&Cs Box 326 CW25WX 150 ppm",
+          "message": "Your unique user ID is 1172. For removal send STOP to 87239 customer services 08708034412",
           "actual": "spam",
-          "spam_probability": 0.999,
-          "base_value": -3.1596,
-          "output_value": 6.8852,
+          "spam_probability": 0.9996,
+          "base_value": -3.1716,
+          "output_value": 7.8672,
           "contributions": [
             {
               "feature": "[digit count]",
               "kind": "engineered",
-              "value": 0.5106,
-              "contribution": 7.1419,
+              "value": 0.4255,
+              "contribution": 5.6921,
               "direction": "spam"
             },
             {
               "feature": "<PHONE>",
               "kind": "pattern",
-              "value": 0.0881,
-              "contribution": 0.4893,
+              "value": 0.239,
+              "contribution": 1.6464,
               "direction": "spam"
             },
             {
-              "feature": "[message length]",
-              "kind": "engineered",
-              "value": 0.1663,
-              "contribution": 0.4186,
-              "direction": "spam"
-            },
-            {
-              "feature": "box <NUM>",
-              "kind": "bigram",
-              "value": 0.1643,
-              "contribution": 0.298,
-              "direction": "spam"
-            },
-            {
-              "feature": "call <PHONE>",
-              "kind": "bigram",
-              "value": 0.111,
-              "contribution": 0.2334,
-              "direction": "spam"
-            },
-            {
-              "feature": "[exclamation marks]",
-              "kind": "engineered",
-              "value": 0.0909,
-              "contribution": 0.2165,
-              "direction": "spam"
-            },
-            {
-              "feature": "<NUM>",
-              "kind": "pattern",
-              "value": 0.1581,
-              "contribution": 0.2115,
-              "direction": "spam"
-            },
-            {
-              "feature": "cash",
+              "feature": "user",
               "kind": "token",
-              "value": 0.1376,
-              "contribution": 0.1833,
+              "value": 0.2976,
+              "contribution": 1.2003,
+              "direction": "spam"
+            },
+            {
+              "feature": "unique",
+              "kind": "token",
+              "value": 0.3434,
+              "contribution": 0.4896,
+              "direction": "spam"
+            },
+            {
+              "feature": "customer",
+              "kind": "token",
+              "value": 0.2364,
+              "contribution": 0.4471,
+              "direction": "spam"
+            },
+            {
+              "feature": "stop",
+              "kind": "token",
+              "value": 0.1988,
+              "contribution": 0.4278,
+              "direction": "spam"
+            },
+            {
+              "feature": "send stop",
+              "kind": "bigram",
+              "value": 0.2686,
+              "contribution": 0.2434,
+              "direction": "spam"
+            },
+            {
+              "feature": "send",
+              "kind": "token",
+              "value": 0.1855,
+              "contribution": 0.2091,
               "direction": "spam"
             }
           ]
         },
         {
-          "message": "Aight, I should be there by 8 at the latest, probably closer to 7. Are jay and tyler down or should we just do two trips?",
+          "message": "Bill, as in: Are there any letters for me. i’m expecting one from orange that isn’t a bill but may still say orange on it.",
           "actual": "ham",
-          "spam_probability": 0.0601,
-          "base_value": -3.1596,
-          "output_value": -2.7496,
+          "spam_probability": 0.0282,
+          "base_value": -3.1716,
+          "output_value": -3.5385,
           "contributions": [
             {
-              "feature": "latest",
+              "feature": "orange",
               "kind": "token",
-              "value": 0.3428,
-              "contribution": 0.4469,
+              "value": 0.5881,
+              "contribution": 0.9731,
               "direction": "spam"
             },
             {
-              "feature": "<NUM>",
-              "kind": "pattern",
-              "value": 0.2394,
-              "contribution": 0.3472,
-              "direction": "spam"
-            },
-            {
-              "feature": "[message length]",
-              "kind": "engineered",
-              "value": 0.1311,
-              "contribution": 0.2366,
-              "direction": "spam"
-            },
-            {
-              "feature": "probably",
+              "feature": "say",
               "kind": "token",
-              "value": 0.3319,
-              "contribution": -0.1766,
+              "value": 0.2912,
+              "contribution": -0.5167,
               "direction": "ham"
             },
             {
-              "feature": "aight",
+              "feature": "[message length]",
+              "kind": "engineered",
+              "value": 0.1905,
+              "contribution": 0.2945,
+              "direction": "spam"
+            },
+            {
+              "feature": "isn",
               "kind": "token",
-              "value": 0.3382,
-              "contribution": -0.1635,
+              "value": 0.3942,
+              "contribution": -0.0756,
               "direction": "ham"
             },
             {
               "feature": "[word count]",
               "kind": "engineered",
-              "value": 0.1471,
-              "contribution": 0.1605,
+              "value": 0.1935,
+              "contribution": 0.073,
               "direction": "spam"
             },
             {
-              "feature": "jay",
-              "kind": "token",
-              "value": 0.3788,
-              "contribution": -0.0977,
+              "feature": "[special characters]",
+              "kind": "engineered",
+              "value": 0.0451,
+              "contribution": -0.0669,
               "direction": "ham"
             },
             {
-              "feature": "[digit count]",
+              "feature": "[uppercase ratio]",
               "kind": "engineered",
-              "value": 0.0426,
-              "contribution": -0.072,
+              "value": 0.0217,
+              "contribution": -0.0435,
               "direction": "ham"
             }
           ]
         },
         {
-          "message": "I'll be in sch fr 4-6... I dun haf da book in sch... It's at home...",
+          "message": "Hi, wkend ok but journey terrible. Wk not good as have huge back log of marking to do",
           "actual": "ham",
-          "spam_probability": 0.0034,
-          "base_value": -3.1596,
-          "output_value": -5.6907,
+          "spam_probability": 0.0047,
+          "base_value": -3.1716,
+          "output_value": -5.3504,
           "contributions": [
             {
-              "feature": "[special characters]",
-              "kind": "engineered",
-              "value": 0.2034,
-              "contribution": -0.6201,
+              "feature": "ok",
+              "kind": "token",
+              "value": 0.2402,
+              "contribution": -0.4702,
               "direction": "ham"
             },
             {
-              "feature": "haf",
+              "feature": "log",
               "kind": "token",
-              "value": 0.307,
-              "contribution": -0.4635,
+              "value": 0.4171,
+              "contribution": -0.3637,
               "direction": "ham"
             },
             {
-              "feature": "home",
+              "feature": "good",
               "kind": "token",
-              "value": 0.2104,
-              "contribution": -0.4229,
+              "value": 0.2537,
+              "contribution": -0.1707,
               "direction": "ham"
             },
             {
-              "feature": "da",
+              "feature": "hi",
               "kind": "token",
-              "value": 0.218,
-              "contribution": -0.302,
-              "direction": "ham"
-            },
-            {
-              "feature": "<NUM>",
-              "kind": "pattern",
-              "value": 0.2025,
-              "contribution": 0.2856,
-              "direction": "spam"
-            },
-            {
-              "feature": "sch",
-              "kind": "token",
-              "value": 0.5304,
-              "contribution": -0.1605,
-              "direction": "ham"
-            },
-            {
-              "feature": "ll",
-              "kind": "token",
-              "value": 0.1936,
+              "value": 0.2933,
               "contribution": -0.153,
               "direction": "ham"
             },
             {
-              "feature": "dun",
+              "feature": "wk",
               "kind": "token",
-              "value": 0.2629,
-              "contribution": -0.1079,
+              "value": 0.3567,
+              "contribution": -0.0875,
+              "direction": "ham"
+            },
+            {
+              "feature": "[special characters]",
+              "kind": "engineered",
+              "value": 0.015,
+              "contribution": 0.0828,
+              "direction": "spam"
+            },
+            {
+              "feature": "[message length]",
+              "kind": "engineered",
+              "value": 0.1317,
+              "contribution": 0.0421,
+              "direction": "spam"
+            },
+            {
+              "feature": "[uppercase ratio]",
+              "kind": "engineered",
+              "value": 0.0303,
+              "contribution": -0.0378,
               "direction": "ham"
             }
           ]

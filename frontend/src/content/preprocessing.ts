@@ -10,9 +10,9 @@ export const PREPROCESSING_STEPS: PreprocessingStep[] = [
   {
     id: "missing",
     title: "Handling missing values",
-    what: "Keep only the label and message columns, drop rows where either is empty, and normalize labels to lowercase ham / spam.",
-    why: "Classifiers cannot learn from an empty message or an unlabeled example, and the Kaggle export includes near-empty overflow columns that would add noise.",
-    how: "Guarantees every training row is a complete (text, label) pair, so no model silently learns from garbage or crashes on NaN input.",
+    what: "Rejoin message fragments from the Kaggle CSV's three near-empty overflow columns, repair mis-encoded characters, drop rows missing a label or text, and normalize labels to lowercase ham / spam.",
+    why: "The overflow columns are 'missing' only because commas inside a message split it across columns. Dropping them would silently truncate those messages, and garbled characters like “å£” hide the “£” money signal.",
+    how: "Guarantees every training row is a complete, correctly encoded (text, label) pair, so no model learns from truncated text or crashes on NaN input.",
   },
   {
     id: "duplicates",

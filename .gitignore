@@ -5,9 +5,8 @@ __pycache__/
 .pytest_cache/
 .ruff_cache/
 
-# Dataset downloads (re-downloaded by `make train`). Trained models in backend/artifacts/models/ are
-# committed so serverless deploys (Vercel) can serve predictions without a training step.
-backend/data/raw/
+# The Kaggle dataset (backend/data/spam.csv) and trained models (backend/artifacts/models/) are committed
+# so serverless deploys (Vercel) can serve predictions without a training step.
 
 # Vercel
 .vercel/

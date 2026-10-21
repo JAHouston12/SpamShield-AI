@@ -41,21 +41,22 @@ Other targets: `make test` (pytest), `make lint` (ruff + ESLint), `make build` (
 
 ## Results
 
-All numbers in the UI, report, and slides are read from the training artifacts, so they update after every `make train`. From the committed run (1,035-message hold-out set):
+All numbers in the UI, report, and slides are read from the training artifacts, so they update after every `make train`. From the committed run on the Kaggle dataset (1,034-message hold-out set):
 
 | Model | Accuracy | Precision | Recall | F1 | ROC-AUC | False positives |
 | --- | --- | --- | --- | --- | --- | --- |
-| Logistic Regression (baseline) | 0.9903 | 0.9764 | 0.9466 | 0.9612 | 0.9980 | 3 |
-| Random Forest (improved) | 0.9894 | 0.9839 | 0.9313 | 0.9569 | 0.9982 | 2 |
+| Logistic Regression (baseline) | 0.9855 | 0.9323 | 0.9538 | 0.9430 | 0.9980 | 9 |
+| Random Forest (improved) | 0.9874 | 0.9535 | 0.9462 | 0.9498 | 0.9971 | 6 |
+| XGBoost (best overall) | 0.9894 | 0.9917 | 0.9231 | 0.9562 | 0.9955 | 1 |
 
-Random Forest reduces false positives and raises precision and ROC-AUC. The tuned baseline stays slightly ahead on recall and F1, so the dashboard reports the research answer as **"partially"**. The margins are a handful of messages, within cross-validation spread. The narrative is generated from the metrics (`frontend/src/lib/findings.ts`), so it changes automatically if a retrain flips the outcome.
+Random Forest beats the baseline on accuracy, precision, and F1, and cuts false positives by a third. The baseline keeps a slight edge on recall and ROC-AUC. XGBoost ranks first overall. The margins are a handful of messages, within cross-validation spread. The narrative is generated from the metrics (`frontend/src/lib/findings.ts`), so it changes automatically if a retrain flips the outcome.
 
 ## Architecture
 
 ```text
 backend/                       Python · FastAPI · scikit-learn · XGBoost
   ml/
-    data.py                    Load Kaggle CSV or auto-download UCI release
+    data.py                    Load the Kaggle CSV, rejoin split messages, repair encoding
     preprocessing.py           clean_text, engineered features, TF-IDF + scaling + chi² pipeline
     registry.py                ★ The 10 models (one ModelSpec each)
     evaluate.py                Metrics, OOF threshold tuning, composite ranking
@@ -103,7 +104,7 @@ The structure is designed so each kind of update touches one obvious place.
 | **Add a page** | Create `frontend/src/app/<route>/page.tsx` and add one entry to `NAV_ITEMS` in `frontend/src/lib/nav.ts` (sidebar, mobile nav, and home cards update). |
 | **Add an API endpoint** | Add a route module under `backend/app/api/v1/routes/` and include it in `router.py`. Add a test in `backend/tests/`. |
 | **Add a threat signal** | Add one `sig(...)` line in `backend/app/services/signals.py`. |
-| **Use the Kaggle CSV** | Place it at `backend/data/raw/spam.csv` and run `make train`. |
+| **Refresh the dataset** | Replace `backend/data/spam.csv` with a new Kaggle download and run `make train`. |
 
 ## Configuration
 
@@ -141,4 +142,4 @@ Things to know:
 
 ## Dataset
 
-Almeida, T. A., Gómez Hidalgo, J. M., & Yamakami, A. (2011). *Contributions to the study of SMS spam filtering: New collection and results.* ACM DocEng '11. Available from the [UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/228/sms+spam+collection) and [Kaggle](https://www.kaggle.com/datasets/uciml/sms-spam-collection-dataset). Raw data is downloaded on demand and not committed.
+Almeida, T. A., Gómez Hidalgo, J. M., & Yamakami, A. (2011). *Contributions to the study of SMS spam filtering: New collection and results.* ACM DocEng '11. The project uses only the [Kaggle release](https://www.kaggle.com/datasets/uciml/sms-spam-collection-dataset) (`spam.csv`, 5,572 messages), committed at `backend/data/spam.csv`. The loader rejoins messages that commas split across the file's three overflow columns and repairs its mis-encoded characters (for example `å£` → `£`).

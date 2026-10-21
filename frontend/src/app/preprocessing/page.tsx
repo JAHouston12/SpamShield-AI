@@ -55,9 +55,9 @@ function Visual({ id, p }: { id: PreprocessingStep["id"]; p: PreprocessingArtifa
             ]}
           />
           <p className="mt-4 text-sm text-muted-foreground">
-            {p.missing.dropped_columns.length
-              ? `Dropped auxiliary columns: ${p.missing.dropped_columns.join(", ")}.`
-              : "No auxiliary columns in this source; the same filter handles the Kaggle CSV's empty overflow columns."}
+            {p.missing.merged_columns.length
+              ? `${num(p.missing.rows_rejoined)} messages containing commas had spilled into ${p.missing.merged_columns.join(", ")}; those fragments were rejoined into the message. ${num(p.missing.rows_encoding_repaired)} messages had mis-encoded characters (e.g. “å£” for “£”) repaired.`
+              : "No overflow columns in this file."}
           </p>
         </>
       );

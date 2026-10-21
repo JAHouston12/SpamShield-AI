@@ -73,7 +73,7 @@ export const TECH_STACK = [
 ];
 
 export const METHODOLOGY = [
-  { step: "Acquire", detail: "Download the SMS Spam Collection (5,574 labeled messages) from UCI / Kaggle." },
+  { step: "Acquire", detail: "Use the SMS Spam Collection Dataset from Kaggle (spam.csv, 5,572 labeled messages)." },
   { step: "Explore", detail: "Profile class balance, message length, vocabulary, duplicates, and feature correlations." },
   { step: "Preprocess", detail: "Deduplicate, normalize text, mask URLs/numbers, TF-IDF vectorize, scale, select features." },
   { step: "Train", detail: "Fit ten classifiers on an 80/20 stratified split with class-imbalance handling." },
@@ -84,7 +84,7 @@ export const METHODOLOGY = [
 
 export const REFERENCES = [
   "Almeida, T. A., Gómez Hidalgo, J. M., & Yamakami, A. (2011). Contributions to the study of SMS spam filtering: New collection and results. Proceedings of the 11th ACM Symposium on Document Engineering, 259–262.",
-  "UCI Machine Learning Repository. SMS Spam Collection [Dataset]. https://archive.ics.uci.edu/dataset/228/sms+spam+collection",
+  "UCI Machine Learning. (2016). SMS Spam Collection Dataset [Data set]. Kaggle. https://www.kaggle.com/datasets/uciml/sms-spam-collection-dataset",
   "Pedregosa, F., et al. (2011). Scikit-learn: Machine learning in Python. Journal of Machine Learning Research, 12, 2825–2830.",
   "Chen, T., & Guestrin, C. (2016). XGBoost: A scalable tree boosting system. Proceedings of KDD '16, 785–794.",
   "Breiman, L. (2001). Random forests. Machine Learning, 45(1), 5–32.",

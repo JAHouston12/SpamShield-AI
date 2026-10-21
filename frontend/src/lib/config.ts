@@ -22,6 +22,5 @@ export const SITE = {
   name: "SpamShield AI",
   tagline: "Machine learning defense against SMS spam and phishing",
   kaggleUrl: "https://www.kaggle.com/datasets/uciml/sms-spam-collection-dataset",
-  uciUrl: "https://archive.ics.uci.edu/dataset/228/sms+spam+collection",
   repoUrl: "#",
 } as const;

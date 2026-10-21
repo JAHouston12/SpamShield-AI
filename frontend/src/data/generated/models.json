@@ -6,12 +6,12 @@
       "family": "Linear",
       "role": "baseline",
       "imbalance_strategy": "class_weight='balanced'",
-      "threshold": 0.34,
+      "threshold": 0.36,
       "params": {
         "C": 10.0,
         "class_weight": "balanced"
       },
-      "train_time_s": 0.01
+      "train_time_s": 0.011
     },
     {
       "key": "naive_bayes",
@@ -19,7 +19,7 @@
       "family": "Probabilistic",
       "role": "candidate",
       "imbalance_strategy": "Class priors learned from data",
-      "threshold": 0.41,
+      "threshold": 0.46,
       "params": {
         "alpha": 0.1
       },
@@ -37,7 +37,7 @@
         "class_weight": "balanced",
         "max_features": null
       },
-      "train_time_s": 0.046
+      "train_time_s": 0.05
     },
     {
       "key": "random_forest",
@@ -45,14 +45,14 @@
       "family": "Ensemble (bagging)",
       "role": "improved",
       "imbalance_strategy": "class_weight='balanced_subsample'",
-      "threshold": 0.37,
+      "threshold": 0.28,
       "params": {
         "max_depth": null,
         "n_estimators": 400,
         "class_weight": "balanced_subsample",
         "max_features": "sqrt"
       },
-      "train_time_s": 0.734
+      "train_time_s": 0.774
     },
     {
       "key": "knn",
@@ -60,7 +60,7 @@
       "family": "Instance-based",
       "role": "candidate",
       "imbalance_strategy": "Distance weighting",
-      "threshold": 0.2,
+      "threshold": 0.38,
       "params": {
         "n_neighbors": 5,
         "metric": "cosine",
@@ -74,13 +74,13 @@
       "family": "Kernel",
       "role": "candidate",
       "imbalance_strategy": "class_weight='balanced'",
-      "threshold": 0.28,
+      "threshold": 0.38,
       "params": {
         "C": 1.0,
         "kernel": "linear",
         "class_weight": "balanced"
       },
-      "train_time_s": 0.838
+      "train_time_s": 0.857
     },
     {
       "key": "adaboost",
@@ -93,7 +93,7 @@
         "n_estimators": 300,
         "learning_rate": 0.5
       },
-      "train_time_s": 1.208
+      "train_time_s": 1.228
     },
     {
       "key": "gradient_boosting",
@@ -101,7 +101,7 @@
       "family": "Ensemble (boosting)",
       "role": "candidate",
       "imbalance_strategy": "none",
-      "threshold": 0.51,
+      "threshold": 0.38,
       "params": {
         "max_depth": 3,
         "n_estimators": 200,
@@ -109,7 +109,7 @@
         "max_features": null,
         "subsample": 0.9
       },
-      "train_time_s": 1.326
+      "train_time_s": 1.419
     },
     {
       "key": "xgboost",
@@ -117,7 +117,7 @@
       "family": "Ensemble (boosting)",
       "role": "candidate",
       "imbalance_strategy": "scale_pos_weight",
-      "threshold": 0.81,
+      "threshold": 0.83,
       "params": {
         "max_depth": 6,
         "n_estimators": 400,
@@ -125,7 +125,7 @@
         "subsample": 0.9,
         "colsample_bytree": 0.5
       },
-      "train_time_s": 0.666
+      "train_time_s": 0.65
     },
     {
       "key": "mlp",
@@ -133,7 +133,7 @@
       "family": "Neural network",
       "role": "candidate",
       "imbalance_strategy": "none",
-      "threshold": 0.28,
+      "threshold": 0.27,
       "params": {
         "alpha": 0.0001,
         "learning_rate": "constant",
@@ -141,7 +141,7 @@
           128
         ]
       },
-      "train_time_s": 1.611
+      "train_time_s": 1.211
     }
   ],
   "feature_count": 3000

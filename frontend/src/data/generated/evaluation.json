@@ -1,5 +1,5 @@
 {
-  "test_size": 1035,
+  "test_size": 1034,
   "threshold": 0.5,
   "results": [
     {
@@ -7,22 +7,22 @@
       "name": "Logistic Regression",
       "family": "Linear",
       "role": "baseline",
-      "threshold": 0.34,
+      "threshold": 0.36,
       "metrics": {
-        "accuracy": 0.9903381642512077,
-        "precision": 0.9763779527559056,
-        "recall": 0.9465648854961832,
-        "f1": 0.9612403100775194,
-        "roc_auc": 0.9980240491792204
+        "accuracy": 0.9854932301740812,
+        "precision": 0.9323308270676691,
+        "recall": 0.9538461538461539,
+        "f1": 0.9429657794676806,
+        "roc_auc": 0.9980173587474472
       },
       "confusion_matrix": {
-        "tn": 901,
-        "fp": 3,
-        "fn": 7,
+        "tn": 895,
+        "fp": 9,
+        "fn": 6,
         "tp": 124
       },
-      "false_positive_rate": 0.00331858407079646,
-      "false_negative_rate": 0.05343511450381679,
+      "false_positive_rate": 0.00995575221238938,
+      "false_negative_rate": 0.046153846153846156,
       "roc_curve": [
         {
           "fpr": 0.0,
@@ -30,27 +30,27 @@
         },
         {
           "fpr": 0.0169,
-          "tpr": 0.9771
+          "tpr": 0.9692
         },
         {
           "fpr": 0.0339,
-          "tpr": 0.9771
+          "tpr": 0.9846
         },
         {
           "fpr": 0.0508,
-          "tpr": 0.9847
+          "tpr": 0.9846
         },
         {
           "fpr": 0.0678,
-          "tpr": 0.9924
+          "tpr": 0.9923
         },
         {
           "fpr": 0.0847,
-          "tpr": 0.9924
+          "tpr": 0.9923
         },
         {
           "fpr": 0.1017,
-          "tpr": 1.0
+          "tpr": 0.9923
         },
         {
           "fpr": 0.1186,
@@ -267,86 +267,98 @@
       ],
       "classification_report": {
         "ham": {
-          "precision": 0.9922907488986784,
-          "recall": 0.9966814159292036,
-          "f1": 0.9944812362030905,
+          "precision": 0.9933407325194229,
+          "recall": 0.9900442477876106,
+          "f1": 0.9916897506925207,
           "support": 904
         },
         "spam": {
-          "precision": 0.9763779527559056,
-          "recall": 0.9465648854961832,
-          "f1": 0.9612403100775194,
-          "support": 131
+          "precision": 0.9323308270676691,
+          "recall": 0.9538461538461539,
+          "f1": 0.9429657794676806,
+          "support": 130
         },
         "macro avg": {
-          "precision": 0.9843343508272919,
-          "recall": 0.9716231507126933,
-          "f1": 0.977860773140305,
-          "support": 1035
+          "precision": 0.9628357797935461,
+          "recall": 0.9719452008168823,
+          "f1": 0.9673277650801007,
+          "support": 1034
         },
         "weighted avg": {
-          "precision": 0.9902766655221534,
-          "recall": 0.9903381642512077,
-          "f1": 0.9902739305775351,
-          "support": 1035
+          "precision": 0.9856702415051792,
+          "recall": 0.9854932301740812,
+          "f1": 0.9855639129176376,
+          "support": 1034
         }
       },
       "default_threshold": {
         "metrics": {
-          "accuracy": 0.9893719806763285,
-          "precision": 0.9838709677419355,
-          "recall": 0.9312977099236641,
-          "f1": 0.9568627450980393,
-          "roc_auc": 0.9980240491792204
+          "accuracy": 0.9874274661508704,
+          "precision": 0.9534883720930233,
+          "recall": 0.9461538461538461,
+          "f1": 0.9498069498069498,
+          "roc_auc": 0.9980173587474472
         },
         "confusion_matrix": {
-          "tn": 902,
-          "fp": 2,
-          "fn": 9,
-          "tp": 122
+          "tn": 898,
+          "fp": 6,
+          "fn": 7,
+          "tp": 123
         }
       },
-      "train_time_s": 0.01,
+      "train_time_s": 0.011,
       "inference_ms": 0.0002,
       "errors": {
         "false_negatives": [
           {
             "message": "Latest News! Police station toilet stolen, cops have nothing to go on!",
-            "spam_probability": 0.0366
-          },
-          {
-            "message": "In The Simpsons Movie released in July 2007 name the band that died at the start of the film? A-Green Day, B-Blue Day, C-Red Day. (Send A, B or C)",
-            "spam_probability": 0.0438
+            "spam_probability": 0.0404
           },
           {
             "message": "Would you like to see my XXX pics they are so hot they were nearly banned in the uk!",
-            "spam_probability": 0.0751
-          },
-          {
-            "message": "Check Out Choose Your Babe Videos @ sms.shsex.netUN fgkslpoPW fgkslpo",
-            "spam_probability": 0.1431
+            "spam_probability": 0.0642
           },
           {
             "message": "Burger King - Wanna play footy at a top stadium? Get 2 Burger King before 1st Sept and go Large or Super with Coca-Cola and walk out a winner",
-            "spam_probability": 0.1516
+            "spam_probability": 0.1484
           },
           {
             "message": "You will recieve your tone within the next 24hrs. For Terms and conditions please see Channel U Teletext Pg 750",
-            "spam_probability": 0.183
+            "spam_probability": 0.1833
+          },
+          {
+            "message": "accordingly. I repeat, just text the word ok on your mobile phone and send",
+            "spam_probability": 0.2579
+          },
+          {
+            "message": "Babe: U want me dont u baby! Im nasty and have a thing 4 filthyguys. Fancy a rude time with a sexy bitch. How about we go slo n hard! Txt XXX SLO(4msgs)",
+            "spam_probability": 0.3457
           }
         ],
         "false_positives": [
           {
-            "message": "I (Career Tel) have added u as a contact on INDYAROCKS.COM to send FREE SMS. To remove from phonebook - sms NO to  &lt;#&gt;",
-            "spam_probability": 0.9625
+            "message": "Ee msg na poortiyagi odalebeku: Hanumanji 7 name 1-Hanuman 2-Bajarangabali 3-Maruti 4-Pavanaputra 5-Sankatmochan 6-Ramaduth 7-Mahaveer ee 7 name  &lt;#&gt;  janarige ivatte kalisidare next saturday olage ondu good news keluviri...! Maretare inde 1 dodda problum nalli siguviri idu matra  &lt;#&gt; % true.. Don't neglet.",
+            "spam_probability": 0.7777
           },
           {
-            "message": "Can you plz tell me the ans. BSLVYL sent via fullonsms.com",
-            "spam_probability": 0.6058
+            "message": "Hey...Great deal...Farm tour 9am to 5pm $95/pax, $50 deposit by 16 May",
+            "spam_probability": 0.7761
           },
           {
-            "message": "Yes... I trust u to buy new stuff ASAP so I can try it out",
-            "spam_probability": 0.3922
+            "message": "K k:) sms chat with me.",
+            "spam_probability": 0.6472
+          },
+          {
+            "message": "Actually i deleted my old website..now i m blogging at magicalsongs.blogspot.com",
+            "spam_probability": 0.6245
+          },
+          {
+            "message": "I only haf msn. It's yijue@hotmail.com",
+            "spam_probability": 0.6031
+          },
+          {
+            "message": "Let Ur Heart Be Ur Compass Ur Mind Ur Map Ur Soul Ur Guide And U Will Never loose in world....gnun - Sent via WAY2SMS.COM",
+            "spam_probability": 0.5529
           }
         ]
       }
@@ -356,22 +368,22 @@
       "name": "Naive Bayes",
       "family": "Probabilistic",
       "role": "candidate",
-      "threshold": 0.41,
+      "threshold": 0.46,
       "metrics": {
-        "accuracy": 0.9845410628019323,
-        "precision": 0.9389312977099237,
-        "recall": 0.9389312977099237,
-        "f1": 0.9389312977099237,
-        "roc_auc": 0.9920370870769439
+        "accuracy": 0.988394584139265,
+        "precision": 0.9538461538461539,
+        "recall": 0.9538461538461539,
+        "f1": 0.9538461538461539,
+        "roc_auc": 0.9952348536419333
       },
       "confusion_matrix": {
-        "tn": 896,
-        "fp": 8,
-        "fn": 8,
-        "tp": 123
+        "tn": 898,
+        "fp": 6,
+        "fn": 6,
+        "tp": 124
       },
-      "false_positive_rate": 0.008849557522123894,
-      "false_negative_rate": 0.061068702290076333,
+      "false_positive_rate": 0.00663716814159292,
+      "false_negative_rate": 0.046153846153846156,
       "roc_curve": [
         {
           "fpr": 0.0,
@@ -379,103 +391,103 @@
         },
         {
           "fpr": 0.0169,
-          "tpr": 0.9542
+          "tpr": 0.9846
         },
         {
           "fpr": 0.0339,
-          "tpr": 0.9695
+          "tpr": 0.9846
         },
         {
           "fpr": 0.0508,
-          "tpr": 0.9695
+          "tpr": 0.9846
         },
         {
           "fpr": 0.0678,
-          "tpr": 0.9695
+          "tpr": 0.9846
         },
         {
           "fpr": 0.0847,
-          "tpr": 0.9695
+          "tpr": 0.9846
         },
         {
           "fpr": 0.1017,
-          "tpr": 0.9695
+          "tpr": 0.9846
         },
         {
           "fpr": 0.1186,
-          "tpr": 0.9771
+          "tpr": 0.9846
         },
         {
           "fpr": 0.1356,
-          "tpr": 0.9771
+          "tpr": 0.9846
         },
         {
           "fpr": 0.1525,
-          "tpr": 0.9771
+          "tpr": 0.9846
         },
         {
           "fpr": 0.1695,
-          "tpr": 0.9771
+          "tpr": 0.9846
         },
         {
           "fpr": 0.1864,
-          "tpr": 0.9847
+          "tpr": 0.9846
         },
         {
           "fpr": 0.2034,
-          "tpr": 0.9847
+          "tpr": 0.9846
         },
         {
           "fpr": 0.2203,
-          "tpr": 0.9924
+          "tpr": 0.9923
         },
         {
           "fpr": 0.2373,
-          "tpr": 0.9924
+          "tpr": 0.9923
         },
         {
           "fpr": 0.2542,
-          "tpr": 0.9924
+          "tpr": 0.9923
         },
         {
           "fpr": 0.2712,
-          "tpr": 0.9924
+          "tpr": 0.9923
         },
         {
           "fpr": 0.2881,
-          "tpr": 0.9924
+          "tpr": 0.9923
         },
         {
           "fpr": 0.3051,
-          "tpr": 0.9924
+          "tpr": 0.9923
         },
         {
           "fpr": 0.322,
-          "tpr": 0.9924
+          "tpr": 0.9923
         },
         {
           "fpr": 0.339,
-          "tpr": 0.9924
+          "tpr": 0.9923
         },
         {
           "fpr": 0.3559,
-          "tpr": 0.9924
+          "tpr": 1.0
         },
         {
           "fpr": 0.3729,
-          "tpr": 0.9924
+          "tpr": 1.0
         },
         {
           "fpr": 0.3898,
-          "tpr": 0.9924
+          "tpr": 1.0
         },
         {
           "fpr": 0.4068,
-          "tpr": 0.9924
+          "tpr": 1.0
         },
         {
           "fpr": 0.4237,
-          "tpr": 0.9924
+          "tpr": 1.0
         },
         {
           "fpr": 0.4407,
@@ -616,43 +628,43 @@
       ],
       "classification_report": {
         "ham": {
-          "precision": 0.9911504424778761,
-          "recall": 0.9911504424778761,
-          "f1": 0.9911504424778761,
+          "precision": 0.9933628318584071,
+          "recall": 0.9933628318584071,
+          "f1": 0.9933628318584071,
           "support": 904
         },
         "spam": {
-          "precision": 0.9389312977099237,
-          "recall": 0.9389312977099237,
-          "f1": 0.9389312977099237,
-          "support": 131
+          "precision": 0.9538461538461539,
+          "recall": 0.9538461538461539,
+          "f1": 0.9538461538461539,
+          "support": 130
         },
         "macro avg": {
-          "precision": 0.9650408700938999,
-          "recall": 0.9650408700938999,
-          "f1": 0.9650408700938999,
-          "support": 1035
+          "precision": 0.9736044928522805,
+          "recall": 0.9736044928522805,
+          "f1": 0.9736044928522805,
+          "support": 1034
         },
         "weighted avg": {
-          "precision": 0.9845410628019323,
-          "recall": 0.9845410628019323,
-          "f1": 0.9845410628019323,
-          "support": 1035
+          "precision": 0.988394584139265,
+          "recall": 0.988394584139265,
+          "f1": 0.988394584139265,
+          "support": 1034
         }
       },
       "default_threshold": {
         "metrics": {
-          "accuracy": 0.9845410628019323,
-          "precision": 0.952755905511811,
-          "recall": 0.9236641221374046,
-          "f1": 0.937984496124031,
-          "roc_auc": 0.9920370870769439
+          "accuracy": 0.9893617021276596,
+          "precision": 0.9612403100775194,
+          "recall": 0.9538461538461539,
+          "f1": 0.9575289575289575,
+          "roc_auc": 0.9952348536419333
         },
         "confusion_matrix": {
-          "tn": 898,
-          "fp": 6,
-          "fn": 10,
-          "tp": 121
+          "tn": 899,
+          "fp": 5,
+          "fn": 6,
+          "tp": 124
         }
       },
       "train_time_s": 0.001,
@@ -661,53 +673,53 @@
         "false_negatives": [
           {
             "message": "Babe: U want me dont u baby! Im nasty and have a thing 4 filthyguys. Fancy a rude time with a sexy bitch. How about we go slo n hard! Txt XXX SLO(4msgs)",
-            "spam_probability": 0.0039
+            "spam_probability": 0.0064
           },
           {
             "message": "Xmas & New Years Eve tickets are now on sale from the club, during the day from 10am till 8pm, and on Thurs, Fri & Sat night this week. They're selling fast!",
-            "spam_probability": 0.0139
+            "spam_probability": 0.0173
           },
           {
-            "message": "In The Simpsons Movie released in July 2007 name the band that died at the start of the film? A-Green Day, B-Blue Day, C-Red Day. (Send A, B or C)",
-            "spam_probability": 0.0194
-          },
-          {
-            "message": "Check Out Choose Your Babe Videos @ sms.shsex.netUN fgkslpoPW fgkslpo",
-            "spam_probability": 0.0622
-          },
-          {
-            "message": "Missed call alert. These numbers called but left no message. 07008009200",
-            "spam_probability": 0.143
+            "message": "Burger King - Wanna play footy at a top stadium? Get 2 Burger King before 1st Sept and go Large or Super with Coca-Cola and walk out a winner",
+            "spam_probability": 0.2143
           },
           {
             "message": "FreeMsg Hey U, i just got 1 of these video/pic fones, reply WILD to this txt & ill send U my pics, hurry up Im so bored at work xxx (18 150p/rcvd STOP2stop)",
-            "spam_probability": 0.1593
+            "spam_probability": 0.2162
+          },
+          {
+            "message": "accordingly. I repeat, just text the word ok on your mobile phone and send",
+            "spam_probability": 0.2803
+          },
+          {
+            "message": "Ever thought about living a good life with a perfect partner? Just txt back NAME and AGE to join the mobile community. (100p/SMS)",
+            "spam_probability": 0.4459
           }
         ],
         "false_positives": [
           {
-            "message": "I (Career Tel) have added u as a contact on INDYAROCKS.COM to send FREE SMS. To remove from phonebook - sms NO to  &lt;#&gt;",
-            "spam_probability": 0.9541
+            "message": "Nokia phone is lovly..",
+            "spam_probability": 0.9096
           },
           {
-            "message": "Nokia phone is lovly..",
-            "spam_probability": 0.9051
+            "message": "I only haf msn. It's yijue@hotmail.com",
+            "spam_probability": 0.6849
+          },
+          {
+            "message": "Hey...Great deal...Farm tour 9am to 5pm $95/pax, $50 deposit by 16 May",
+            "spam_probability": 0.6343
           },
           {
             "message": "K:)eng rocking in ashes:)",
-            "spam_probability": 0.5886
-          },
-          {
-            "message": "Are you free now?can i call now?",
-            "spam_probability": 0.5443
-          },
-          {
-            "message": "Received, understood n acted upon!",
-            "spam_probability": 0.5333
+            "spam_probability": 0.5981
           },
           {
             "message": "Your bill at 3 is £33.65 so thats not bad!",
-            "spam_probability": 0.5274
+            "spam_probability": 0.5639
+          },
+          {
+            "message": "Actually i deleted my old website..now i m blogging at magicalsongs.blogspot.com",
+            "spam_probability": 0.4724
           }
         ]
       }
@@ -719,20 +731,20 @@
       "role": "candidate",
       "threshold": 0.88,
       "metrics": {
-        "accuracy": 0.9729468599033816,
-        "precision": 0.9186991869918699,
-        "recall": 0.8625954198473282,
-        "f1": 0.889763779527559,
-        "roc_auc": 0.9520367493075726
+        "accuracy": 0.9700193423597679,
+        "precision": 0.8721804511278195,
+        "recall": 0.8923076923076924,
+        "f1": 0.8821292775665399,
+        "roc_auc": 0.9634104833219876
       },
       "confusion_matrix": {
-        "tn": 894,
-        "fp": 10,
-        "fn": 18,
-        "tp": 113
+        "tn": 887,
+        "fp": 17,
+        "fn": 14,
+        "tp": 116
       },
-      "false_positive_rate": 0.011061946902654867,
-      "false_negative_rate": 0.13740458015267176,
+      "false_positive_rate": 0.018805309734513276,
+      "false_negative_rate": 0.1076923076923077,
       "roc_curve": [
         {
           "fpr": 0.0,
@@ -740,929 +752,223 @@
         },
         {
           "fpr": 0.0169,
-          "tpr": 0.9163
+          "tpr": 0.8923
         },
         {
           "fpr": 0.0339,
-          "tpr": 0.9178
+          "tpr": 0.9462
         },
         {
           "fpr": 0.0508,
-          "tpr": 0.9192
+          "tpr": 0.9471
         },
         {
           "fpr": 0.0678,
-          "tpr": 0.9207
+          "tpr": 0.948
         },
         {
           "fpr": 0.0847,
-          "tpr": 0.9221
+          "tpr": 0.949
         },
         {
           "fpr": 0.1017,
-          "tpr": 0.9236
+          "tpr": 0.9499
         },
         {
           "fpr": 0.1186,
-          "tpr": 0.925
+          "tpr": 0.9509
         },
         {
           "fpr": 0.1356,
-          "tpr": 0.9264
+          "tpr": 0.9518
         },
         {
           "fpr": 0.1525,
-          "tpr": 0.9279
+          "tpr": 0.9527
         },
         {
           "fpr": 0.1695,
-          "tpr": 0.9293
-        },
-        {
-          "fpr": 0.1864,
-          "tpr": 0.9308
-        },
-        {
-          "fpr": 0.2034,
-          "tpr": 0.9322
-        },
-        {
-          "fpr": 0.2203,
-          "tpr": 0.9337
-        },
-        {
-          "fpr": 0.2373,
-          "tpr": 0.9351
-        },
-        {
-          "fpr": 0.2542,
-          "tpr": 0.9365
-        },
-        {
-          "fpr": 0.2712,
-          "tpr": 0.938
-        },
-        {
-          "fpr": 0.2881,
-          "tpr": 0.9394
-        },
-        {
-          "fpr": 0.3051,
-          "tpr": 0.9409
-        },
-        {
-          "fpr": 0.322,
-          "tpr": 0.9423
-        },
-        {
-          "fpr": 0.339,
-          "tpr": 0.9437
-        },
-        {
-          "fpr": 0.3559,
-          "tpr": 0.9452
-        },
-        {
-          "fpr": 0.3729,
-          "tpr": 0.9466
-        },
-        {
-          "fpr": 0.3898,
-          "tpr": 0.9481
-        },
-        {
-          "fpr": 0.4068,
-          "tpr": 0.9495
-        },
-        {
-          "fpr": 0.4237,
-          "tpr": 0.951
-        },
-        {
-          "fpr": 0.4407,
-          "tpr": 0.9524
-        },
-        {
-          "fpr": 0.4576,
-          "tpr": 0.9538
-        },
-        {
-          "fpr": 0.4746,
-          "tpr": 0.9553
-        },
-        {
-          "fpr": 0.4915,
-          "tpr": 0.9567
-        },
-        {
-          "fpr": 0.5085,
-          "tpr": 0.9582
-        },
-        {
-          "fpr": 0.5254,
-          "tpr": 0.9596
-        },
-        {
-          "fpr": 0.5424,
-          "tpr": 0.9611
-        },
-        {
-          "fpr": 0.5593,
-          "tpr": 0.9625
-        },
-        {
-          "fpr": 0.5763,
-          "tpr": 0.9639
-        },
-        {
-          "fpr": 0.5932,
-          "tpr": 0.9654
-        },
-        {
-          "fpr": 0.6102,
-          "tpr": 0.9668
-        },
-        {
-          "fpr": 0.6271,
-          "tpr": 0.9683
-        },
-        {
-          "fpr": 0.6441,
-          "tpr": 0.9697
-        },
-        {
-          "fpr": 0.661,
-          "tpr": 0.9712
-        },
-        {
-          "fpr": 0.678,
-          "tpr": 0.9726
-        },
-        {
-          "fpr": 0.6949,
-          "tpr": 0.974
-        },
-        {
-          "fpr": 0.7119,
-          "tpr": 0.9755
-        },
-        {
-          "fpr": 0.7288,
-          "tpr": 0.9769
-        },
-        {
-          "fpr": 0.7458,
-          "tpr": 0.9784
-        },
-        {
-          "fpr": 0.7627,
-          "tpr": 0.9798
-        },
-        {
-          "fpr": 0.7797,
-          "tpr": 0.9812
-        },
-        {
-          "fpr": 0.7966,
-          "tpr": 0.9827
-        },
-        {
-          "fpr": 0.8136,
-          "tpr": 0.9841
-        },
-        {
-          "fpr": 0.8305,
-          "tpr": 0.9856
-        },
-        {
-          "fpr": 0.8475,
-          "tpr": 0.987
-        },
-        {
-          "fpr": 0.8644,
-          "tpr": 0.9885
-        },
-        {
-          "fpr": 0.8814,
-          "tpr": 0.9899
-        },
-        {
-          "fpr": 0.8983,
-          "tpr": 0.9913
-        },
-        {
-          "fpr": 0.9153,
-          "tpr": 0.9928
-        },
-        {
-          "fpr": 0.9322,
-          "tpr": 0.9942
-        },
-        {
-          "fpr": 0.9492,
-          "tpr": 0.9957
-        },
-        {
-          "fpr": 0.9661,
-          "tpr": 0.9971
-        },
-        {
-          "fpr": 0.9831,
-          "tpr": 0.9986
-        },
-        {
-          "fpr": 1.0,
-          "tpr": 1.0
-        }
-      ],
-      "classification_report": {
-        "ham": {
-          "precision": 0.9802631578947368,
-          "recall": 0.9889380530973452,
-          "f1": 0.9845814977973568,
-          "support": 904
-        },
-        "spam": {
-          "precision": 0.9186991869918699,
-          "recall": 0.8625954198473282,
-          "f1": 0.889763779527559,
-          "support": 131
-        },
-        "macro avg": {
-          "precision": 0.9494811724433034,
-          "recall": 0.9257667364723368,
-          "f1": 0.9371726386624579,
-          "support": 1035
-        },
-        "weighted avg": {
-          "precision": 0.9724710031234561,
-          "recall": 0.9729468599033816,
-          "f1": 0.9725804146153824,
-          "support": 1035
-        }
-      },
-      "default_threshold": {
-        "metrics": {
-          "accuracy": 0.9777777777777777,
-          "precision": 0.9090909090909091,
-          "recall": 0.916030534351145,
-          "f1": 0.9125475285171103,
-          "roc_auc": 0.9520367493075726
-        },
-        "confusion_matrix": {
-          "tn": 892,
-          "fp": 12,
-          "fn": 11,
-          "tp": 120
-        }
-      },
-      "train_time_s": 0.046,
-      "inference_ms": 0.0003,
-      "errors": {
-        "false_negatives": [
-          {
-            "message": "Check Out Choose Your Babe Videos @ sms.shsex.netUN fgkslpoPW fgkslpo",
-            "spam_probability": 0.0
-          },
-          {
-            "message": "Burger King - Wanna play footy at a top stadium? Get 2 Burger King before 1st Sept and go Large or Super with Coca-Cola and walk out a winner",
-            "spam_probability": 0.0
-          },
-          {
-            "message": "RECPT 1/3. You have ordered a Ringtone. Your order is being processed...",
-            "spam_probability": 0.0
-          },
-          {
-            "message": "Would you like to see my XXX pics they are so hot they were nearly banned in the uk!",
-            "spam_probability": 0.0
-          },
-          {
-            "message": "Missed call alert. These numbers called but left no message. 07008009200",
-            "spam_probability": 0.0
-          },
-          {
-            "message": "Babe: U want me dont u baby! Im nasty and have a thing 4 filthyguys. Fancy a rude time with a sexy bitch. How about we go slo n hard! Txt XXX SLO(4msgs)",
-            "spam_probability": 0.0
-          }
-        ],
-        "false_positives": [
-          {
-            "message": "Hai ana tomarrow am coming on morning.  &lt;DECIMAL&gt;  ill be there in sathy then we ll go to RTO office. Reply me after came to home.",
-            "spam_probability": 1.0
-          },
-          {
-            "message": "If anyone calls for a treadmill say you'll buy it. Make sure its working. I found an ad on Craigslist selling for $ &lt;#&gt; .",
-            "spam_probability": 1.0
-          },
-          {
-            "message": "Dunno da next show aft 6 is 850. Toa payoh got 650.",
-            "spam_probability": 1.0
-          },
-          {
-            "message": "7 wonders in My WORLD 7th You 6th Ur style 5th Ur smile 4th Ur Personality 3rd Ur Nature 2nd Ur SMS and 1st \"Ur Lovely Friendship\"... good morning dear",
-            "spam_probability": 1.0
-          },
-          {
-            "message": ", ow u dey.i paid 60,400thousad.i told  u would call . ",
-            "spam_probability": 1.0
-          },
-          {
-            "message": "Book which lesson? then you msg me... I will call up after work or sth... I'm going to get specs. My membership is PX3748",
-            "spam_probability": 1.0
-          }
-        ]
-      }
-    },
-    {
-      "key": "random_forest",
-      "name": "Random Forest",
-      "family": "Ensemble (bagging)",
-      "role": "improved",
-      "threshold": 0.37,
-      "metrics": {
-        "accuracy": 0.9893719806763285,
-        "precision": 0.9838709677419355,
-        "recall": 0.9312977099236641,
-        "f1": 0.9568627450980393,
-        "roc_auc": 0.9981633790447884
-      },
-      "confusion_matrix": {
-        "tn": 902,
-        "fp": 2,
-        "fn": 9,
-        "tp": 122
-      },
-      "false_positive_rate": 0.0022123893805309734,
-      "false_negative_rate": 0.06870229007633588,
-      "roc_curve": [
-        {
-          "fpr": 0.0,
-          "tpr": 0.0
-        },
-        {
-          "fpr": 0.0169,
-          "tpr": 0.9771
-        },
-        {
-          "fpr": 0.0339,
-          "tpr": 0.9771
-        },
-        {
-          "fpr": 0.0508,
-          "tpr": 0.9847
-        },
-        {
-          "fpr": 0.0678,
-          "tpr": 0.9924
-        },
-        {
-          "fpr": 0.0847,
-          "tpr": 0.9924
-        },
-        {
-          "fpr": 0.1017,
-          "tpr": 1.0
-        },
-        {
-          "fpr": 0.1186,
-          "tpr": 1.0
-        },
-        {
-          "fpr": 0.1356,
-          "tpr": 1.0
-        },
-        {
-          "fpr": 0.1525,
-          "tpr": 1.0
-        },
-        {
-          "fpr": 0.1695,
-          "tpr": 1.0
-        },
-        {
-          "fpr": 0.1864,
-          "tpr": 1.0
-        },
-        {
-          "fpr": 0.2034,
-          "tpr": 1.0
-        },
-        {
-          "fpr": 0.2203,
-          "tpr": 1.0
-        },
-        {
-          "fpr": 0.2373,
-          "tpr": 1.0
-        },
-        {
-          "fpr": 0.2542,
-          "tpr": 1.0
-        },
-        {
-          "fpr": 0.2712,
-          "tpr": 1.0
-        },
-        {
-          "fpr": 0.2881,
-          "tpr": 1.0
-        },
-        {
-          "fpr": 0.3051,
-          "tpr": 1.0
-        },
-        {
-          "fpr": 0.322,
-          "tpr": 1.0
-        },
-        {
-          "fpr": 0.339,
-          "tpr": 1.0
-        },
-        {
-          "fpr": 0.3559,
-          "tpr": 1.0
-        },
-        {
-          "fpr": 0.3729,
-          "tpr": 1.0
-        },
-        {
-          "fpr": 0.3898,
-          "tpr": 1.0
-        },
-        {
-          "fpr": 0.4068,
-          "tpr": 1.0
-        },
-        {
-          "fpr": 0.4237,
-          "tpr": 1.0
-        },
-        {
-          "fpr": 0.4407,
-          "tpr": 1.0
-        },
-        {
-          "fpr": 0.4576,
-          "tpr": 1.0
-        },
-        {
-          "fpr": 0.4746,
-          "tpr": 1.0
-        },
-        {
-          "fpr": 0.4915,
-          "tpr": 1.0
-        },
-        {
-          "fpr": 0.5085,
-          "tpr": 1.0
-        },
-        {
-          "fpr": 0.5254,
-          "tpr": 1.0
-        },
-        {
-          "fpr": 0.5424,
-          "tpr": 1.0
-        },
-        {
-          "fpr": 0.5593,
-          "tpr": 1.0
-        },
-        {
-          "fpr": 0.5763,
-          "tpr": 1.0
-        },
-        {
-          "fpr": 0.5932,
-          "tpr": 1.0
-        },
-        {
-          "fpr": 0.6102,
-          "tpr": 1.0
-        },
-        {
-          "fpr": 0.6271,
-          "tpr": 1.0
-        },
-        {
-          "fpr": 0.6441,
-          "tpr": 1.0
-        },
-        {
-          "fpr": 0.661,
-          "tpr": 1.0
-        },
-        {
-          "fpr": 0.678,
-          "tpr": 1.0
-        },
-        {
-          "fpr": 0.6949,
-          "tpr": 1.0
-        },
-        {
-          "fpr": 0.7119,
-          "tpr": 1.0
-        },
-        {
-          "fpr": 0.7288,
-          "tpr": 1.0
-        },
-        {
-          "fpr": 0.7458,
-          "tpr": 1.0
-        },
-        {
-          "fpr": 0.7627,
-          "tpr": 1.0
-        },
-        {
-          "fpr": 0.7797,
-          "tpr": 1.0
-        },
-        {
-          "fpr": 0.7966,
-          "tpr": 1.0
-        },
-        {
-          "fpr": 0.8136,
-          "tpr": 1.0
-        },
-        {
-          "fpr": 0.8305,
-          "tpr": 1.0
-        },
-        {
-          "fpr": 0.8475,
-          "tpr": 1.0
-        },
-        {
-          "fpr": 0.8644,
-          "tpr": 1.0
-        },
-        {
-          "fpr": 0.8814,
-          "tpr": 1.0
-        },
-        {
-          "fpr": 0.8983,
-          "tpr": 1.0
-        },
-        {
-          "fpr": 0.9153,
-          "tpr": 1.0
-        },
-        {
-          "fpr": 0.9322,
-          "tpr": 1.0
-        },
-        {
-          "fpr": 0.9492,
-          "tpr": 1.0
-        },
-        {
-          "fpr": 0.9661,
-          "tpr": 1.0
-        },
-        {
-          "fpr": 0.9831,
-          "tpr": 1.0
-        },
-        {
-          "fpr": 1.0,
-          "tpr": 1.0
-        }
-      ],
-      "classification_report": {
-        "ham": {
-          "precision": 0.9901207464324918,
-          "recall": 0.9977876106194691,
-          "f1": 0.9939393939393939,
-          "support": 904
-        },
-        "spam": {
-          "precision": 0.9838709677419355,
-          "recall": 0.9312977099236641,
-          "f1": 0.9568627450980393,
-          "support": 131
-        },
-        "macro avg": {
-          "precision": 0.9869958570872137,
-          "recall": 0.9645426602715665,
-          "f1": 0.9754010695187165,
-          "support": 1035
-        },
-        "weighted avg": {
-          "precision": 0.9893297116417065,
-          "recall": 0.9893719806763285,
-          "f1": 0.9892466007044012,
-          "support": 1035
-        }
-      },
-      "default_threshold": {
-        "metrics": {
-          "accuracy": 0.9855072463768116,
-          "precision": 1.0,
-          "recall": 0.8854961832061069,
-          "f1": 0.9392712550607287,
-          "roc_auc": 0.9981633790447884
-        },
-        "confusion_matrix": {
-          "tn": 904,
-          "fp": 0,
-          "fn": 15,
-          "tp": 116
-        }
-      },
-      "train_time_s": 0.734,
-      "inference_ms": 0.0418,
-      "errors": {
-        "false_negatives": [
-          {
-            "message": "Latest News! Police station toilet stolen, cops have nothing to go on!",
-            "spam_probability": 0.045
-          },
-          {
-            "message": "Check Out Choose Your Babe Videos @ sms.shsex.netUN fgkslpoPW fgkslpo",
-            "spam_probability": 0.0575
-          },
-          {
-            "message": "Would you like to see my XXX pics they are so hot they were nearly banned in the uk!",
-            "spam_probability": 0.07
-          },
-          {
-            "message": "Xmas & New Years Eve tickets are now on sale from the club, during the day from 10am till 8pm, and on Thurs, Fri & Sat night this week. They're selling fast!",
-            "spam_probability": 0.22
-          },
-          {
-            "message": "Babe: U want me dont u baby! Im nasty and have a thing 4 filthyguys. Fancy a rude time with a sexy bitch. How about we go slo n hard! Txt XXX SLO(4msgs)",
-            "spam_probability": 0.2225
-          },
-          {
-            "message": "Burger King - Wanna play footy at a top stadium? Get 2 Burger King before 1st Sept and go Large or Super with Coca-Cola and walk out a winner",
-            "spam_probability": 0.2275
-          }
-        ],
-        "false_positives": [
-          {
-            "message": "I (Career Tel) have added u as a contact on INDYAROCKS.COM to send FREE SMS. To remove from phonebook - sms NO to  &lt;#&gt;",
-            "spam_probability": 0.45
-          },
-          {
-            "message": "7 wonders in My WORLD 7th You 6th Ur style 5th Ur smile 4th Ur Personality 3rd Ur Nature 2nd Ur SMS and 1st \"Ur Lovely Friendship\"... good morning dear",
-            "spam_probability": 0.4075
-          }
-        ]
-      }
-    },
-    {
-      "key": "knn",
-      "name": "K-Nearest Neighbors",
-      "family": "Instance-based",
-      "role": "candidate",
-      "threshold": 0.2,
-      "metrics": {
-        "accuracy": 0.9797101449275363,
-        "precision": 0.9365079365079365,
-        "recall": 0.9007633587786259,
-        "f1": 0.9182879377431906,
-        "roc_auc": 0.9719862527865973
-      },
-      "confusion_matrix": {
-        "tn": 896,
-        "fp": 8,
-        "fn": 13,
-        "tp": 118
-      },
-      "false_positive_rate": 0.008849557522123894,
-      "false_negative_rate": 0.09923664122137404,
-      "roc_curve": [
-        {
-          "fpr": 0.0,
-          "tpr": 0.0
-        },
-        {
-          "fpr": 0.0169,
-          "tpr": 0.9466
-        },
-        {
-          "fpr": 0.0339,
-          "tpr": 0.9473
-        },
-        {
-          "fpr": 0.0508,
-          "tpr": 0.9482
-        },
-        {
-          "fpr": 0.0678,
-          "tpr": 0.9491
-        },
-        {
-          "fpr": 0.0847,
-          "tpr": 0.95
-        },
-        {
-          "fpr": 0.1017,
-          "tpr": 0.951
-        },
-        {
-          "fpr": 0.1186,
-          "tpr": 0.9519
-        },
-        {
-          "fpr": 0.1356,
-          "tpr": 0.9528
-        },
-        {
-          "fpr": 0.1525,
           "tpr": 0.9537
         },
         {
-          "fpr": 0.1695,
-          "tpr": 0.9547
-        },
-        {
           "fpr": 0.1864,
-          "tpr": 0.9556
+          "tpr": 0.9546
         },
         {
           "fpr": 0.2034,
-          "tpr": 0.9565
+          "tpr": 0.9556
         },
         {
           "fpr": 0.2203,
-          "tpr": 0.9574
+          "tpr": 0.9565
         },
         {
           "fpr": 0.2373,
-          "tpr": 0.9584
+          "tpr": 0.9575
         },
         {
           "fpr": 0.2542,
-          "tpr": 0.9593
+          "tpr": 0.9584
         },
         {
           "fpr": 0.2712,
-          "tpr": 0.9602
+          "tpr": 0.9594
         },
         {
           "fpr": 0.2881,
-          "tpr": 0.9611
+          "tpr": 0.9603
         },
         {
           "fpr": 0.3051,
-          "tpr": 0.9621
+          "tpr": 0.9613
         },
         {
           "fpr": 0.322,
-          "tpr": 0.963
+          "tpr": 0.9622
         },
         {
           "fpr": 0.339,
-          "tpr": 0.9639
+          "tpr": 0.9631
         },
         {
           "fpr": 0.3559,
-          "tpr": 0.9648
+          "tpr": 0.9641
         },
         {
           "fpr": 0.3729,
-          "tpr": 0.9658
+          "tpr": 0.965
         },
         {
           "fpr": 0.3898,
-          "tpr": 0.9667
+          "tpr": 0.966
         },
         {
           "fpr": 0.4068,
-          "tpr": 0.9676
+          "tpr": 0.9669
         },
         {
           "fpr": 0.4237,
-          "tpr": 0.9685
+          "tpr": 0.9679
         },
         {
           "fpr": 0.4407,
-          "tpr": 0.9695
+          "tpr": 0.9688
         },
         {
           "fpr": 0.4576,
-          "tpr": 0.9704
+          "tpr": 0.9698
         },
         {
           "fpr": 0.4746,
-          "tpr": 0.9713
+          "tpr": 0.9707
         },
         {
           "fpr": 0.4915,
-          "tpr": 0.9722
+          "tpr": 0.9716
         },
         {
           "fpr": 0.5085,
-          "tpr": 0.9732
+          "tpr": 0.9726
         },
         {
           "fpr": 0.5254,
-          "tpr": 0.9741
+          "tpr": 0.9735
         },
         {
           "fpr": 0.5424,
-          "tpr": 0.975
+          "tpr": 0.9745
         },
         {
           "fpr": 0.5593,
-          "tpr": 0.9759
+          "tpr": 0.9754
         },
         {
           "fpr": 0.5763,
-          "tpr": 0.9769
+          "tpr": 0.9764
         },
         {
           "fpr": 0.5932,
-          "tpr": 0.9778
+          "tpr": 0.9773
         },
         {
           "fpr": 0.6102,
-          "tpr": 0.9787
+          "tpr": 0.9783
         },
         {
           "fpr": 0.6271,
-          "tpr": 0.9796
+          "tpr": 0.9792
         },
         {
           "fpr": 0.6441,
-          "tpr": 0.9806
+          "tpr": 0.9802
         },
         {
           "fpr": 0.661,
-          "tpr": 0.9815
+          "tpr": 0.9811
         },
         {
           "fpr": 0.678,
-          "tpr": 0.9824
+          "tpr": 0.982
         },
         {
           "fpr": 0.6949,
-          "tpr": 0.9833
+          "tpr": 0.983
         },
         {
           "fpr": 0.7119,
-          "tpr": 0.9843
+          "tpr": 0.9839
         },
         {
           "fpr": 0.7288,
-          "tpr": 0.9852
+          "tpr": 0.9849
         },
         {
           "fpr": 0.7458,
-          "tpr": 0.9861
+          "tpr": 0.9858
         },
         {
           "fpr": 0.7627,
-          "tpr": 0.987
+          "tpr": 0.9868
         },
         {
           "fpr": 0.7797,
-          "tpr": 0.988
+          "tpr": 0.9877
         },
         {
           "fpr": 0.7966,
-          "tpr": 0.9889
+          "tpr": 0.9887
         },
         {
           "fpr": 0.8136,
-          "tpr": 0.9898
+          "tpr": 0.9896
         },
         {
           "fpr": 0.8305,
-          "tpr": 0.9907
+          "tpr": 0.9905
         },
         {
           "fpr": 0.8475,
-          "tpr": 0.9917
+          "tpr": 0.9915
         },
         {
           "fpr": 0.8644,
-          "tpr": 0.9926
+          "tpr": 0.9924
         },
         {
           "fpr": 0.8814,
-          "tpr": 0.9935
+          "tpr": 0.9934
         },
         {
           "fpr": 0.8983,
-          "tpr": 0.9944
+          "tpr": 0.9943
         },
         {
           "fpr": 0.9153,
-          "tpr": 0.9954
+          "tpr": 0.9953
         },
         {
           "fpr": 0.9322,
-          "tpr": 0.9963
+          "tpr": 0.9962
         },
         {
           "fpr": 0.9492,
@@ -1683,59 +989,781 @@
       ],
       "classification_report": {
         "ham": {
-          "precision": 0.9856985698569857,
-          "recall": 0.9911504424778761,
-          "f1": 0.9884169884169884,
+          "precision": 0.9844617092119867,
+          "recall": 0.9811946902654868,
+          "f1": 0.9828254847645429,
           "support": 904
         },
         "spam": {
-          "precision": 0.9365079365079365,
-          "recall": 0.9007633587786259,
-          "f1": 0.9182879377431906,
-          "support": 131
+          "precision": 0.8721804511278195,
+          "recall": 0.8923076923076924,
+          "f1": 0.8821292775665399,
+          "support": 130
         },
         "macro avg": {
-          "precision": 0.961103253182461,
-          "recall": 0.945956900628251,
-          "f1": 0.9533524630800896,
-          "support": 1035
+          "precision": 0.9283210801699031,
+          "recall": 0.9367511912865896,
+          "f1": 0.9324773811655414,
+          "support": 1034
         },
         "weighted avg": {
-          "precision": 0.9794725090176374,
-          "recall": 0.9797101449275363,
-          "f1": 0.979540751085329,
-          "support": 1035
+          "precision": 0.9703451100331263,
+          "recall": 0.9700193423597679,
+          "f1": 0.9701654200297842,
+          "support": 1034
         }
       },
       "default_threshold": {
         "metrics": {
-          "accuracy": 0.9777777777777777,
-          "precision": 1.0,
-          "recall": 0.8244274809160306,
-          "f1": 0.9037656903765691,
-          "roc_auc": 0.9719862527865973
+          "accuracy": 0.9632495164410058,
+          "precision": 0.7987012987012987,
+          "recall": 0.9461538461538461,
+          "f1": 0.8661971830985915,
+          "roc_auc": 0.9634104833219876
         },
         "confusion_matrix": {
-          "tn": 904,
-          "fp": 0,
-          "fn": 23,
-          "tp": 108
+          "tn": 873,
+          "fp": 31,
+          "fn": 7,
+          "tp": 123
         }
       },
-      "train_time_s": 0.001,
-      "inference_ms": 0.0466,
+      "train_time_s": 0.05,
+      "inference_ms": 0.0003,
       "errors": {
         "false_negatives": [
           {
-            "message": "Check Out Choose Your Babe Videos @ sms.shsex.netUN fgkslpoPW fgkslpo",
+            "message": "ASKED 3MOBILE IF 0870 CHATLINES INCLU IN FREE MINS. INDIA CUST SERVs SED YES. L8ER GOT MEGA BILL. 3 DONT GIV A SHIT. BAILIFF DUE IN DAYS. I O £250 3 WANT £800",
             "spam_probability": 0.0
           },
           {
-            "message": "Burger King - Wanna play footy at a top stadium? Get 2 Burger King before 1st Sept and go Large or Super with Coca-Cola and walk out a winner",
+            "message": "Bought one ringtone and now getting texts costing 3 pound offering more tones etc",
             "spam_probability": 0.0
+          },
+          {
+            "message": "FreeMsg Hey U, i just got 1 of these video/pic fones, reply WILD to this txt & ill send U my pics, hurry up Im so bored at work xxx (18 150p/rcvd STOP2stop)",
+            "spam_probability": 0.0
+          },
+          {
+            "message": "Latest News! Police station toilet stolen, cops have nothing to go on!",
+            "spam_probability": 0.0
+          },
+          {
+            "message": "Ringtone Club: Gr8 new polys direct to your mobile every week !",
+            "spam_probability": 0.0
+          },
+          {
+            "message": "Would you like to see my XXX pics they are so hot they were nearly banned in the uk!",
+            "spam_probability": 0.0
+          }
+        ],
+        "false_positives": [
+          {
+            "message": "One of best dialogue in cute reltnship..!! \\Wen i Die, Dont Come Near My Body..!! Bcoz My Hands May Not Come 2 Wipe Ur Tears Off That Time..!Gud ni8\"",
+            "spam_probability": 1.0
+          },
+          {
+            "message": "WE REGRET TO INFORM U THAT THE NHS HAS MADE A MISTAKE.U WERE NEVER ACTUALLY BORN.PLEASE REPORT 2 YOR LOCAL HOSPITAL 2B TERMINATED.WE R SORRY 4 THE INCONVENIENCE",
+            "spam_probability": 1.0
+          },
+          {
+            "message": "Hi the way I was with u 2day, is the normal way&this is the real me. UR unique&I hope I know u 4 the rest of mylife. Hope u find wot was lost.",
+            "spam_probability": 1.0
+          },
+          {
+            "message": "I only haf msn. It's yijue@hotmail.com",
+            "spam_probability": 1.0
+          },
+          {
+            "message": "\\SYMPTOMS\\\" when U are in love: \\\"1.U like listening songs 2.U get stopped where u see the name of your beloved 3.U won't get angry when your\"",
+            "spam_probability": 1.0
+          },
+          {
+            "message": "Let Ur Heart Be Ur Compass Ur Mind Ur Map Ur Soul Ur Guide And U Will Never loose in world....gnun - Sent via WAY2SMS.COM",
+            "spam_probability": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "key": "random_forest",
+      "name": "Random Forest",
+      "family": "Ensemble (bagging)",
+      "role": "improved",
+      "threshold": 0.28,
+      "metrics": {
+        "accuracy": 0.9874274661508704,
+        "precision": 0.9534883720930233,
+        "recall": 0.9461538461538461,
+        "f1": 0.9498069498069498,
+        "roc_auc": 0.9971153846153846
+      },
+      "confusion_matrix": {
+        "tn": 898,
+        "fp": 6,
+        "fn": 7,
+        "tp": 123
+      },
+      "false_positive_rate": 0.00663716814159292,
+      "false_negative_rate": 0.05384615384615385,
+      "roc_curve": [
+        {
+          "fpr": 0.0,
+          "tpr": 0.0
+        },
+        {
+          "fpr": 0.0169,
+          "tpr": 0.9769
+        },
+        {
+          "fpr": 0.0339,
+          "tpr": 0.9846
+        },
+        {
+          "fpr": 0.0508,
+          "tpr": 0.9846
+        },
+        {
+          "fpr": 0.0678,
+          "tpr": 0.9846
+        },
+        {
+          "fpr": 0.0847,
+          "tpr": 0.9846
+        },
+        {
+          "fpr": 0.1017,
+          "tpr": 0.9846
+        },
+        {
+          "fpr": 0.1186,
+          "tpr": 0.9923
+        },
+        {
+          "fpr": 0.1356,
+          "tpr": 0.9923
+        },
+        {
+          "fpr": 0.1525,
+          "tpr": 0.9923
+        },
+        {
+          "fpr": 0.1695,
+          "tpr": 0.9923
+        },
+        {
+          "fpr": 0.1864,
+          "tpr": 0.9967
+        },
+        {
+          "fpr": 0.2034,
+          "tpr": 1.0
+        },
+        {
+          "fpr": 0.2203,
+          "tpr": 1.0
+        },
+        {
+          "fpr": 0.2373,
+          "tpr": 1.0
+        },
+        {
+          "fpr": 0.2542,
+          "tpr": 1.0
+        },
+        {
+          "fpr": 0.2712,
+          "tpr": 1.0
+        },
+        {
+          "fpr": 0.2881,
+          "tpr": 1.0
+        },
+        {
+          "fpr": 0.3051,
+          "tpr": 1.0
+        },
+        {
+          "fpr": 0.322,
+          "tpr": 1.0
+        },
+        {
+          "fpr": 0.339,
+          "tpr": 1.0
+        },
+        {
+          "fpr": 0.3559,
+          "tpr": 1.0
+        },
+        {
+          "fpr": 0.3729,
+          "tpr": 1.0
+        },
+        {
+          "fpr": 0.3898,
+          "tpr": 1.0
+        },
+        {
+          "fpr": 0.4068,
+          "tpr": 1.0
+        },
+        {
+          "fpr": 0.4237,
+          "tpr": 1.0
+        },
+        {
+          "fpr": 0.4407,
+          "tpr": 1.0
+        },
+        {
+          "fpr": 0.4576,
+          "tpr": 1.0
+        },
+        {
+          "fpr": 0.4746,
+          "tpr": 1.0
+        },
+        {
+          "fpr": 0.4915,
+          "tpr": 1.0
+        },
+        {
+          "fpr": 0.5085,
+          "tpr": 1.0
+        },
+        {
+          "fpr": 0.5254,
+          "tpr": 1.0
+        },
+        {
+          "fpr": 0.5424,
+          "tpr": 1.0
+        },
+        {
+          "fpr": 0.5593,
+          "tpr": 1.0
+        },
+        {
+          "fpr": 0.5763,
+          "tpr": 1.0
+        },
+        {
+          "fpr": 0.5932,
+          "tpr": 1.0
+        },
+        {
+          "fpr": 0.6102,
+          "tpr": 1.0
+        },
+        {
+          "fpr": 0.6271,
+          "tpr": 1.0
+        },
+        {
+          "fpr": 0.6441,
+          "tpr": 1.0
+        },
+        {
+          "fpr": 0.661,
+          "tpr": 1.0
+        },
+        {
+          "fpr": 0.678,
+          "tpr": 1.0
+        },
+        {
+          "fpr": 0.6949,
+          "tpr": 1.0
+        },
+        {
+          "fpr": 0.7119,
+          "tpr": 1.0
+        },
+        {
+          "fpr": 0.7288,
+          "tpr": 1.0
+        },
+        {
+          "fpr": 0.7458,
+          "tpr": 1.0
+        },
+        {
+          "fpr": 0.7627,
+          "tpr": 1.0
+        },
+        {
+          "fpr": 0.7797,
+          "tpr": 1.0
+        },
+        {
+          "fpr": 0.7966,
+          "tpr": 1.0
+        },
+        {
+          "fpr": 0.8136,
+          "tpr": 1.0
+        },
+        {
+          "fpr": 0.8305,
+          "tpr": 1.0
+        },
+        {
+          "fpr": 0.8475,
+          "tpr": 1.0
+        },
+        {
+          "fpr": 0.8644,
+          "tpr": 1.0
+        },
+        {
+          "fpr": 0.8814,
+          "tpr": 1.0
+        },
+        {
+          "fpr": 0.8983,
+          "tpr": 1.0
+        },
+        {
+          "fpr": 0.9153,
+          "tpr": 1.0
+        },
+        {
+          "fpr": 0.9322,
+          "tpr": 1.0
+        },
+        {
+          "fpr": 0.9492,
+          "tpr": 1.0
+        },
+        {
+          "fpr": 0.9661,
+          "tpr": 1.0
+        },
+        {
+          "fpr": 0.9831,
+          "tpr": 1.0
+        },
+        {
+          "fpr": 1.0,
+          "tpr": 1.0
+        }
+      ],
+      "classification_report": {
+        "ham": {
+          "precision": 0.9922651933701657,
+          "recall": 0.9933628318584071,
+          "f1": 0.9928137092316197,
+          "support": 904
+        },
+        "spam": {
+          "precision": 0.9534883720930233,
+          "recall": 0.9461538461538461,
+          "f1": 0.9498069498069498,
+          "support": 130
+        },
+        "macro avg": {
+          "precision": 0.9728767827315945,
+          "recall": 0.9697583390061266,
+          "f1": 0.9713103295192848,
+          "support": 1034
+        },
+        "weighted avg": {
+          "precision": 0.9873899643894806,
+          "recall": 0.9874274661508704,
+          "f1": 0.9874066698455394,
+          "support": 1034
+        }
+      },
+      "default_threshold": {
+        "metrics": {
+          "accuracy": 0.9874274661508704,
+          "precision": 0.9834710743801653,
+          "recall": 0.9153846153846154,
+          "f1": 0.9482071713147411,
+          "roc_auc": 0.9971153846153846
+        },
+        "confusion_matrix": {
+          "tn": 902,
+          "fp": 2,
+          "fn": 11,
+          "tp": 119
+        }
+      },
+      "train_time_s": 0.774,
+      "inference_ms": 0.0523,
+      "errors": {
+        "false_negatives": [
+          {
+            "message": "Latest News! Police station toilet stolen, cops have nothing to go on!",
+            "spam_probability": 0.0275
+          },
+          {
+            "message": "Would you like to see my XXX pics they are so hot they were nearly banned in the uk!",
+            "spam_probability": 0.05
+          },
+          {
+            "message": "accordingly. I repeat, just text the word ok on your mobile phone and send",
+            "spam_probability": 0.1375
+          },
+          {
+            "message": "Babe: U want me dont u baby! Im nasty and have a thing 4 filthyguys. Fancy a rude time with a sexy bitch. How about we go slo n hard! Txt XXX SLO(4msgs)",
+            "spam_probability": 0.22
           },
           {
             "message": "Xmas & New Years Eve tickets are now on sale from the club, during the day from 10am till 8pm, and on Thurs, Fri & Sat night this week. They're selling fast!",
+            "spam_probability": 0.22
+          },
+          {
+            "message": "Burger King - Wanna play footy at a top stadium? Get 2 Burger King before 1st Sept and go Large or Super with Coca-Cola and walk out a winner",
+            "spam_probability": 0.2475
+          }
+        ],
+        "false_positives": [
+          {
+            "message": "Let Ur Heart Be Ur Compass Ur Mind Ur Map Ur Soul Ur Guide And U Will Never loose in world....gnun - Sent via WAY2SMS.COM",
+            "spam_probability": 0.5225
+          },
+          {
+            "message": "I only haf msn. It's yijue@hotmail.com",
+            "spam_probability": 0.5025
+          },
+          {
+            "message": "Actually i deleted my old website..now i m blogging at magicalsongs.blogspot.com",
+            "spam_probability": 0.4775
+          },
+          {
+            "message": "Hi! You just spoke to MANEESHA V. We'd like to know if you were satisfied with the experience. Reply Toll Free with Yes or No.",
+            "spam_probability": 0.3325
+          },
+          {
+            "message": "1) Go to write msg 2) Put on Dictionary mode 3)Cover the screen with hand, 4)Press  &lt;#&gt; . 5)Gently remove Ur hand.. Its interesting..:)",
+            "spam_probability": 0.3075
+          },
+          {
+            "message": "Plz note: if anyone calling from a mobile Co. &amp; asks u to type # &lt;#&gt;  or # &lt;#&gt; . Do not do so. Disconnect the call,coz it iz an attempt of 'terrorist' to make use of the sim card no. Itz confirmd by nokia n motorola n has been verified by CNN IBN.",
+            "spam_probability": 0.28
+          }
+        ]
+      }
+    },
+    {
+      "key": "knn",
+      "name": "K-Nearest Neighbors",
+      "family": "Instance-based",
+      "role": "candidate",
+      "threshold": 0.38,
+      "metrics": {
+        "accuracy": 0.9738878143133463,
+        "precision": 0.9327731092436975,
+        "recall": 0.8538461538461538,
+        "f1": 0.891566265060241,
+        "roc_auc": 0.9708560245064669
+      },
+      "confusion_matrix": {
+        "tn": 896,
+        "fp": 8,
+        "fn": 19,
+        "tp": 111
+      },
+      "false_positive_rate": 0.008849557522123894,
+      "false_negative_rate": 0.14615384615384616,
+      "roc_curve": [
+        {
+          "fpr": 0.0,
+          "tpr": 0.0
+        },
+        {
+          "fpr": 0.0169,
+          "tpr": 0.9385
+        },
+        {
+          "fpr": 0.0339,
+          "tpr": 0.9464
+        },
+        {
+          "fpr": 0.0508,
+          "tpr": 0.9474
+        },
+        {
+          "fpr": 0.0678,
+          "tpr": 0.9483
+        },
+        {
+          "fpr": 0.0847,
+          "tpr": 0.9493
+        },
+        {
+          "fpr": 0.1017,
+          "tpr": 0.9502
+        },
+        {
+          "fpr": 0.1186,
+          "tpr": 0.9511
+        },
+        {
+          "fpr": 0.1356,
+          "tpr": 0.9521
+        },
+        {
+          "fpr": 0.1525,
+          "tpr": 0.953
+        },
+        {
+          "fpr": 0.1695,
+          "tpr": 0.954
+        },
+        {
+          "fpr": 0.1864,
+          "tpr": 0.9549
+        },
+        {
+          "fpr": 0.2034,
+          "tpr": 0.9558
+        },
+        {
+          "fpr": 0.2203,
+          "tpr": 0.9568
+        },
+        {
+          "fpr": 0.2373,
+          "tpr": 0.9577
+        },
+        {
+          "fpr": 0.2542,
+          "tpr": 0.9587
+        },
+        {
+          "fpr": 0.2712,
+          "tpr": 0.9596
+        },
+        {
+          "fpr": 0.2881,
+          "tpr": 0.9605
+        },
+        {
+          "fpr": 0.3051,
+          "tpr": 0.9615
+        },
+        {
+          "fpr": 0.322,
+          "tpr": 0.9624
+        },
+        {
+          "fpr": 0.339,
+          "tpr": 0.9634
+        },
+        {
+          "fpr": 0.3559,
+          "tpr": 0.9643
+        },
+        {
+          "fpr": 0.3729,
+          "tpr": 0.9652
+        },
+        {
+          "fpr": 0.3898,
+          "tpr": 0.9662
+        },
+        {
+          "fpr": 0.4068,
+          "tpr": 0.9671
+        },
+        {
+          "fpr": 0.4237,
+          "tpr": 0.9681
+        },
+        {
+          "fpr": 0.4407,
+          "tpr": 0.969
+        },
+        {
+          "fpr": 0.4576,
+          "tpr": 0.9699
+        },
+        {
+          "fpr": 0.4746,
+          "tpr": 0.9709
+        },
+        {
+          "fpr": 0.4915,
+          "tpr": 0.9718
+        },
+        {
+          "fpr": 0.5085,
+          "tpr": 0.9727
+        },
+        {
+          "fpr": 0.5254,
+          "tpr": 0.9737
+        },
+        {
+          "fpr": 0.5424,
+          "tpr": 0.9746
+        },
+        {
+          "fpr": 0.5593,
+          "tpr": 0.9756
+        },
+        {
+          "fpr": 0.5763,
+          "tpr": 0.9765
+        },
+        {
+          "fpr": 0.5932,
+          "tpr": 0.9774
+        },
+        {
+          "fpr": 0.6102,
+          "tpr": 0.9784
+        },
+        {
+          "fpr": 0.6271,
+          "tpr": 0.9793
+        },
+        {
+          "fpr": 0.6441,
+          "tpr": 0.9803
+        },
+        {
+          "fpr": 0.661,
+          "tpr": 0.9812
+        },
+        {
+          "fpr": 0.678,
+          "tpr": 0.9821
+        },
+        {
+          "fpr": 0.6949,
+          "tpr": 0.9831
+        },
+        {
+          "fpr": 0.7119,
+          "tpr": 0.984
+        },
+        {
+          "fpr": 0.7288,
+          "tpr": 0.985
+        },
+        {
+          "fpr": 0.7458,
+          "tpr": 0.9859
+        },
+        {
+          "fpr": 0.7627,
+          "tpr": 0.9868
+        },
+        {
+          "fpr": 0.7797,
+          "tpr": 0.9878
+        },
+        {
+          "fpr": 0.7966,
+          "tpr": 0.9887
+        },
+        {
+          "fpr": 0.8136,
+          "tpr": 0.9897
+        },
+        {
+          "fpr": 0.8305,
+          "tpr": 0.9906
+        },
+        {
+          "fpr": 0.8475,
+          "tpr": 0.9915
+        },
+        {
+          "fpr": 0.8644,
+          "tpr": 0.9925
+        },
+        {
+          "fpr": 0.8814,
+          "tpr": 0.9934
+        },
+        {
+          "fpr": 0.8983,
+          "tpr": 0.9944
+        },
+        {
+          "fpr": 0.9153,
+          "tpr": 0.9953
+        },
+        {
+          "fpr": 0.9322,
+          "tpr": 0.9962
+        },
+        {
+          "fpr": 0.9492,
+          "tpr": 0.9972
+        },
+        {
+          "fpr": 0.9661,
+          "tpr": 0.9981
+        },
+        {
+          "fpr": 0.9831,
+          "tpr": 0.9991
+        },
+        {
+          "fpr": 1.0,
+          "tpr": 1.0
+        }
+      ],
+      "classification_report": {
+        "ham": {
+          "precision": 0.9792349726775956,
+          "recall": 0.9911504424778761,
+          "f1": 0.9851566794942276,
+          "support": 904
+        },
+        "spam": {
+          "precision": 0.9327731092436975,
+          "recall": 0.8538461538461538,
+          "f1": 0.891566265060241,
+          "support": 130
+        },
+        "macro avg": {
+          "precision": 0.9560040409606465,
+          "recall": 0.9224982981620149,
+          "f1": 0.9383614722772342,
+          "support": 1034
+        },
+        "weighted avg": {
+          "precision": 0.9733935391704324,
+          "recall": 0.9738878143133463,
+          "f1": 0.973389992959974,
+          "support": 1034
+        }
+      },
+      "default_threshold": {
+        "metrics": {
+          "accuracy": 0.9748549323017408,
+          "precision": 0.9814814814814815,
+          "recall": 0.8153846153846154,
+          "f1": 0.8907563025210085,
+          "roc_auc": 0.9708560245064669
+        },
+        "confusion_matrix": {
+          "tn": 902,
+          "fp": 2,
+          "fn": 24,
+          "tp": 106
+        }
+      },
+      "train_time_s": 0.001,
+      "inference_ms": 0.0564,
+      "errors": {
+        "false_negatives": [
+          {
+            "message": "SMS. ac sun0819 posts HELLO:\\You seem cool, wanted to say hi. HI!!!\\\" Stop? Send STOP to 62468\"",
+            "spam_probability": 0.0
+          },
+          {
+            "message": "WOW! The Boys R Back. TAKE THAT 2007 UK Tour. Win VIP Tickets & pre-book with VIP Club. Txt CLUB to 81303. Trackmarque Ltd info@vipclub4u.",
+            "spam_probability": 0.0
+          },
+          {
+            "message": "We currently have a message awaiting your collection. To collect your message just call 08718723815.",
             "spam_probability": 0.0
           },
           {
@@ -1743,38 +1771,38 @@
             "spam_probability": 0.0
           },
           {
-            "message": "In The Simpsons Movie released in July 2007 name the band that died at the start of the film? A-Green Day, B-Blue Day, C-Red Day. (Send A, B or C)",
+            "message": "88066 FROM 88066 LOST 3POUND HELP",
             "spam_probability": 0.0
           },
           {
-            "message": "88066 FROM 88066 LOST 3POUND HELP",
+            "message": "Xmas & New Years Eve tickets are now on sale from the club, during the day from 10am till 8pm, and on Thurs, Fri & Sat night this week. They're selling fast!",
             "spam_probability": 0.0
           }
         ],
         "false_positives": [
           {
+            "message": "I only haf msn. It's yijue@hotmail.com",
+            "spam_probability": 0.6029
+          },
+          {
+            "message": "U're welcome... Caught u using broken english again...",
+            "spam_probability": 0.5572
+          },
+          {
             "message": "Received, understood n acted upon!",
-            "spam_probability": 0.491
+            "spam_probability": 0.4669
           },
           {
             "message": "K:)eng rocking in ashes:)",
-            "spam_probability": 0.4258
+            "spam_probability": 0.4295
           },
           {
-            "message": "Cps is causing the outages to conserve energy.",
-            "spam_probability": 0.4138
+            "message": "I'm in a movie. Call me 4 wat?",
+            "spam_probability": 0.4209
           },
           {
-            "message": "Your bill at 3 is £33.65 so thats not bad!",
-            "spam_probability": 0.389
-          },
-          {
-            "message": "Can you plz tell me the ans. BSLVYL sent via fullonsms.com",
-            "spam_probability": 0.3624
-          },
-          {
-            "message": "* Will have two more cartons off u and is very pleased with shelves",
-            "spam_probability": 0.352
+            "message": "Actually i deleted my old website..now i m blogging at magicalsongs.blogspot.com",
+            "spam_probability": 0.4011
           }
         ]
       }
@@ -1784,22 +1812,22 @@
       "name": "Support Vector Machine",
       "family": "Kernel",
       "role": "candidate",
-      "threshold": 0.28,
+      "threshold": 0.38,
       "metrics": {
-        "accuracy": 0.9884057971014493,
-        "precision": 0.9612403100775194,
-        "recall": 0.9465648854961832,
-        "f1": 0.9538461538461539,
-        "roc_auc": 0.9975511720597177
+        "accuracy": 0.9864603481624759,
+        "precision": 0.9461538461538461,
+        "recall": 0.9461538461538461,
+        "f1": 0.9461538461538461,
+        "roc_auc": 0.9979237576582709
       },
       "confusion_matrix": {
-        "tn": 899,
-        "fp": 5,
+        "tn": 897,
+        "fp": 7,
         "fn": 7,
-        "tp": 124
+        "tp": 123
       },
-      "false_positive_rate": 0.0055309734513274336,
-      "false_negative_rate": 0.05343511450381679,
+      "false_positive_rate": 0.007743362831858407,
+      "false_negative_rate": 0.05384615384615385,
       "roc_curve": [
         {
           "fpr": 0.0,
@@ -1807,31 +1835,31 @@
         },
         {
           "fpr": 0.0169,
-          "tpr": 0.9695
+          "tpr": 0.9692
         },
         {
           "fpr": 0.0339,
-          "tpr": 0.9847
+          "tpr": 0.9846
         },
         {
           "fpr": 0.0508,
-          "tpr": 0.9847
+          "tpr": 0.9846
         },
         {
           "fpr": 0.0678,
-          "tpr": 0.9924
+          "tpr": 0.9923
         },
         {
           "fpr": 0.0847,
-          "tpr": 0.9924
+          "tpr": 1.0
         },
         {
           "fpr": 0.1017,
-          "tpr": 0.9924
+          "tpr": 1.0
         },
         {
           "fpr": 0.1186,
-          "tpr": 0.9924
+          "tpr": 1.0
         },
         {
           "fpr": 0.1356,
@@ -2044,94 +2072,98 @@
       ],
       "classification_report": {
         "ham": {
-          "precision": 0.9922737306843267,
-          "recall": 0.9944690265486725,
-          "f1": 0.9933701657458563,
+          "precision": 0.9922566371681416,
+          "recall": 0.9922566371681416,
+          "f1": 0.9922566371681416,
           "support": 904
         },
         "spam": {
-          "precision": 0.9612403100775194,
-          "recall": 0.9465648854961832,
-          "f1": 0.9538461538461539,
-          "support": 131
+          "precision": 0.9461538461538461,
+          "recall": 0.9461538461538461,
+          "f1": 0.9461538461538461,
+          "support": 130
         },
         "macro avg": {
-          "precision": 0.976757020380923,
-          "recall": 0.9705169560224278,
-          "f1": 0.9736081597960051,
-          "support": 1035
+          "precision": 0.9692052416609939,
+          "recall": 0.9692052416609939,
+          "f1": 0.9692052416609939,
+          "support": 1034
         },
         "weighted avg": {
-          "precision": 0.988345829138924,
-          "recall": 0.9884057971014493,
-          "f1": 0.9883676096503384,
-          "support": 1035
+          "precision": 0.9864603481624759,
+          "recall": 0.9864603481624759,
+          "f1": 0.9864603481624759,
+          "support": 1034
         }
       },
       "default_threshold": {
         "metrics": {
-          "accuracy": 0.9884057971014493,
-          "precision": 0.983739837398374,
-          "recall": 0.9236641221374046,
-          "f1": 0.952755905511811,
-          "roc_auc": 0.9975511720597177
+          "accuracy": 0.9854932301740812,
+          "precision": 0.9457364341085271,
+          "recall": 0.9384615384615385,
+          "f1": 0.9420849420849421,
+          "roc_auc": 0.9979237576582709
         },
         "confusion_matrix": {
-          "tn": 902,
-          "fp": 2,
-          "fn": 10,
-          "tp": 121
+          "tn": 897,
+          "fp": 7,
+          "fn": 8,
+          "tp": 122
         }
       },
-      "train_time_s": 0.838,
-      "inference_ms": 0.0409,
+      "train_time_s": 0.857,
+      "inference_ms": 0.0338,
       "errors": {
         "false_negatives": [
           {
-            "message": "In The Simpsons Movie released in July 2007 name the band that died at the start of the film? A-Green Day, B-Blue Day, C-Red Day. (Send A, B or C)",
-            "spam_probability": 0.01
-          },
-          {
             "message": "Latest News! Police station toilet stolen, cops have nothing to go on!",
-            "spam_probability": 0.0184
+            "spam_probability": 0.0194
           },
           {
             "message": "Would you like to see my XXX pics they are so hot they were nearly banned in the uk!",
-            "spam_probability": 0.0418
+            "spam_probability": 0.0362
+          },
+          {
+            "message": "accordingly. I repeat, just text the word ok on your mobile phone and send",
+            "spam_probability": 0.0761
           },
           {
             "message": "You will recieve your tone within the next 24hrs. For Terms and conditions please see Channel U Teletext Pg 750",
-            "spam_probability": 0.0691
+            "spam_probability": 0.0986
           },
           {
             "message": "Babe: U want me dont u baby! Im nasty and have a thing 4 filthyguys. Fancy a rude time with a sexy bitch. How about we go slo n hard! Txt XXX SLO(4msgs)",
-            "spam_probability": 0.1019
+            "spam_probability": 0.1308
           },
           {
-            "message": "Check Out Choose Your Babe Videos @ sms.shsex.netUN fgkslpoPW fgkslpo",
-            "spam_probability": 0.148
+            "message": "Burger King - Wanna play footy at a top stadium? Get 2 Burger King before 1st Sept and go Large or Super with Coca-Cola and walk out a winner",
+            "spam_probability": 0.1513
           }
         ],
         "false_positives": [
           {
-            "message": "I (Career Tel) have added u as a contact on INDYAROCKS.COM to send FREE SMS. To remove from phonebook - sms NO to  &lt;#&gt;",
-            "spam_probability": 0.9975
+            "message": "K k:) sms chat with me.",
+            "spam_probability": 0.9436
           },
           {
-            "message": "Can you plz tell me the ans. BSLVYL sent via fullonsms.com",
-            "spam_probability": 0.7483
+            "message": "Hey...Great deal...Farm tour 9am to 5pm $95/pax, $50 deposit by 16 May",
+            "spam_probability": 0.9109
           },
           {
-            "message": "Yes... I trust u to buy new stuff ASAP so I can try it out",
-            "spam_probability": 0.3418
+            "message": "I only haf msn. It's yijue@hotmail.com",
+            "spam_probability": 0.8531
           },
           {
-            "message": "Yunny i'm walking in citylink now ü faster come down... Me very hungry...",
-            "spam_probability": 0.3113
+            "message": "Actually i deleted my old website..now i m blogging at magicalsongs.blogspot.com",
+            "spam_probability": 0.7655
           },
           {
-            "message": "Your bill at 3 is £33.65 so thats not bad!",
-            "spam_probability": 0.3003
+            "message": "Let Ur Heart Be Ur Compass Ur Mind Ur Map Ur Soul Ur Guide And U Will Never loose in world....gnun - Sent via WAY2SMS.COM",
+            "spam_probability": 0.7342
+          },
+          {
+            "message": "Msg me when rajini comes.",
+            "spam_probability": 0.6917
           }
         ]
       }
@@ -2143,20 +2175,20 @@
       "role": "candidate",
       "threshold": 0.5,
       "metrics": {
-        "accuracy": 0.9845410628019323,
+        "accuracy": 0.9854932301740812,
         "precision": 0.9752066115702479,
-        "recall": 0.9007633587786259,
-        "f1": 0.9365079365079365,
-        "roc_auc": 0.9963478686752685
+        "recall": 0.9076923076923077,
+        "f1": 0.9402390438247012,
+        "roc_auc": 0.9939669843430905
       },
       "confusion_matrix": {
         "tn": 901,
         "fp": 3,
-        "fn": 13,
+        "fn": 12,
         "tp": 118
       },
       "false_positive_rate": 0.00331858407079646,
-      "false_negative_rate": 0.09923664122137404,
+      "false_negative_rate": 0.09230769230769231,
       "roc_curve": [
         {
           "fpr": 0.0,
@@ -2164,55 +2196,55 @@
         },
         {
           "fpr": 0.0169,
-          "tpr": 0.9618
+          "tpr": 0.9462
         },
         {
           "fpr": 0.0339,
-          "tpr": 0.9771
+          "tpr": 0.9615
         },
         {
           "fpr": 0.0508,
-          "tpr": 0.9847
+          "tpr": 0.9615
         },
         {
           "fpr": 0.0678,
-          "tpr": 0.9847
+          "tpr": 0.9769
         },
         {
           "fpr": 0.0847,
-          "tpr": 0.9847
+          "tpr": 0.9769
         },
         {
           "fpr": 0.1017,
-          "tpr": 0.9847
+          "tpr": 0.9769
         },
         {
           "fpr": 0.1186,
-          "tpr": 0.9847
+          "tpr": 0.9846
         },
         {
           "fpr": 0.1356,
-          "tpr": 0.9847
+          "tpr": 0.9846
         },
         {
           "fpr": 0.1525,
-          "tpr": 0.9847
+          "tpr": 0.9846
         },
         {
           "fpr": 0.1695,
-          "tpr": 1.0
+          "tpr": 0.9846
         },
         {
           "fpr": 0.1864,
-          "tpr": 1.0
+          "tpr": 0.9846
         },
         {
           "fpr": 0.2034,
-          "tpr": 1.0
+          "tpr": 0.9846
         },
         {
           "fpr": 0.2203,
-          "tpr": 1.0
+          "tpr": 0.9846
         },
         {
           "fpr": 0.2373,
@@ -2401,86 +2433,86 @@
       ],
       "classification_report": {
         "ham": {
-          "precision": 0.9857768052516411,
+          "precision": 0.9868565169769989,
           "recall": 0.9966814159292036,
-          "f1": 0.9911991199119912,
+          "f1": 0.9917446340121079,
           "support": 904
         },
         "spam": {
           "precision": 0.9752066115702479,
-          "recall": 0.9007633587786259,
-          "f1": 0.9365079365079365,
-          "support": 131
+          "recall": 0.9076923076923077,
+          "f1": 0.9402390438247012,
+          "support": 130
         },
         "macro avg": {
-          "precision": 0.9804917084109446,
-          "recall": 0.9487223873539148,
-          "f1": 0.9638535282099638,
-          "support": 1035
+          "precision": 0.9810315642736234,
+          "recall": 0.9521868618107556,
+          "f1": 0.9659918389184046,
+          "support": 1034
         },
         "weighted avg": {
-          "precision": 0.9844389353267499,
-          "recall": 0.9845410628019323,
-          "f1": 0.9842768541864538,
-          "support": 1035
+          "precision": 0.9853918286763435,
+          "recall": 0.9854932301740812,
+          "f1": 0.9852690762516023,
+          "support": 1034
         }
       },
       "default_threshold": {
         "metrics": {
-          "accuracy": 0.9845410628019323,
+          "accuracy": 0.9854932301740812,
           "precision": 0.9752066115702479,
-          "recall": 0.9007633587786259,
-          "f1": 0.9365079365079365,
-          "roc_auc": 0.9963478686752685
+          "recall": 0.9076923076923077,
+          "f1": 0.9402390438247012,
+          "roc_auc": 0.9939669843430905
         },
         "confusion_matrix": {
           "tn": 901,
           "fp": 3,
-          "fn": 13,
+          "fn": 12,
           "tp": 118
         }
       },
-      "train_time_s": 1.208,
+      "train_time_s": 1.228,
       "inference_ms": 0.0408,
       "errors": {
         "false_negatives": [
           {
-            "message": "Would you like to see my XXX pics they are so hot they were nearly banned in the uk!",
-            "spam_probability": 0.3938
+            "message": "Latest News! Police station toilet stolen, cops have nothing to go on!",
+            "spam_probability": 0.3919
           },
           {
-            "message": "Latest News! Police station toilet stolen, cops have nothing to go on!",
-            "spam_probability": 0.3938
+            "message": "Would you like to see my XXX pics they are so hot they were nearly banned in the uk!",
+            "spam_probability": 0.3919
           },
           {
             "message": "Bought one ringtone and now getting texts costing 3 pound offering more tones etc",
-            "spam_probability": 0.4261
+            "spam_probability": 0.4135
           },
           {
-            "message": "Check Out Choose Your Babe Videos @ sms.shsex.netUN fgkslpoPW fgkslpo",
-            "spam_probability": 0.431
+            "message": "accordingly. I repeat, just text the word ok on your mobile phone and send",
+            "spam_probability": 0.4227
           },
           {
-            "message": "In The Simpsons Movie released in July 2007 name the band that died at the start of the film? A-Green Day, B-Blue Day, C-Red Day. (Send A, B or C)",
-            "spam_probability": 0.449
+            "message": "Ringtone Club: Gr8 new polys direct to your mobile every week !",
+            "spam_probability": 0.4228
           },
           {
             "message": "Xmas & New Years Eve tickets are now on sale from the club, during the day from 10am till 8pm, and on Thurs, Fri & Sat night this week. They're selling fast!",
-            "spam_probability": 0.4552
+            "spam_probability": 0.4582
           }
         ],
         "false_positives": [
           {
-            "message": "7 wonders in My WORLD 7th You 6th Ur style 5th Ur smile 4th Ur Personality 3rd Ur Nature 2nd Ur SMS and 1st \"Ur Lovely Friendship\"... good morning dear",
-            "spam_probability": 0.5663
+            "message": "Hey...Great deal...Farm tour 9am to 5pm $95/pax, $50 deposit by 16 May",
+            "spam_probability": 0.529
           },
           {
-            "message": "I (Career Tel) have added u as a contact on INDYAROCKS.COM to send FREE SMS. To remove from phonebook - sms NO to  &lt;#&gt;",
-            "spam_probability": 0.5096
+            "message": "1) Go to write msg 2) Put on Dictionary mode 3)Cover the screen with hand, 4)Press  &lt;#&gt; . 5)Gently remove Ur hand.. Its interesting..:)",
+            "spam_probability": 0.5107
           },
           {
-            "message": "Your bill at 3 is £33.65 so thats not bad!",
-            "spam_probability": 0.5043
+            "message": "Hi! You just spoke to MANEESHA V. We'd like to know if you were satisfied with the experience. Reply Toll Free with Yes or No.",
+            "spam_probability": 0.5016
           }
         ]
       }
@@ -2490,22 +2522,22 @@
       "name": "Gradient Boosting",
       "family": "Ensemble (boosting)",
       "role": "candidate",
-      "threshold": 0.51,
+      "threshold": 0.38,
       "metrics": {
-        "accuracy": 0.9874396135265701,
-        "precision": 0.9758064516129032,
-        "recall": 0.9236641221374046,
-        "f1": 0.9490196078431372,
-        "roc_auc": 0.9936246031209889
+        "accuracy": 0.9854932301740812,
+        "precision": 0.967479674796748,
+        "recall": 0.9153846153846154,
+        "f1": 0.9407114624505929,
+        "roc_auc": 0.9937202178352621
       },
       "confusion_matrix": {
-        "tn": 901,
-        "fp": 3,
-        "fn": 10,
-        "tp": 121
+        "tn": 900,
+        "fp": 4,
+        "fn": 11,
+        "tp": 119
       },
-      "false_positive_rate": 0.00331858407079646,
-      "false_negative_rate": 0.07633587786259542,
+      "false_positive_rate": 0.004424778761061947,
+      "false_negative_rate": 0.08461538461538462,
       "roc_curve": [
         {
           "fpr": 0.0,
@@ -2513,91 +2545,91 @@
         },
         {
           "fpr": 0.0169,
-          "tpr": 0.9771
+          "tpr": 0.9615
         },
         {
           "fpr": 0.0339,
-          "tpr": 0.9771
+          "tpr": 0.9769
         },
         {
           "fpr": 0.0508,
-          "tpr": 0.9847
+          "tpr": 0.9846
         },
         {
           "fpr": 0.0678,
-          "tpr": 0.9847
+          "tpr": 0.9846
         },
         {
           "fpr": 0.0847,
-          "tpr": 0.9847
+          "tpr": 0.9846
         },
         {
           "fpr": 0.1017,
-          "tpr": 0.9847
+          "tpr": 0.9846
         },
         {
           "fpr": 0.1186,
-          "tpr": 0.9847
+          "tpr": 0.9846
         },
         {
           "fpr": 0.1356,
-          "tpr": 0.9847
+          "tpr": 0.9846
         },
         {
           "fpr": 0.1525,
-          "tpr": 0.9847
+          "tpr": 0.9846
         },
         {
           "fpr": 0.1695,
-          "tpr": 0.9847
+          "tpr": 0.9846
         },
         {
           "fpr": 0.1864,
-          "tpr": 0.9847
+          "tpr": 0.9846
         },
         {
           "fpr": 0.2034,
-          "tpr": 0.9847
+          "tpr": 0.9846
         },
         {
           "fpr": 0.2203,
-          "tpr": 0.9847
+          "tpr": 0.9846
         },
         {
           "fpr": 0.2373,
-          "tpr": 0.9847
+          "tpr": 0.9846
         },
         {
           "fpr": 0.2542,
-          "tpr": 0.9847
+          "tpr": 0.9846
         },
         {
           "fpr": 0.2712,
-          "tpr": 0.9847
+          "tpr": 0.9846
         },
         {
           "fpr": 0.2881,
-          "tpr": 0.9847
+          "tpr": 0.9846
         },
         {
           "fpr": 0.3051,
-          "tpr": 0.9847
+          "tpr": 0.9846
         },
         {
           "fpr": 0.322,
-          "tpr": 0.9847
+          "tpr": 0.9846
         },
         {
           "fpr": 0.339,
-          "tpr": 0.989
+          "tpr": 0.9898
         },
         {
           "fpr": 0.3559,
-          "tpr": 0.9935
+          "tpr": 0.9957
         },
         {
           "fpr": 0.3729,
-          "tpr": 0.998
+          "tpr": 1.0
         },
         {
           "fpr": 0.3898,
@@ -2750,86 +2782,90 @@
       ],
       "classification_report": {
         "ham": {
-          "precision": 0.9890230515916575,
-          "recall": 0.9966814159292036,
-          "f1": 0.9928374655647383,
+          "precision": 0.9879253567508233,
+          "recall": 0.995575221238938,
+          "f1": 0.9917355371900827,
           "support": 904
         },
         "spam": {
-          "precision": 0.9758064516129032,
-          "recall": 0.9236641221374046,
-          "f1": 0.9490196078431372,
-          "support": 131
+          "precision": 0.967479674796748,
+          "recall": 0.9153846153846154,
+          "f1": 0.9407114624505929,
+          "support": 130
         },
         "macro avg": {
-          "precision": 0.9824147516022803,
-          "recall": 0.9601727690333041,
-          "f1": 0.9709285367039378,
-          "support": 1035
+          "precision": 0.9777025157737856,
+          "recall": 0.9554799183117767,
+          "f1": 0.9662234998203378,
+          "support": 1034
         },
         "weighted avg": {
-          "precision": 0.9873502258938635,
-          "recall": 0.9874396135265701,
-          "f1": 0.9872914371961105,
-          "support": 1035
+          "precision": 0.9853548164664617,
+          "recall": 0.9854932301740812,
+          "f1": 0.9853205181222552,
+          "support": 1034
         }
       },
       "default_threshold": {
         "metrics": {
-          "accuracy": 0.9874396135265701,
-          "precision": 0.9758064516129032,
-          "recall": 0.9236641221374046,
-          "f1": 0.9490196078431372,
-          "roc_auc": 0.9936246031209889
+          "accuracy": 0.9864603481624759,
+          "precision": 0.9754098360655737,
+          "recall": 0.9153846153846154,
+          "f1": 0.9444444444444444,
+          "roc_auc": 0.9937202178352621
         },
         "confusion_matrix": {
           "tn": 901,
           "fp": 3,
-          "fn": 10,
-          "tp": 121
+          "fn": 11,
+          "tp": 119
         }
       },
-      "train_time_s": 1.326,
-      "inference_ms": 0.002,
+      "train_time_s": 1.419,
+      "inference_ms": 0.0028,
       "errors": {
         "false_negatives": [
           {
             "message": "Latest News! Police station toilet stolen, cops have nothing to go on!",
-            "spam_probability": 0.0033
+            "spam_probability": 0.0031
           },
           {
             "message": "Would you like to see my XXX pics they are so hot they were nearly banned in the uk!",
-            "spam_probability": 0.0033
+            "spam_probability": 0.0031
           },
           {
-            "message": "Check Out Choose Your Babe Videos @ sms.shsex.netUN fgkslpoPW fgkslpo",
-            "spam_probability": 0.0135
-          },
-          {
-            "message": "Orange brings you ringtones from all time Chart Heroes, with a free hit each week! Go to Ringtones & Pics on wap. To stop receiving these tips reply STOP.",
-            "spam_probability": 0.0403
-          },
-          {
-            "message": "Babe: U want me dont u baby! Im nasty and have a thing 4 filthyguys. Fancy a rude time with a sexy bitch. How about we go slo n hard! Txt XXX SLO(4msgs)",
-            "spam_probability": 0.0524
+            "message": "accordingly. I repeat, just text the word ok on your mobile phone and send",
+            "spam_probability": 0.0258
           },
           {
             "message": "Xmas & New Years Eve tickets are now on sale from the club, during the day from 10am till 8pm, and on Thurs, Fri & Sat night this week. They're selling fast!",
-            "spam_probability": 0.0702
+            "spam_probability": 0.0825
+          },
+          {
+            "message": "Babe: U want me dont u baby! Im nasty and have a thing 4 filthyguys. Fancy a rude time with a sexy bitch. How about we go slo n hard! Txt XXX SLO(4msgs)",
+            "spam_probability": 0.1
+          },
+          {
+            "message": "As one of our registered subscribers u can enter the draw 4 a 100 G.B. gift voucher by replying with ENTER. To unsubscribe text STOP",
+            "spam_probability": 0.2001
           }
         ],
         "false_positives": [
           {
-            "message": "7 wonders in My WORLD 7th You 6th Ur style 5th Ur smile 4th Ur Personality 3rd Ur Nature 2nd Ur SMS and 1st \"Ur Lovely Friendship\"... good morning dear",
-            "spam_probability": 0.9243
+            "message": "K.. I yan jiu liao... Sat we can go 4 bugis vill one frm 10 to 3 den hop to parco 4 nb. Sun can go cine frm 1030 to 2, den hop to orc mrt 4 hip hop at 4...",
+            "spam_probability": 0.6347
           },
           {
-            "message": "U wake up already? Wat u doing? U picking us up later rite? I'm taking sq825, reaching ard 7 smth 8 like dat. U can check e arrival time. C ya soon...",
-            "spam_probability": 0.5658
+            "message": "I only haf msn. It's yijue@hotmail.com",
+            "spam_probability": 0.5789
           },
           {
-            "message": "I (Career Tel) have added u as a contact on INDYAROCKS.COM to send FREE SMS. To remove from phonebook - sms NO to  &lt;#&gt;",
-            "spam_probability": 0.5548
+            "message": "Camera quite good, 10.1mega pixels, 3optical and 5digital dooms. Have a lovely holiday, be safe and i hope you hav a good journey! Happy new year to you both! See you in a couple of weeks! ",
+            "spam_probability": 0.5483
+          },
+          {
+            "message": "Let Ur Heart Be Ur Compass Ur Mind Ur Map Ur Soul Ur Guide And U Will Never loose in world....gnun - Sent via WAY2SMS.COM",
+            "spam_probability": 0.4554
           }
         ]
       }
@@ -2839,22 +2875,22 @@
       "name": "XGBoost",
       "family": "Ensemble (boosting)",
       "role": "candidate",
-      "threshold": 0.81,
+      "threshold": 0.83,
       "metrics": {
-        "accuracy": 0.9874396135265701,
-        "precision": 0.9836065573770492,
-        "recall": 0.916030534351145,
-        "f1": 0.9486166007905138,
-        "roc_auc": 0.997019185300277
+        "accuracy": 0.9893617021276596,
+        "precision": 0.9917355371900827,
+        "recall": 0.9230769230769231,
+        "f1": 0.9561752988047809,
+        "roc_auc": 0.9955496936691627
       },
       "confusion_matrix": {
-        "tn": 902,
-        "fp": 2,
-        "fn": 11,
+        "tn": 903,
+        "fp": 1,
+        "fn": 10,
         "tp": 120
       },
-      "false_positive_rate": 0.0022123893805309734,
-      "false_negative_rate": 0.08396946564885496,
+      "false_positive_rate": 0.0011061946902654867,
+      "false_negative_rate": 0.07692307692307693,
       "roc_curve": [
         {
           "fpr": 0.0,
@@ -2862,71 +2898,71 @@
         },
         {
           "fpr": 0.0169,
-          "tpr": 0.9695
+          "tpr": 0.9538
         },
         {
           "fpr": 0.0339,
-          "tpr": 0.9695
+          "tpr": 0.9615
         },
         {
           "fpr": 0.0508,
-          "tpr": 0.9847
+          "tpr": 0.9692
         },
         {
           "fpr": 0.0678,
-          "tpr": 0.9847
+          "tpr": 0.9846
         },
         {
           "fpr": 0.0847,
-          "tpr": 0.9924
+          "tpr": 0.9923
         },
         {
           "fpr": 0.1017,
-          "tpr": 0.9924
+          "tpr": 0.9923
         },
         {
           "fpr": 0.1186,
-          "tpr": 0.9924
+          "tpr": 0.9923
         },
         {
           "fpr": 0.1356,
-          "tpr": 0.9924
+          "tpr": 0.9923
         },
         {
           "fpr": 0.1525,
-          "tpr": 0.9924
+          "tpr": 0.9923
         },
         {
           "fpr": 0.1695,
-          "tpr": 1.0
+          "tpr": 0.9923
         },
         {
           "fpr": 0.1864,
-          "tpr": 1.0
+          "tpr": 0.9923
         },
         {
           "fpr": 0.2034,
-          "tpr": 1.0
+          "tpr": 0.9923
         },
         {
           "fpr": 0.2203,
-          "tpr": 1.0
+          "tpr": 0.9923
         },
         {
           "fpr": 0.2373,
-          "tpr": 1.0
+          "tpr": 0.9923
         },
         {
           "fpr": 0.2542,
-          "tpr": 1.0
+          "tpr": 0.9923
         },
         {
           "fpr": 0.2712,
-          "tpr": 1.0
+          "tpr": 0.9923
         },
         {
           "fpr": 0.2881,
-          "tpr": 1.0
+          "tpr": 0.9923
         },
         {
           "fpr": 0.3051,
@@ -3099,82 +3135,78 @@
       ],
       "classification_report": {
         "ham": {
-          "precision": 0.9879518072289156,
-          "recall": 0.9977876106194691,
-          "f1": 0.9928453494771602,
+          "precision": 0.9890470974808324,
+          "recall": 0.9988938053097345,
+          "f1": 0.9939460649422125,
           "support": 904
         },
         "spam": {
-          "precision": 0.9836065573770492,
-          "recall": 0.916030534351145,
-          "f1": 0.9486166007905138,
-          "support": 131
+          "precision": 0.9917355371900827,
+          "recall": 0.9230769230769231,
+          "f1": 0.9561752988047809,
+          "support": 130
         },
         "macro avg": {
-          "precision": 0.9857791823029824,
-          "recall": 0.9569090724853071,
-          "f1": 0.970730975133837,
-          "support": 1035
+          "precision": 0.9903913173354575,
+          "recall": 0.9609853641933288,
+          "f1": 0.9750606818734967,
+          "support": 1034
         },
         "weighted avg": {
-          "precision": 0.9874018287452494,
-          "recall": 0.9874396135265701,
-          "f1": 0.9872473146192369,
-          "support": 1035
+          "precision": 0.9893851024732913,
+          "recall": 0.9893617021276596,
+          "f1": 0.9891973225845084,
+          "support": 1034
         }
       },
       "default_threshold": {
         "metrics": {
-          "accuracy": 0.9884057971014493,
-          "precision": 0.9612403100775194,
-          "recall": 0.9465648854961832,
+          "accuracy": 0.988394584139265,
+          "precision": 0.9538461538461539,
+          "recall": 0.9538461538461539,
           "f1": 0.9538461538461539,
-          "roc_auc": 0.997019185300277
+          "roc_auc": 0.9955496936691627
         },
         "confusion_matrix": {
-          "tn": 899,
-          "fp": 5,
-          "fn": 7,
+          "tn": 898,
+          "fp": 6,
+          "fn": 6,
           "tp": 124
         }
       },
-      "train_time_s": 0.666,
-      "inference_ms": 0.0033,
+      "train_time_s": 0.65,
+      "inference_ms": 0.0037,
       "errors": {
         "false_negatives": [
           {
             "message": "Would you like to see my XXX pics they are so hot they were nearly banned in the uk!",
-            "spam_probability": 0.001
+            "spam_probability": 0.0004
           },
           {
             "message": "Latest News! Police station toilet stolen, cops have nothing to go on!",
-            "spam_probability": 0.0039
+            "spam_probability": 0.01
           },
           {
             "message": "Bought one ringtone and now getting texts costing 3 pound offering more tones etc",
-            "spam_probability": 0.011
+            "spam_probability": 0.0146
           },
           {
-            "message": "Check Out Choose Your Babe Videos @ sms.shsex.netUN fgkslpoPW fgkslpo",
-            "spam_probability": 0.0179
+            "message": "accordingly. I repeat, just text the word ok on your mobile phone and send",
+            "spam_probability": 0.0174
           },
           {
-            "message": "RECPT 1/3. You have ordered a Ringtone. Your order is being processed...",
-            "spam_probability": 0.1351
+            "message": "Win a £1000 cash prize or a prize worth £5000",
+            "spam_probability": 0.0314
           },
           {
-            "message": "In The Simpsons Movie released in July 2007 name the band that died at the start of the film? A-Green Day, B-Blue Day, C-Red Day. (Send A, B or C)",
-            "spam_probability": 0.2041
+            "message": "Ringtone Club: Gr8 new polys direct to your mobile every week !",
+            "spam_probability": 0.0506
           }
         ],
         "false_positives": [
           {
-            "message": "7 wonders in My WORLD 7th You 6th Ur style 5th Ur smile 4th Ur Personality 3rd Ur Nature 2nd Ur SMS and 1st \"Ur Lovely Friendship\"... good morning dear",
-            "spam_probability": 0.9778
-          },
-          {
-            "message": "I (Career Tel) have added u as a contact on INDYAROCKS.COM to send FREE SMS. To remove from phonebook - sms NO to  &lt;#&gt;",
-            "spam_probability": 0.9223
+            "message": "Actually i deleted my old website..now i m blogging at magicalsongs.blogspot.com",
+            "spam_probability": 0.8317
           }
         ]
       }
@@ -3184,22 +3216,22 @@
       "name": "MLP Neural Network",
       "family": "Neural network",
       "role": "candidate",
-      "threshold": 0.28,
+      "threshold": 0.27,
       "metrics": {
-        "accuracy": 0.9884057971014493,
-        "precision": 0.9612403100775194,
-        "recall": 0.9465648854961832,
-        "f1": 0.9538461538461539,
-        "roc_auc": 0.9945196919543335
+        "accuracy": 0.9864603481624759,
+        "precision": 0.9328358208955224,
+        "recall": 0.9615384615384616,
+        "f1": 0.946969696969697,
+        "roc_auc": 0.9950136147038802
       },
       "confusion_matrix": {
-        "tn": 899,
-        "fp": 5,
-        "fn": 7,
-        "tp": 124
+        "tn": 895,
+        "fp": 9,
+        "fn": 5,
+        "tp": 125
       },
-      "false_positive_rate": 0.0055309734513274336,
-      "false_negative_rate": 0.05343511450381679,
+      "false_positive_rate": 0.00995575221238938,
+      "false_negative_rate": 0.038461538461538464,
       "roc_curve": [
         {
           "fpr": 0.0,
@@ -3207,75 +3239,75 @@
         },
         {
           "fpr": 0.0169,
-          "tpr": 0.9618
+          "tpr": 0.9846
         },
         {
           "fpr": 0.0339,
-          "tpr": 0.9771
+          "tpr": 0.9846
         },
         {
           "fpr": 0.0508,
-          "tpr": 0.9771
+          "tpr": 0.9846
         },
         {
           "fpr": 0.0678,
-          "tpr": 0.9771
+          "tpr": 0.9846
         },
         {
           "fpr": 0.0847,
-          "tpr": 0.9771
+          "tpr": 0.9846
         },
         {
           "fpr": 0.1017,
-          "tpr": 0.9771
+          "tpr": 0.9846
         },
         {
           "fpr": 0.1186,
-          "tpr": 0.9771
+          "tpr": 0.9846
         },
         {
           "fpr": 0.1356,
-          "tpr": 0.9847
+          "tpr": 0.9846
         },
         {
           "fpr": 0.1525,
-          "tpr": 0.9847
+          "tpr": 0.9846
         },
         {
           "fpr": 0.1695,
-          "tpr": 0.9847
+          "tpr": 0.9846
         },
         {
           "fpr": 0.1864,
-          "tpr": 0.9847
+          "tpr": 0.9846
         },
         {
           "fpr": 0.2034,
-          "tpr": 0.9924
+          "tpr": 0.9846
         },
         {
           "fpr": 0.2203,
-          "tpr": 0.9924
+          "tpr": 0.9846
         },
         {
           "fpr": 0.2373,
-          "tpr": 0.9924
+          "tpr": 0.9846
         },
         {
           "fpr": 0.2542,
-          "tpr": 0.9924
+          "tpr": 0.9846
         },
         {
           "fpr": 0.2712,
-          "tpr": 0.9924
+          "tpr": 0.9923
         },
         {
           "fpr": 0.2881,
-          "tpr": 0.9924
+          "tpr": 1.0
         },
         {
           "fpr": 0.3051,
-          "tpr": 0.9924
+          "tpr": 1.0
         },
         {
           "fpr": 0.322,
@@ -3444,94 +3476,94 @@
       ],
       "classification_report": {
         "ham": {
-          "precision": 0.9922737306843267,
-          "recall": 0.9944690265486725,
-          "f1": 0.9933701657458563,
+          "precision": 0.9944444444444445,
+          "recall": 0.9900442477876106,
+          "f1": 0.9922394678492239,
           "support": 904
         },
         "spam": {
-          "precision": 0.9612403100775194,
-          "recall": 0.9465648854961832,
-          "f1": 0.9538461538461539,
-          "support": 131
+          "precision": 0.9328358208955224,
+          "recall": 0.9615384615384616,
+          "f1": 0.946969696969697,
+          "support": 130
         },
         "macro avg": {
-          "precision": 0.976757020380923,
-          "recall": 0.9705169560224278,
-          "f1": 0.9736081597960051,
-          "support": 1035
+          "precision": 0.9636401326699835,
+          "recall": 0.9757913546630361,
+          "f1": 0.9696045824094605,
+          "support": 1034
         },
         "weighted avg": {
-          "precision": 0.988345829138924,
-          "recall": 0.9884057971014493,
-          "f1": 0.9883676096503384,
-          "support": 1035
+          "precision": 0.9866986793947734,
+          "recall": 0.9864603481624759,
+          "f1": 0.986547910581972,
+          "support": 1034
         }
       },
       "default_threshold": {
         "metrics": {
-          "accuracy": 0.9864734299516909,
-          "precision": 0.9915966386554622,
-          "recall": 0.9007633587786259,
-          "f1": 0.944,
-          "roc_auc": 0.9945196919543335
+          "accuracy": 0.9825918762088974,
+          "precision": 0.9745762711864406,
+          "recall": 0.8846153846153846,
+          "f1": 0.9274193548387096,
+          "roc_auc": 0.9950136147038802
         },
         "confusion_matrix": {
-          "tn": 903,
-          "fp": 1,
-          "fn": 13,
-          "tp": 118
+          "tn": 901,
+          "fp": 3,
+          "fn": 15,
+          "tp": 115
         }
       },
-      "train_time_s": 1.611,
-      "inference_ms": 0.0009,
+      "train_time_s": 1.211,
+      "inference_ms": 0.001,
       "errors": {
         "false_negatives": [
           {
-            "message": "In The Simpsons Movie released in July 2007 name the band that died at the start of the film? A-Green Day, B-Blue Day, C-Red Day. (Send A, B or C)",
-            "spam_probability": 0.0201
-          },
-          {
             "message": "Babe: U want me dont u baby! Im nasty and have a thing 4 filthyguys. Fancy a rude time with a sexy bitch. How about we go slo n hard! Txt XXX SLO(4msgs)",
-            "spam_probability": 0.0326
+            "spam_probability": 0.0604
           },
           {
             "message": "Xmas & New Years Eve tickets are now on sale from the club, during the day from 10am till 8pm, and on Thurs, Fri & Sat night this week. They're selling fast!",
-            "spam_probability": 0.0462
-          },
-          {
-            "message": "Check Out Choose Your Babe Videos @ sms.shsex.netUN fgkslpoPW fgkslpo",
-            "spam_probability": 0.1072
+            "spam_probability": 0.0641
           },
           {
             "message": "Burger King - Wanna play footy at a top stadium? Get 2 Burger King before 1st Sept and go Large or Super with Coca-Cola and walk out a winner",
-            "spam_probability": 0.134
+            "spam_probability": 0.1741
           },
           {
-            "message": "Latest News! Police station toilet stolen, cops have nothing to go on!",
-            "spam_probability": 0.1523
+            "message": "accordingly. I repeat, just text the word ok on your mobile phone and send",
+            "spam_probability": 0.1891
+          },
+          {
+            "message": "FreeMsg Hey U, i just got 1 of these video/pic fones, reply WILD to this txt & ill send U my pics, hurry up Im so bored at work xxx (18 150p/rcvd STOP2stop)",
+            "spam_probability": 0.2602
           }
         ],
         "false_positives": [
           {
-            "message": "I (Career Tel) have added u as a contact on INDYAROCKS.COM to send FREE SMS. To remove from phonebook - sms NO to  &lt;#&gt;",
-            "spam_probability": 0.7192
+            "message": "I only haf msn. It's yijue@hotmail.com",
+            "spam_probability": 0.6571
+          },
+          {
+            "message": "Hey...Great deal...Farm tour 9am to 5pm $95/pax, $50 deposit by 16 May",
+            "spam_probability": 0.5546
           },
           {
             "message": "Your bill at 3 is £33.65 so thats not bad!",
-            "spam_probability": 0.4738
+            "spam_probability": 0.5122
           },
           {
-            "message": "Are you free now?can i call now?",
-            "spam_probability": 0.396
+            "message": "K k:) sms chat with me.",
+            "spam_probability": 0.474
           },
           {
-            "message": "Can you plz tell me the ans. BSLVYL sent via fullonsms.com",
-            "spam_probability": 0.3373
+            "message": "Actually i deleted my old website..now i m blogging at magicalsongs.blogspot.com",
+            "spam_probability": 0.4143
           },
           {
-            "message": "Glad to see your reply.",
-            "spam_probability": 0.3095
+            "message": "I am waiting machan. Call me once you free.",
+            "spam_probability": 0.325
           }
         ]
       }
@@ -3540,157 +3572,157 @@
   "ranking": [
     {
       "rank": 1,
-      "key": "logistic_regression",
-      "name": "Logistic Regression",
-      "score": 0.9687
+      "key": "xgboost",
+      "name": "XGBoost",
+      "score": 0.9645
     },
     {
       "rank": 2,
-      "key": "random_forest",
-      "name": "Random Forest",
-      "score": 0.9654
+      "key": "naive_bayes",
+      "name": "Naive Bayes",
+      "score": 0.9621
     },
     {
       "rank": 3,
-      "key": "svm",
-      "name": "Support Vector Machine",
-      "score": 0.9626
+      "key": "random_forest",
+      "name": "Random Forest",
+      "score": 0.9593
     },
     {
       "rank": 4,
       "key": "mlp",
       "name": "MLP Neural Network",
-      "score": 0.962
+      "score": 0.9567
     },
     {
       "rank": 5,
-      "key": "xgboost",
-      "name": "XGBoost",
-      "score": 0.9588
+      "key": "svm",
+      "name": "Support Vector Machine",
+      "score": 0.9565
     },
     {
       "rank": 6,
-      "key": "gradient_boosting",
-      "name": "Gradient Boosting",
-      "score": 0.9582
+      "key": "logistic_regression",
+      "name": "Logistic Regression",
+      "score": 0.954
     },
     {
       "rank": 7,
-      "key": "naive_bayes",
-      "name": "Naive Bayes",
-      "score": 0.9496
+      "key": "gradient_boosting",
+      "name": "Gradient Boosting",
+      "score": 0.9516
     },
     {
       "rank": 8,
       "key": "adaboost",
       "name": "AdaBoost",
-      "score": 0.9491
+      "score": 0.9515
     },
     {
       "rank": 9,
       "key": "knn",
       "name": "K-Nearest Neighbors",
-      "score": 0.9292
+      "score": 0.9081
     },
     {
       "rank": 10,
       "key": "decision_tree",
       "name": "Decision Tree",
-      "score": 0.9026
+      "score": 0.8984
     }
   ],
-  "best_model": "logistic_regression",
+  "best_model": "xgboost",
   "baseline": "logistic_regression",
   "improved": "random_forest",
   "baseline_vs_improved": {
     "baseline": "logistic_regression",
     "challenger": "random_forest",
     "metric_deltas": {
-      "accuracy": -0.001,
-      "precision": 0.0075,
-      "recall": -0.0153,
-      "f1": -0.0044,
-      "roc_auc": 0.0001
+      "accuracy": 0.0019,
+      "precision": 0.0212,
+      "recall": -0.0077,
+      "f1": 0.0068,
+      "roc_auc": -0.0009
     },
     "false_positives": {
-      "baseline": 3,
-      "challenger": 2
+      "baseline": 9,
+      "challenger": 6
     },
     "false_negatives": {
-      "baseline": 7,
-      "challenger": 9
-    },
-    "true_positives": {
-      "baseline": 124,
-      "challenger": 122
-    }
-  },
-  "baseline_vs_best": {
-    "baseline": "logistic_regression",
-    "challenger": "logistic_regression",
-    "metric_deltas": {
-      "accuracy": 0.0,
-      "precision": 0.0,
-      "recall": 0.0,
-      "f1": 0.0,
-      "roc_auc": 0.0
-    },
-    "false_positives": {
-      "baseline": 3,
-      "challenger": 3
-    },
-    "false_negatives": {
-      "baseline": 7,
+      "baseline": 6,
       "challenger": 7
     },
     "true_positives": {
       "baseline": 124,
-      "challenger": 124
+      "challenger": 123
+    }
+  },
+  "baseline_vs_best": {
+    "baseline": "logistic_regression",
+    "challenger": "xgboost",
+    "metric_deltas": {
+      "accuracy": 0.0039,
+      "precision": 0.0594,
+      "recall": -0.0308,
+      "f1": 0.0132,
+      "roc_auc": -0.0025
+    },
+    "false_positives": {
+      "baseline": 9,
+      "challenger": 1
+    },
+    "false_negatives": {
+      "baseline": 6,
+      "challenger": 10
+    },
+    "true_positives": {
+      "baseline": 124,
+      "challenger": 120
     }
   },
   "cross_validation": {
     "logistic_regression": {
       "accuracy": {
-        "mean": 0.985,
-        "std": 0.0048
+        "mean": 0.9862,
+        "std": 0.0025
       },
       "precision": {
-        "mean": 0.9516,
-        "std": 0.0238
+        "mean": 0.9555,
+        "std": 0.0169
       },
       "recall": {
-        "mean": 0.9291,
-        "std": 0.0332
+        "mean": 0.9349,
+        "std": 0.025
       },
       "f1": {
-        "mean": 0.9397,
-        "std": 0.02
+        "mean": 0.9447,
+        "std": 0.0105
       },
       "roc_auc": {
-        "mean": 0.9922,
-        "std": 0.0047
+        "mean": 0.9929,
+        "std": 0.0057
       }
     },
     "random_forest": {
       "accuracy": {
-        "mean": 0.9828,
-        "std": 0.0067
+        "mean": 0.9821,
+        "std": 0.0019
       },
       "precision": {
-        "mean": 0.9806,
-        "std": 0.0083
+        "mean": 0.9748,
+        "std": 0.0079
       },
       "recall": {
-        "mean": 0.8811,
-        "std": 0.0499
+        "mean": 0.8813,
+        "std": 0.0213
       },
       "f1": {
-        "mean": 0.9275,
-        "std": 0.0306
+        "mean": 0.9254,
+        "std": 0.009
       },
       "roc_auc": {
-        "mean": 0.9926,
-        "std": 0.0033
+        "mean": 0.9934,
+        "std": 0.0044
       }
     }
   }

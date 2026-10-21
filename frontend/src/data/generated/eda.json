@@ -2,13 +2,13 @@
   "class_distribution": [
     {
       "label": "ham",
-      "count": 4827,
-      "percent": 86.6
+      "count": 4825,
+      "percent": 86.59
     },
     {
       "label": "spam",
       "count": 747,
-      "percent": 13.4
+      "percent": 13.41
     }
   ],
   "length_histogram": [
@@ -21,31 +21,31 @@
     {
       "bin": "20-39",
       "start": 20,
-      "ham": 1519,
+      "ham": 1518,
       "spam": 6
     },
     {
       "bin": "40-59",
       "start": 40,
-      "ham": 1032,
+      "ham": 1031,
       "spam": 16
     },
     {
       "bin": "60-79",
       "start": 60,
-      "ham": 609,
-      "spam": 24
+      "ham": 608,
+      "spam": 23
     },
     {
       "bin": "80-99",
       "start": 80,
-      "ham": 413,
-      "spam": 26
+      "ham": 414,
+      "spam": 27
     },
     {
       "bin": "100-119",
       "start": 100,
-      "ham": 266,
+      "ham": 261,
       "spam": 57
     },
     {
@@ -57,19 +57,19 @@
     {
       "bin": "140-159",
       "start": 140,
-      "ham": 333,
-      "spam": 401
+      "ham": 329,
+      "spam": 399
     },
     {
       "bin": "160-179",
       "start": 160,
-      "ham": 94,
-      "spam": 89
+      "ham": 101,
+      "spam": 91
     },
     {
       "bin": "180-199",
       "start": 180,
-      "ham": 30,
+      "ham": 32,
       "spam": 4
     },
     {
@@ -106,7 +106,7 @@
   "length_stats": [
     {
       "label": "ham",
-      "mean_chars": 71.5,
+      "mean_chars": 71.6,
       "median_chars": 52.0,
       "max_chars": 910,
       "mean_words": 14.3,
@@ -323,33 +323,54 @@
     {
       "column": "label",
       "missing": 0,
-      "present": 5574,
+      "present": 5572,
       "percent_missing": 0.0,
       "used": true
     },
     {
       "column": "message",
       "missing": 0,
-      "present": 5574,
+      "present": 5572,
       "percent_missing": 0.0,
       "used": true
+    },
+    {
+      "column": "Unnamed: 2",
+      "missing": 5522,
+      "present": 50,
+      "percent_missing": 99.1,
+      "used": false
+    },
+    {
+      "column": "Unnamed: 3",
+      "missing": 5560,
+      "present": 12,
+      "percent_missing": 99.78,
+      "used": false
+    },
+    {
+      "column": "Unnamed: 4",
+      "missing": 5566,
+      "present": 6,
+      "percent_missing": 99.89,
+      "used": false
     }
   ],
   "duplicates": {
-    "total_records": 5574,
-    "duplicate_records": 403,
-    "unique_records": 5171,
-    "percent_duplicate": 7.23,
+    "total_records": 5572,
+    "duplicate_records": 404,
+    "unique_records": 5168,
+    "percent_duplicate": 7.25,
     "by_class": [
       {
         "label": "ham",
         "duplicates": 309,
-        "unique": 4518
+        "unique": 4516
       },
       {
         "label": "spam",
-        "duplicates": 94,
-        "unique": 653
+        "duplicates": 95,
+        "unique": 652
       }
     ],
     "most_repeated": [
@@ -369,17 +390,17 @@
         "count": 10
       },
       {
+        "message": "Please call our customer service representative on FREEPHONE 0808 145 4742 between 9am-11pm as you have WON a guaranteed £1000 cash or £5000",
+        "label": "spam",
+        "count": 4
+      },
+      {
+        "message": "Say this slowly.? GOD,I LOVE YOU &amp; I NEED YOU,CLEAN MY HEART WITH YOUR BLOOD.Send this to Ten special people &amp; u c miracle tomorrow,",
+        "label": "ham",
+        "count": 4
+      },
+      {
         "message": "Okie",
-        "label": "ham",
-        "count": 4
-      },
-      {
-        "message": "Wen ur lovable bcums angry wid u, dnt take it seriously.. Coz being angry is d most childish n true way of showing deep affection, care n lu",
-        "label": "ham",
-        "count": 4
-      },
-      {
-        "message": "Ok.",
         "label": "ham",
         "count": 4
       }
@@ -402,20 +423,20 @@
         1.0,
         0.974,
         0.387,
-        0.065,
+        0.066,
         0.27,
-        0.655,
+        0.652,
         0.167,
         0.243,
-        0.383
+        0.382
       ],
       [
         0.974,
         1.0,
         0.292,
         0.044,
-        0.252,
-        0.609,
+        0.251,
+        0.605,
         0.104,
         0.187,
         0.287
@@ -426,43 +447,43 @@
         1.0,
         0.218,
         0.273,
-        0.2,
+        0.193,
         0.251,
         0.588,
         0.845
       ],
       [
-        0.065,
+        0.066,
         0.044,
         0.218,
         1.0,
         0.2,
-        0.065,
+        0.075,
         0.082,
         0.125,
         0.202
       ],
       [
         0.27,
-        0.252,
+        0.251,
         0.273,
         0.2,
         1.0,
-        0.269,
+        0.268,
         0.047,
         0.189,
         0.274
       ],
       [
-        0.655,
-        0.609,
-        0.2,
-        0.065,
-        0.269,
+        0.652,
+        0.605,
+        0.193,
+        0.075,
+        0.268,
         1.0,
-        0.137,
-        0.152,
-        0.159
+        0.132,
+        0.146,
+        0.152
       ],
       [
         0.167,
@@ -470,7 +491,7 @@
         0.251,
         0.082,
         0.047,
-        0.137,
+        0.132,
         1.0,
         0.137,
         0.382
@@ -481,18 +502,18 @@
         0.588,
         0.125,
         0.189,
-        0.152,
+        0.146,
         0.137,
         1.0,
         0.519
       ],
       [
-        0.383,
+        0.382,
         0.287,
         0.845,
         0.202,
         0.274,
-        0.159,
+        0.152,
         0.382,
         0.519,
         1.0
@@ -509,7 +530,7 @@
       },
       {
         "feature": "char_length",
-        "r": 0.383
+        "r": 0.382
       },
       {
         "feature": "has_url",
@@ -529,7 +550,7 @@
       },
       {
         "feature": "special_char_count",
-        "r": 0.159
+        "r": 0.152
       }
     ]
   },
@@ -537,13 +558,13 @@
     {
       "feature": "char_length",
       "description": "Total characters in the message",
-      "ham_mean": 71.472,
-      "spam_mean": 138.676
+      "ham_mean": 71.566,
+      "spam_mean": 138.71
     },
     {
       "feature": "word_count",
       "description": "Number of whitespace-separated tokens",
-      "ham_mean": 14.304,
+      "ham_mean": 14.309,
       "spam_mean": 23.912
     },
     {
@@ -567,8 +588,8 @@
     {
       "feature": "special_char_count",
       "description": "Non-alphanumeric, non-space characters",
-      "ham_mean": 3.984,
-      "spam_mean": 6.161
+      "ham_mean": 4.054,
+      "spam_mean": 6.194
     },
     {
       "feature": "has_url",

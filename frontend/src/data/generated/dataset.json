@@ -1,21 +1,24 @@
 {
   "name": "SMS Spam Collection Dataset",
-  "source": "uci",
-  "records": 5574,
-  "records_usable": 5574,
+  "source": "kaggle",
+  "records": 5572,
+  "records_usable": 5572,
   "raw_columns": [
-    "label",
-    "message"
+    "v1",
+    "v2",
+    "Unnamed: 2",
+    "Unnamed: 3",
+    "Unnamed: 4"
   ],
   "num_raw_features": 1,
   "num_engineered_features": 8,
   "target": "label",
   "classes": {
-    "ham": 4827,
+    "ham": 4825,
     "spam": 747
   },
-  "spam_ratio": 0.134,
-  "avg_chars": 80.5,
+  "spam_ratio": 0.1341,
+  "avg_chars": 80.6,
   "avg_words": 15.6,
   "vocabulary_size": 7417,
   "language": "English",
@@ -55,121 +58,121 @@
   ],
   "sample": [
     {
-      "id": 2664,
+      "id": 2663,
       "label": "spam",
       "message": "8007 FREE for 1st week! No1 Nokia tone 4 ur mob every week just txt NOKIA to 8007 Get txting and tell ur mates www.getzed.co.uk POBox 36504 W4 5WQ norm 150p/tone 16+",
       "length": 165
     },
     {
-      "id": 5379,
+      "id": 5377,
       "label": "spam",
       "message": "The current leading bid is 151. To pause this auction send OUT. Customer Care: 08718726270",
       "length": 90
     },
     {
-      "id": 1282,
+      "id": 5351,
       "label": "ham",
-      "message": "Am I the only one who doesn't stalk profiles?",
-      "length": 45
+      "message": "Yup it's at paragon... I havent decided whether 2 cut yet... Hee...",
+      "length": 67
     },
     {
-      "id": 1182,
+      "id": 3731,
       "label": "ham",
-      "message": "You flippin your shit yet?",
-      "length": 26
+      "message": "Gud mrng dear hav a nice day",
+      "length": 28
     },
     {
-      "id": 1536,
+      "id": 1535,
       "label": "spam",
       "message": "You have won a Nokia 7250i. This is what you get when you win our FREE auction. To take part send Nokia to 86021 now. HG/Suite342/2Lands Row/W1JHL 16+",
       "length": 150
     },
     {
-      "id": 4504,
+      "id": 885,
       "label": "ham",
-      "message": "Stupid.its not possible",
-      "length": 23
-    },
-    {
-      "id": 2918,
-      "label": "ham",
-      "message": "Yes. that will be fine. Love you. Be safe.",
-      "length": 42
-    },
-    {
-      "id": 2061,
-      "label": "ham",
-      "message": "I did. One slice and one breadstick. Lol",
-      "length": 40
-    },
-    {
-      "id": 5169,
-      "label": "ham",
-      "message": "Oh did you charge camera",
+      "message": "Gibbs unsold.mike hussey",
       "length": 24
     },
     {
-      "id": 1699,
+      "id": 902,
+      "label": "ham",
+      "message": "I wonder if your phone battery went dead ? I had to tell you, I love you babe",
+      "length": 77
+    },
+    {
+      "id": 3543,
+      "label": "ham",
+      "message": "Lol ok ill try to send. Be warned Sprint is dead slow. You'll prolly get it tomorrow",
+      "length": 84
+    },
+    {
+      "id": 3590,
+      "label": "ham",
+      "message": "How much would it cost to hire a hitman",
+      "length": 39
+    },
+    {
+      "id": 1698,
       "label": "spam",
       "message": "Free msg. Sorry, a service you ordered from 81303 could not be delivered as you do not have sufficient credit. Please top up to receive the service.",
       "length": 148
     },
     {
-      "id": 2839,
+      "id": 1998,
       "label": "ham",
-      "message": "Were trying to find a Chinese food place around here",
-      "length": 52
+      "message": "Well, I have to leave for my class babe ... You never came back to me ... :-( ... Hope you have a nice sleep, my love",
+      "length": 117
     },
     {
-      "id": 5100,
+      "id": 5098,
       "label": "spam",
       "message": "TheMob>Hit the link to get a premium Pink Panther game, the new no. 1 from Sugababes, a crazy Zebra animation or a badass Hoody wallpaper-all 4 FREE!",
       "length": 149
     },
     {
-      "id": 4919,
+      "id": 1398,
       "label": "ham",
-      "message": "Sitting in mu waiting for everyone to get out of my suite so I can take a shower",
-      "length": 80
+      "message": "No did you check? I got his detailed message now",
+      "length": 48
     },
     {
-      "id": 762,
+      "id": 687,
       "label": "ham",
-      "message": "We are at grandmas. Oh dear, u still ill? I felt Shit this morning but i think i am just hungover! Another night then. We leave on sat.",
-      "length": 135
+      "message": "Dear,Me at cherthala.in case u r coming cochin pls call bfore u start.i shall also reach accordingly.or tell me which day u r coming.tmorow i am engaged ans its holiday.",
+      "length": 169
     },
     {
-      "id": 2008,
+      "id": 2007,
       "label": "ham",
       "message": "Hi here. have birth at on the  to  at 8lb 7oz. Mother and baby doing brilliantly.",
       "length": 81
     },
     {
-      "id": 4181,
+      "id": 931,
       "label": "ham",
-      "message": "swhrt how u dey,hope ur ok, tot about u 2day.love n miss.take care.",
-      "length": 67
+      "message": "Congratulations ore mo owo re wa. Enjoy it and i wish you many happy moments to and fro wherever you go",
+      "length": 103
     },
     {
-      "id": 2623,
+      "id": 2622,
       "label": "ham",
       "message": "Ok lor...",
       "length": 9
     },
     {
-      "id": 1532,
+      "id": 5521,
       "label": "ham",
-      "message": "Oh dang! I didn't mean o send that to you! Lol!",
-      "length": 47
+      "message": "You are a big chic. Common. Declare",
+      "length": 35
     },
     {
-      "id": 476,
+      "id": 5477,
       "label": "ham",
-      "message": "Ok I'm gonna head up to usf in like fifteen minutes",
-      "length": 51
+      "message": "What Today-sunday..sunday is holiday..so no work..",
+      "length": 50
     },
     {
-      "id": 1985,
+      "id": 1984,
       "label": "spam",
       "message": "Urgent! Please call 09061743810 from landline. Your ABTA complimentary 4* Tenerife Holiday or #5000 cash await collection SAE T&Cs Box 326 CW25WX 150 ppm",
       "length": 153
@@ -177,32 +180,32 @@
     {
       "id": 437,
       "label": "ham",
-      "message": "Ask g or iouri, I've told the story like ten times already",
-      "length": 58
+      "message": "How long does applebees fucking take",
+      "length": 36
     },
     {
-      "id": 5239,
+      "id": 5237,
       "label": "spam",
       "message": "Someonone you know is trying to contact you via our dating service! To find out who it could be call from your mobile or landline 09064015307 BOX334SK38ch ",
       "length": 155
     },
     {
-      "id": 3856,
+      "id": 3854,
       "label": "spam",
       "message": "Free msg: Single? Find a partner in your area! 1000s of real people are waiting to chat now!Send CHAT to 62220Cncl send STOPCS 08717890890£1.50 per msg",
       "length": 151
     },
     {
-      "id": 1427,
+      "id": 2532,
       "label": "ham",
-      "message": "Ok...",
-      "length": 5
+      "message": "Yup ok...",
+      "length": 9
     }
   ],
   "length_quantiles": {
     "0.25": 36,
     "0.5": 62,
-    "0.75": 122,
-    "0.95": 160
+    "0.75": 123,
+    "0.95": 161
   }
 }

@@ -22,7 +22,7 @@ export default async function DatasetPage() {
   const docs = [
     { k: "Dataset name", v: d.name },
     { k: "Original authors", v: "Tiago A. Almeida & José María Gómez Hidalgo (2011)" },
-    { k: "Source", v: d.source === "kaggle" ? "Kaggle CSV export (spam.csv)" : "UCI Machine Learning Repository (auto-downloaded)" },
+    { k: "Source", v: "Kaggle: SMS Spam Collection Dataset (spam.csv)" },
     { k: "Collection", v: "Grumbletext UK forum (spam), NUS SMS Corpus (ham), Caroline Tag's PhD thesis, SMS Spam Corpus v0.1" },
     { k: "Language", v: d.language },
     { k: "License", v: "CC BY 4.0" },
@@ -40,11 +40,6 @@ export default async function DatasetPage() {
           <Button asChild variant="outline" size="sm">
             <a href={SITE.kaggleUrl} target="_blank" rel="noreferrer">
               Kaggle dataset <ExternalLink className="ml-1.5 h-3.5 w-3.5" />
-            </a>
-          </Button>
-          <Button asChild variant="ghost" size="sm">
-            <a href={SITE.uciUrl} target="_blank" rel="noreferrer">
-              UCI repository <ExternalLink className="ml-1.5 h-3.5 w-3.5" />
             </a>
           </Button>
           <SourceBadge source={source} />

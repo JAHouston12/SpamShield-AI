@@ -23,7 +23,7 @@ from sklearn.pipeline import Pipeline
 from app.core.config import get_settings
 from ml import eda as eda_mod
 from ml import explain as xai
-from ml.data import load_raw, to_canonical
+from ml.data import load_raw, quality_report, to_canonical
 from ml.evaluate import METRICS, evaluate, rank, tune_threshold
 from ml.preprocessing import (
     META_FEATURES,
@@ -77,7 +77,8 @@ def build_preprocessing_report(raw, canonical, deduped, feats, x_train, y_train,
             "raw_records": int(len(raw.frame)),
             "records_after": int(len(canonical)),
             "removed": int(len(raw.frame) - len(canonical)),
-            "dropped_columns": [str(c) for c in raw.frame.columns if c not in (raw.label_col, raw.text_col)],
+            "merged_columns": [str(c) for c in raw.frame.columns if c not in (raw.label_col, raw.text_col)],
+            **quality_report(raw),
         },
         "duplicates": {
             "before": int(len(canonical)),

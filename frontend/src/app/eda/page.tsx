@@ -204,15 +204,19 @@ export default async function EdaPage() {
             interpretation={
               totalMissing === 0 ? (
                 <>
-                  The UCI release has <strong>no missing values</strong> in either column. The Kaggle CSV export,
-                  however, ships three extra unnamed columns that are over 99% empty (fragments of messages containing
-                  commas). The pipeline keeps only <code>label</code> and <code>message</code> and drops any row
-                  missing either, so both sources produce the same clean frame.
+                  The file has <strong>no missing values</strong>.
+                </>
+              ) : usedMissing === 0 ? (
+                <>
+                  The label (<code>v1</code>) and message (<code>v2</code>) columns are <strong>complete</strong>. All{" "}
+                  {num(totalMissing)} missing cells sit in the Kaggle CSV&apos;s three unnamed columns, which are over 99%
+                  empty: they hold only the tail of messages that contained commas. Those fragments are rejoined into the
+                  message rather than discarded.
                 </>
               ) : (
                 <>
-                  {num(totalMissing)} missing cells were found, {usedMissing === 0 ? "all in unused auxiliary columns" : `${usedMissing} in required columns`}.
-                  Those columns are dropped and incomplete rows removed before training.
+                  {num(totalMissing)} missing cells were found, {num(usedMissing)} of them in required columns. Rows
+                  missing a label or message are removed before training.
                 </>
               )
             }
