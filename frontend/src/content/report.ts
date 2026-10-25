@@ -21,7 +21,7 @@ export type ReportTab = (typeof REPORT_TABS)[number];
 export type DocBlock =
   | { type: "p"; text: string }
   | { type: "list"; items: string[]; ordered?: boolean }
-  | { type: "table"; caption?: string; head: string[]; rows: (string | number)[][]; highlightRow?: number }
+  | { type: "table"; caption?: string; head: string[]; rows: (string | number)[][]; highlightRow?: number; textOnly?: boolean }
   | { type: "kv"; items: { label: string; value: string }[] }
   | { type: "callout"; title: string; text: string }
   | { type: "code"; code: string; lang?: string; title?: string };

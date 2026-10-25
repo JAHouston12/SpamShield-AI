@@ -46,7 +46,7 @@ function Block({ block }: { block: DocBlock }) {
               <thead className="bg-muted/50">
                 <tr>
                   {block.head.map((h, i) => (
-                    <th key={h} scope="col" className={cn("px-3 py-2 font-medium text-muted-foreground", i === 0 || i === 1 ? "text-left" : "text-right")}>
+                    <th key={h} scope="col" className={cn("px-3 py-2 font-medium text-muted-foreground", block.textOnly || i === 0 || i === 1 ? "text-left" : "text-right")}>
                       {h}
                     </th>
                   ))}
@@ -56,7 +56,7 @@ function Block({ block }: { block: DocBlock }) {
                 {block.rows.map((row, r) => (
                   <tr key={r} className={cn("border-t", r === block.highlightRow && "bg-primary/10")}>
                     {row.map((cell, c) => (
-                      <td key={c} className={cn("px-3 py-2 tabular-nums", c === 0 || c === 1 ? "text-left" : "text-right font-mono text-xs")}>
+                      <td key={c} className={cn("px-3 py-2 tabular-nums", block.textOnly || c === 0 || c === 1 ? "text-left" : "text-right font-mono text-xs")}>
                         {cell}
                       </td>
                     ))}

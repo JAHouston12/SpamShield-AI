@@ -16,7 +16,7 @@ export default function AssignmentsPage() {
       <PageHeader
         eyebrow="Tools · Assignments"
         title="Assignments"
-        description="Course assignments behind this project, newest first. Open one to read the original PDF and jump to the pages that implement it."
+        description="Course assignments behind this project, newest first. Open one to read the write-up or original PDF and jump to the pages that implement it."
       />
 
       {assignments.length === 0 ? (

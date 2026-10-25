@@ -18,9 +18,38 @@ export interface Assignment {
   highlights: { label: string; value: string }[];
   /** Related pages in this site that implement or extend the assignment. */
   related: { href: string; label: string }[];
+  /** Renders a rich in-page write-up instead of a PDF. Keys map to components in the detail page. */
+  body?: "ddos";
+  /** Embedded movie: a file under `public/` (`src`) or an unlisted YouTube video (`youtubeId`). */
+  video?: { title: string; src?: string; youtubeId?: string; caption?: string };
 }
 
 export const ASSIGNMENTS: Assignment[] = [
+  {
+    slug: "assignment-7",
+    number: 7,
+    title: "Assignment 7",
+    subtitle: "DoS/DDoS Attacks, Website Availability, and AI Movie Creation",
+    status: "in-progress",
+    summary:
+      "Data-driven DDoS detection on the public CIC-IDS2017 Friday DDoS capture: normal vs attack traffic analysis, a volume threshold, a single-feature rule, Isolation Forest anomaly detection, and Logistic Regression vs Random Forest, plus an AI-generated movie about restoring website availability.",
+    topics: ["DoS vs DDoS", "Website availability", "CIC-IDS2017", "Anomaly detection", "Random Forest", "Google Flow"],
+    highlights: [
+      { label: "Research question", value: "Can data-driven methods detect the abnormal network traffic of a DDoS attack?" },
+      { label: "Dataset", value: "CIC-IDS2017, Friday DDoS (225,745 flows, Hugging Face / Kaggle)" },
+      { label: "Methods", value: "Volume threshold, single-feature rule, Isolation Forest, Logistic Regression, Random Forest" },
+      { label: "Metrics", value: "Precision, Recall, F1-Score, Confusion matrix, ROC-AUC" },
+    ],
+    related: [
+      { href: "/security", label: "Threat model and attacks" },
+      { href: "/evaluation", label: "Same metrics on the spam models" },
+    ],
+    body: "ddos",
+    video: {
+      title: "Restoring availability: an AI movie about DDoS detection",
+      src: "",
+    },
+  },
   {
     slug: "assignment-6",
     number: 6,

@@ -5,15 +5,23 @@ interface Props {
   cm: { tn: number; fp: number; fn: number; tp: number };
   compact?: boolean;
   highlight?: boolean;
+  /** Class names and cell descriptions; defaults to the spam/ham wording. */
+  labels?: { negative: string; positive: string; desc: [string, string, string, string] };
 }
 
-export function ConfusionMatrix({ name, cm, compact, highlight }: Props) {
+const SPAM_LABELS: NonNullable<Props["labels"]> = {
+  negative: "Ham",
+  positive: "Spam",
+  desc: ["Ham correctly delivered", "Ham wrongly blocked", "Spam that got through", "Spam caught"],
+};
+
+export function ConfusionMatrix({ name, cm, compact, highlight, labels = SPAM_LABELS }: Props) {
   const total = cm.tn + cm.fp + cm.fn + cm.tp;
   const cells = [
-    { k: "TN", v: cm.tn, label: "True negative", desc: "Ham correctly delivered", good: true },
-    { k: "FP", v: cm.fp, label: "False positive", desc: "Ham wrongly blocked", good: false },
-    { k: "FN", v: cm.fn, label: "False negative", desc: "Spam that got through", good: false },
-    { k: "TP", v: cm.tp, label: "True positive", desc: "Spam caught", good: true },
+    { k: "TN", v: cm.tn, label: "True negative", desc: labels.desc[0], good: true },
+    { k: "FP", v: cm.fp, label: "False positive", desc: labels.desc[1], good: false },
+    { k: "FN", v: cm.fn, label: "False negative", desc: labels.desc[2], good: false },
+    { k: "TP", v: cm.tp, label: "True positive", desc: labels.desc[3], good: true },
   ];
 
   return (
@@ -24,12 +32,12 @@ export function ConfusionMatrix({ name, cm, compact, highlight }: Props) {
       </figcaption>
       <div className="grid grid-cols-[auto_1fr_1fr] gap-1.5 text-xs">
         <span />
-        <span className="text-center text-muted-foreground">Pred. ham</span>
-        <span className="text-center text-muted-foreground">Pred. spam</span>
+        <span className="text-center text-muted-foreground">Pred. {labels.negative.toLowerCase()}</span>
+        <span className="text-center text-muted-foreground">Pred. {labels.positive.toLowerCase()}</span>
         {[0, 1].map((row) => (
           <div key={row} className="contents">
             <span className="flex items-center pr-1 text-muted-foreground [writing-mode:vertical-rl] rotate-180 sm:[writing-mode:horizontal-tb] sm:rotate-0">
-              {row === 0 ? "Ham" : "Spam"}
+              {row === 0 ? labels.negative : labels.positive}
             </span>
             {cells.slice(row * 2, row * 2 + 2).map((c) => (
               <div
