@@ -21,7 +21,7 @@ export interface Assignment {
   /** Renders a rich in-page write-up instead of a PDF. Keys map to components in the detail page. */
   body?: "ddos";
   /** Embedded movie: a file under `public/` (`src`) or an unlisted YouTube video (`youtubeId`). */
-  video?: { title: string; src?: string; youtubeId?: string; caption?: string };
+  video?: { title: string; src?: string; poster?: string; youtubeId?: string; caption?: string };
 }
 
 export const ASSIGNMENTS: Assignment[] = [
@@ -30,7 +30,8 @@ export const ASSIGNMENTS: Assignment[] = [
     number: 7,
     title: "Assignment 7",
     subtitle: "DoS/DDoS Attacks, Website Availability, and AI Movie Creation",
-    status: "in-progress",
+    status: "submitted",
+    submitted: "2026-10-25",
     summary:
       "Data-driven DDoS detection on the public CIC-IDS2017 Friday DDoS capture: normal vs attack traffic analysis, a volume threshold, a single-feature rule, Isolation Forest anomaly detection, and Logistic Regression vs Random Forest, plus an AI-generated movie about restoring website availability.",
     topics: ["DoS vs DDoS", "Website availability", "CIC-IDS2017", "Anomaly detection", "Random Forest", "Google Flow"],
@@ -47,7 +48,9 @@ export const ASSIGNMENTS: Assignment[] = [
     body: "ddos",
     video: {
       title: "Restoring availability: an AI movie about DDoS detection",
-      src: "",
+      src: "/videos/assignment-7.mp4",
+      poster: "/videos/assignment-7-poster.jpg",
+      caption: "Generated with Google Flow: four 8-second scenes edited into one 30-second movie",
     },
   },
   {

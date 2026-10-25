@@ -20,7 +20,7 @@ export function AssignmentVideo({ video }: { video: NonNullable<Assignment["vide
             className="aspect-video w-full"
           />
         ) : video.src ? (
-          <video controls preload="metadata" playsInline className="aspect-video w-full" aria-label={video.title}>
+          <video controls preload="metadata" playsInline poster={video.poster} className="aspect-video w-full" aria-label={video.title}>
             <source src={video.src} type="video/mp4" />
             Your browser can&apos;t play this video. <a href={video.src}>Download it instead.</a>
           </video>
