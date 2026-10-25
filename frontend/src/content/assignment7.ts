@@ -134,7 +134,7 @@ export const A7_SECTIONS: DocSection[] = [
       {
         type: "list",
         items: [
-          `Normal traffic is diverse: ${pct(ddos.ports.benign[0].share)} of benign flows are DNS (port ${ddos.ports.benign[0].port}), followed by HTTPS and HTTP. Rates vary widely; the median benign flow sends ${pps.benign_median} packets/s, but the top 10% exceed ${num(Math.round(pps.benign_p90))} packets/s (short DNS exchanges).`,
+          `Normal traffic is diverse: ${pct(ddos.ports.benign[0].share)} of benign flows are DNS (port ${ddos.ports.benign[0].port}), followed by HTTPS and HTTP. Rates vary widely; the median benign flow sends ${pps.benign_median} packets/s, but the top 10% exceed ${num(Math.round(pps.benign_p90))} packets/s (very short flows, where a few packets within microseconds produce a huge rate).`,
           `Attack traffic is uniform: ${pct(ddos.ports.attack[0].share)} of DDoS flows target port ${ddos.ports.attack[0].port}. Each flow is small and slow (median ${pps.attack_median} packets/s, ${fwdBytes.attack_median} forward bytes vs ${fwdBytes.benign_median} for benign) but packets are large on average (median packet length ${pktMean.attack_median} vs ${pktMean.benign_median} bytes) because the server answers each flood request with a full HTTP response.`,
           `Traffic volume: the attack's volume comes from the number of flows (${num(attack)} attack flows in a roughly 20-minute window), not from the size of any single flow. Per-flow volume is actually lower for attack traffic than for normal traffic.`,
           `Attack patterns: the features most correlated with the attack label are ${ddos.correlations
@@ -157,17 +157,17 @@ export const A7_SECTIONS: DocSection[] = [
         type: "table",
         caption: `Held-out test set: ${num(p.test_rows)} flows. Attack is the positive class.`,
         head: ["Method", "Family", "Precision", "Recall", "F1", "Accuracy"],
-        rows: [...ddos.detectors, ...ddos.models].map((d) => [d.name, d.family, pct(d.precision), pct(d.recall), pct(d.f1), pct(d.accuracy)]),
+        rows: [...ddos.detectors, ...ddos.models].map((d) => [d.name, d.family, pct(d.precision, 2), pct(d.recall, 2), pct(d.f1, 2), pct(d.accuracy, 2)]),
         highlightRow: ddos.detectors.length + ddos.models.findIndex((m) => m.name === "Random Forest"),
       },
       {
         type: "list",
         items: [
-          `Volume threshold (F1 ${pct(volumeRule.f1)}): almost useless here. Flagging flows faster than the benign 99th percentile caught ${volumeRule.cm.tp} of ${num(volumeRule.cm.tp + volumeRule.cm.fn)} attack flows, because individual flood flows are slow. 'More traffic = attack' only works when you aggregate per destination over time.`,
-          `Single-feature rule (${stump.rule}): recall ${pct(stump.recall)} but precision ${pct(stump.precision)}. It catches every attack flow but would block ${num(stump.cm.fp)} legitimate flows in the test set alone, which itself harms availability.`,
-          `Isolation Forest: precision ${pct(iso.precision)}, recall ${pct(iso.recall)}. Without labels it finds some attack flows, but flood flows are individually ordinary, so most look 'normal' to an anomaly detector.`,
-          `Logistic Regression: F1 ${pct(lr.f1)} with ${lr.cm.fp} false alarms and ${lr.cm.fn} missed attacks.`,
-          `Random Forest: F1 ${pct(rf.f1)}, precision ${pct(rf.precision)}, recall ${pct(rf.recall)}, ROC-AUC ${pct(rf.roc_auc ?? 0, 2)}. It missed ${rf.cm.fn} of ${num(rf.cm.tp + rf.cm.fn)} attack flows and raised ${rf.cm.fp} false alarms.`,
+          `Volume threshold (F1 ${pct(volumeRule.f1, 2)}): almost useless here. Flagging flows faster than the benign 99th percentile caught ${volumeRule.cm.tp} of ${num(volumeRule.cm.tp + volumeRule.cm.fn)} attack flows, because individual flood flows are slow. 'More traffic = attack' only works when you aggregate per destination over time.`,
+          `Single-feature rule (${stump.rule}): recall ${pct(stump.recall, 2)} but precision ${pct(stump.precision, 2)}. It catches every attack flow but would block ${num(stump.cm.fp)} legitimate flows in the test set alone, which itself harms availability.`,
+          `Isolation Forest: precision ${pct(iso.precision, 2)}, recall ${pct(iso.recall, 2)}. Without labels it finds some attack flows, but flood flows are individually ordinary, so most look 'normal' to an anomaly detector.`,
+          `Logistic Regression: F1 ${pct(lr.f1, 2)} with ${lr.cm.fp} false alarms and ${lr.cm.fn} missed attacks.`,
+          `Random Forest: F1 ${pct(rf.f1, 2)}, precision ${pct(rf.precision, 2)}, recall ${pct(rf.recall, 2)}, ROC-AUC ${pct(rf.roc_auc ?? 0, 2)}. It missed ${rf.cm.fn} of ${num(rf.cm.tp + rf.cm.fn)} attack flows and raised ${rf.cm.fp} false alarms.`,
         ],
       },
       {
@@ -184,7 +184,7 @@ export const A7_SECTIONS: DocSection[] = [
       {
         type: "callout",
         title: "Answer to the research question",
-        text: `Yes. Supervised ML separated DDoS from normal flows almost perfectly (Random Forest F1 ${pct(rf.f1)}), while a naive volume threshold failed (F1 ${pct(volumeRule.f1)}). The useful signal is the shape and repetition of attack flows, not their per-flow speed.`,
+        text: `Yes. Supervised ML separated DDoS from normal flows almost perfectly (Random Forest F1 ${pct(rf.f1, 2)}), while a naive volume threshold failed (F1 ${pct(volumeRule.f1, 2)}). The useful signal is the shape and repetition of attack flows, not their per-flow speed.`,
       },
       {
         type: "p",
