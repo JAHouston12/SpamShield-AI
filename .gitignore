@@ -8,6 +8,9 @@ __pycache__/
 # The Kaggle dataset (backend/data/spam.csv) and trained models (backend/artifacts/models/) are committed
 # so serverless deploys (Vercel) can serve predictions without a training step.
 
+# Assignment 7 raw CIC-IDS2017 CSV (~77 MB), re-downloaded by `make ddos`
+backend/data/cic/
+
 # Vercel
 .vercel/
 

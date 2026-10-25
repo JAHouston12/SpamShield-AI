@@ -1,4 +1,4 @@
-.PHONY: install install-backend install-frontend train snapshot api web dev test lint build
+.PHONY: install install-backend install-frontend train ddos snapshot api web dev test lint build
 
 BACKEND_PORT ?= 8417
 FRONTEND_PORT ?= 3417
@@ -14,6 +14,11 @@ install-frontend:
 ## Train all models and write artifacts, then copy the JSON snapshot into the frontend.
 train:
 	cd backend && uv run python -m ml.train
+	$(MAKE) snapshot
+
+## Assignment 7: download CIC-IDS2017 (Friday DDoS), analyse it, and refresh the frontend snapshot.
+ddos:
+	cd backend && uv run python -m ml.ddos
 	$(MAKE) snapshot
 
 snapshot:
