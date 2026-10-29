@@ -89,7 +89,7 @@ export const ASSIGNMENTS: Assignment[] = [
     summary:
       "Laboratory report for CPS 3498 exploring a Windows client's network identity: reading the IP configuration with ipconfig, testing reachability and latency with ping, mapping routes to kean.edu and google.com with tracert, and inspecting IP-to-MAC mappings in the ARP cache.",
     pdf: "/assignments/lab-1.pdf",
-    pages: 5,
+    pages: 14,
     topics: ["ipconfig", "DHCP", "Subnet masks", "ping / TTL", "tracert", "ARP"],
     highlights: [
       { label: "Course", value: "CPS 3498 · Dr. Bin Hu" },
