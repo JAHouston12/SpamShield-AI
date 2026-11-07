@@ -1,0 +1,1111 @@
+{
+  "generated_at": "2026-11-07T21:39:40+00:00",
+  "window": {
+    "start": "2026-10-26T00:00:00+00:00",
+    "end": "2026-11-02T00:00:00+00:00",
+    "days": 7
+  },
+  "totals": {
+    "events": 18800,
+    "http_requests": 16405,
+    "login_attempts": 2395,
+    "failed_logins": 618,
+    "unique_ips": 179,
+    "suspicious_ips": 95,
+    "detected_attacks": 6,
+    "security_events": 8780
+  },
+  "threat": {
+    "score": 100,
+    "level": "Severe"
+  },
+  "days": [
+    {
+      "day": "Mon Oct 26",
+      "normal": 1376,
+      "suspicious": 0,
+      "failed_logins": 18,
+      "incidents": 0,
+      "threat": 0
+    },
+    {
+      "day": "Tue Oct 27",
+      "normal": 1315,
+      "suspicious": 380,
+      "failed_logins": 392,
+      "incidents": 1,
+      "threat": 20
+    },
+    {
+      "day": "Wed Oct 28",
+      "normal": 1553,
+      "suspicious": 43,
+      "failed_logins": 15,
+      "incidents": 2,
+      "threat": 40
+    },
+    {
+      "day": "Thu Oct 29",
+      "normal": 1558,
+      "suspicious": 130,
+      "failed_logins": 150,
+      "incidents": 1,
+      "threat": 30
+    },
+    {
+      "day": "Fri Oct 30",
+      "normal": 1407,
+      "suspicious": 27,
+      "failed_logins": 16,
+      "incidents": 1,
+      "threat": 10
+    },
+    {
+      "day": "Sat Oct 31",
+      "normal": 1314,
+      "suspicious": 8200,
+      "failed_logins": 13,
+      "incidents": 1,
+      "threat": 30
+    },
+    {
+      "day": "Sun Nov 01",
+      "normal": 1497,
+      "suspicious": 0,
+      "failed_logins": 14,
+      "incidents": 0,
+      "threat": 0
+    }
+  ],
+  "hourly_failed_logins": [
+    {
+      "hour": "Mon 00:00",
+      "failed": 0
+    },
+    {
+      "hour": "Mon 01:00",
+      "failed": 0
+    },
+    {
+      "hour": "Mon 02:00",
+      "failed": 0
+    },
+    {
+      "hour": "Mon 03:00",
+      "failed": 0
+    },
+    {
+      "hour": "Mon 04:00",
+      "failed": 0
+    },
+    {
+      "hour": "Mon 05:00",
+      "failed": 0
+    },
+    {
+      "hour": "Mon 06:00",
+      "failed": 0
+    },
+    {
+      "hour": "Mon 07:00",
+      "failed": 0
+    },
+    {
+      "hour": "Mon 08:00",
+      "failed": 0
+    },
+    {
+      "hour": "Mon 09:00",
+      "failed": 4
+    },
+    {
+      "hour": "Mon 10:00",
+      "failed": 1
+    },
+    {
+      "hour": "Mon 11:00",
+      "failed": 2
+    },
+    {
+      "hour": "Mon 12:00",
+      "failed": 3
+    },
+    {
+      "hour": "Mon 13:00",
+      "failed": 2
+    },
+    {
+      "hour": "Mon 14:00",
+      "failed": 1
+    },
+    {
+      "hour": "Mon 15:00",
+      "failed": 1
+    },
+    {
+      "hour": "Mon 16:00",
+      "failed": 1
+    },
+    {
+      "hour": "Mon 17:00",
+      "failed": 0
+    },
+    {
+      "hour": "Mon 18:00",
+      "failed": 1
+    },
+    {
+      "hour": "Mon 19:00",
+      "failed": 0
+    },
+    {
+      "hour": "Mon 20:00",
+      "failed": 0
+    },
+    {
+      "hour": "Mon 21:00",
+      "failed": 1
+    },
+    {
+      "hour": "Mon 22:00",
+      "failed": 0
+    },
+    {
+      "hour": "Mon 23:00",
+      "failed": 1
+    },
+    {
+      "hour": "Tue 00:00",
+      "failed": 0
+    },
+    {
+      "hour": "Tue 01:00",
+      "failed": 0
+    },
+    {
+      "hour": "Tue 02:00",
+      "failed": 380
+    },
+    {
+      "hour": "Tue 03:00",
+      "failed": 0
+    },
+    {
+      "hour": "Tue 04:00",
+      "failed": 0
+    },
+    {
+      "hour": "Tue 05:00",
+      "failed": 0
+    },
+    {
+      "hour": "Tue 06:00",
+      "failed": 0
+    },
+    {
+      "hour": "Tue 07:00",
+      "failed": 0
+    },
+    {
+      "hour": "Tue 08:00",
+      "failed": 1
+    },
+    {
+      "hour": "Tue 09:00",
+      "failed": 2
+    },
+    {
+      "hour": "Tue 10:00",
+      "failed": 1
+    },
+    {
+      "hour": "Tue 11:00",
+      "failed": 2
+    },
+    {
+      "hour": "Tue 12:00",
+      "failed": 0
+    },
+    {
+      "hour": "Tue 13:00",
+      "failed": 1
+    },
+    {
+      "hour": "Tue 14:00",
+      "failed": 0
+    },
+    {
+      "hour": "Tue 15:00",
+      "failed": 0
+    },
+    {
+      "hour": "Tue 16:00",
+      "failed": 1
+    },
+    {
+      "hour": "Tue 17:00",
+      "failed": 0
+    },
+    {
+      "hour": "Tue 18:00",
+      "failed": 1
+    },
+    {
+      "hour": "Tue 19:00",
+      "failed": 0
+    },
+    {
+      "hour": "Tue 20:00",
+      "failed": 2
+    },
+    {
+      "hour": "Tue 21:00",
+      "failed": 0
+    },
+    {
+      "hour": "Tue 22:00",
+      "failed": 0
+    },
+    {
+      "hour": "Tue 23:00",
+      "failed": 1
+    },
+    {
+      "hour": "Wed 00:00",
+      "failed": 0
+    },
+    {
+      "hour": "Wed 01:00",
+      "failed": 0
+    },
+    {
+      "hour": "Wed 02:00",
+      "failed": 0
+    },
+    {
+      "hour": "Wed 03:00",
+      "failed": 0
+    },
+    {
+      "hour": "Wed 04:00",
+      "failed": 2
+    },
+    {
+      "hour": "Wed 05:00",
+      "failed": 0
+    },
+    {
+      "hour": "Wed 06:00",
+      "failed": 0
+    },
+    {
+      "hour": "Wed 07:00",
+      "failed": 0
+    },
+    {
+      "hour": "Wed 08:00",
+      "failed": 1
+    },
+    {
+      "hour": "Wed 09:00",
+      "failed": 1
+    },
+    {
+      "hour": "Wed 10:00",
+      "failed": 0
+    },
+    {
+      "hour": "Wed 11:00",
+      "failed": 2
+    },
+    {
+      "hour": "Wed 12:00",
+      "failed": 1
+    },
+    {
+      "hour": "Wed 13:00",
+      "failed": 2
+    },
+    {
+      "hour": "Wed 14:00",
+      "failed": 2
+    },
+    {
+      "hour": "Wed 15:00",
+      "failed": 2
+    },
+    {
+      "hour": "Wed 16:00",
+      "failed": 0
+    },
+    {
+      "hour": "Wed 17:00",
+      "failed": 0
+    },
+    {
+      "hour": "Wed 18:00",
+      "failed": 2
+    },
+    {
+      "hour": "Wed 19:00",
+      "failed": 0
+    },
+    {
+      "hour": "Wed 20:00",
+      "failed": 0
+    },
+    {
+      "hour": "Wed 21:00",
+      "failed": 0
+    },
+    {
+      "hour": "Wed 22:00",
+      "failed": 0
+    },
+    {
+      "hour": "Wed 23:00",
+      "failed": 0
+    },
+    {
+      "hour": "Thu 00:00",
+      "failed": 0
+    },
+    {
+      "hour": "Thu 01:00",
+      "failed": 0
+    },
+    {
+      "hour": "Thu 02:00",
+      "failed": 0
+    },
+    {
+      "hour": "Thu 03:00",
+      "failed": 123
+    },
+    {
+      "hour": "Thu 04:00",
+      "failed": 5
+    },
+    {
+      "hour": "Thu 05:00",
+      "failed": 0
+    },
+    {
+      "hour": "Thu 06:00",
+      "failed": 2
+    },
+    {
+      "hour": "Thu 07:00",
+      "failed": 1
+    },
+    {
+      "hour": "Thu 08:00",
+      "failed": 1
+    },
+    {
+      "hour": "Thu 09:00",
+      "failed": 1
+    },
+    {
+      "hour": "Thu 10:00",
+      "failed": 4
+    },
+    {
+      "hour": "Thu 11:00",
+      "failed": 0
+    },
+    {
+      "hour": "Thu 12:00",
+      "failed": 1
+    },
+    {
+      "hour": "Thu 13:00",
+      "failed": 4
+    },
+    {
+      "hour": "Thu 14:00",
+      "failed": 1
+    },
+    {
+      "hour": "Thu 15:00",
+      "failed": 1
+    },
+    {
+      "hour": "Thu 16:00",
+      "failed": 2
+    },
+    {
+      "hour": "Thu 17:00",
+      "failed": 2
+    },
+    {
+      "hour": "Thu 18:00",
+      "failed": 0
+    },
+    {
+      "hour": "Thu 19:00",
+      "failed": 0
+    },
+    {
+      "hour": "Thu 20:00",
+      "failed": 1
+    },
+    {
+      "hour": "Thu 21:00",
+      "failed": 1
+    },
+    {
+      "hour": "Thu 22:00",
+      "failed": 0
+    },
+    {
+      "hour": "Thu 23:00",
+      "failed": 0
+    },
+    {
+      "hour": "Fri 00:00",
+      "failed": 0
+    },
+    {
+      "hour": "Fri 01:00",
+      "failed": 0
+    },
+    {
+      "hour": "Fri 02:00",
+      "failed": 0
+    },
+    {
+      "hour": "Fri 03:00",
+      "failed": 0
+    },
+    {
+      "hour": "Fri 04:00",
+      "failed": 0
+    },
+    {
+      "hour": "Fri 05:00",
+      "failed": 0
+    },
+    {
+      "hour": "Fri 06:00",
+      "failed": 1
+    },
+    {
+      "hour": "Fri 07:00",
+      "failed": 0
+    },
+    {
+      "hour": "Fri 08:00",
+      "failed": 0
+    },
+    {
+      "hour": "Fri 09:00",
+      "failed": 1
+    },
+    {
+      "hour": "Fri 10:00",
+      "failed": 1
+    },
+    {
+      "hour": "Fri 11:00",
+      "failed": 1
+    },
+    {
+      "hour": "Fri 12:00",
+      "failed": 1
+    },
+    {
+      "hour": "Fri 13:00",
+      "failed": 3
+    },
+    {
+      "hour": "Fri 14:00",
+      "failed": 4
+    },
+    {
+      "hour": "Fri 15:00",
+      "failed": 1
+    },
+    {
+      "hour": "Fri 16:00",
+      "failed": 0
+    },
+    {
+      "hour": "Fri 17:00",
+      "failed": 0
+    },
+    {
+      "hour": "Fri 18:00",
+      "failed": 1
+    },
+    {
+      "hour": "Fri 19:00",
+      "failed": 0
+    },
+    {
+      "hour": "Fri 20:00",
+      "failed": 1
+    },
+    {
+      "hour": "Fri 21:00",
+      "failed": 1
+    },
+    {
+      "hour": "Fri 22:00",
+      "failed": 0
+    },
+    {
+      "hour": "Fri 23:00",
+      "failed": 0
+    },
+    {
+      "hour": "Sat 00:00",
+      "failed": 0
+    },
+    {
+      "hour": "Sat 01:00",
+      "failed": 0
+    },
+    {
+      "hour": "Sat 02:00",
+      "failed": 0
+    },
+    {
+      "hour": "Sat 03:00",
+      "failed": 0
+    },
+    {
+      "hour": "Sat 04:00",
+      "failed": 1
+    },
+    {
+      "hour": "Sat 05:00",
+      "failed": 0
+    },
+    {
+      "hour": "Sat 06:00",
+      "failed": 0
+    },
+    {
+      "hour": "Sat 07:00",
+      "failed": 0
+    },
+    {
+      "hour": "Sat 08:00",
+      "failed": 0
+    },
+    {
+      "hour": "Sat 09:00",
+      "failed": 0
+    },
+    {
+      "hour": "Sat 10:00",
+      "failed": 3
+    },
+    {
+      "hour": "Sat 11:00",
+      "failed": 1
+    },
+    {
+      "hour": "Sat 12:00",
+      "failed": 1
+    },
+    {
+      "hour": "Sat 13:00",
+      "failed": 2
+    },
+    {
+      "hour": "Sat 14:00",
+      "failed": 1
+    },
+    {
+      "hour": "Sat 15:00",
+      "failed": 2
+    },
+    {
+      "hour": "Sat 16:00",
+      "failed": 0
+    },
+    {
+      "hour": "Sat 17:00",
+      "failed": 0
+    },
+    {
+      "hour": "Sat 18:00",
+      "failed": 1
+    },
+    {
+      "hour": "Sat 19:00",
+      "failed": 0
+    },
+    {
+      "hour": "Sat 20:00",
+      "failed": 0
+    },
+    {
+      "hour": "Sat 21:00",
+      "failed": 1
+    },
+    {
+      "hour": "Sat 22:00",
+      "failed": 0
+    },
+    {
+      "hour": "Sat 23:00",
+      "failed": 0
+    },
+    {
+      "hour": "Sun 00:00",
+      "failed": 0
+    },
+    {
+      "hour": "Sun 01:00",
+      "failed": 0
+    },
+    {
+      "hour": "Sun 02:00",
+      "failed": 0
+    },
+    {
+      "hour": "Sun 03:00",
+      "failed": 0
+    },
+    {
+      "hour": "Sun 04:00",
+      "failed": 0
+    },
+    {
+      "hour": "Sun 05:00",
+      "failed": 0
+    },
+    {
+      "hour": "Sun 06:00",
+      "failed": 0
+    },
+    {
+      "hour": "Sun 07:00",
+      "failed": 0
+    },
+    {
+      "hour": "Sun 08:00",
+      "failed": 0
+    },
+    {
+      "hour": "Sun 09:00",
+      "failed": 0
+    },
+    {
+      "hour": "Sun 10:00",
+      "failed": 0
+    },
+    {
+      "hour": "Sun 11:00",
+      "failed": 2
+    },
+    {
+      "hour": "Sun 12:00",
+      "failed": 2
+    },
+    {
+      "hour": "Sun 13:00",
+      "failed": 3
+    },
+    {
+      "hour": "Sun 14:00",
+      "failed": 1
+    },
+    {
+      "hour": "Sun 15:00",
+      "failed": 1
+    },
+    {
+      "hour": "Sun 16:00",
+      "failed": 1
+    },
+    {
+      "hour": "Sun 17:00",
+      "failed": 1
+    },
+    {
+      "hour": "Sun 18:00",
+      "failed": 1
+    },
+    {
+      "hour": "Sun 19:00",
+      "failed": 1
+    },
+    {
+      "hour": "Sun 20:00",
+      "failed": 1
+    },
+    {
+      "hour": "Sun 21:00",
+      "failed": 0
+    },
+    {
+      "hour": "Sun 22:00",
+      "failed": 0
+    },
+    {
+      "hour": "Sun 23:00",
+      "failed": 0
+    }
+  ],
+  "attacks_by_type": [
+    {
+      "type": "HTTP flood (DDoS)",
+      "incidents": 1,
+      "events": 8200
+    },
+    {
+      "type": "Brute-force login",
+      "incidents": 1,
+      "events": 380
+    },
+    {
+      "type": "Credential stuffing",
+      "incidents": 1,
+      "events": 130
+    },
+    {
+      "type": "SQL injection probe",
+      "incidents": 1,
+      "events": 42
+    },
+    {
+      "type": "Cross-site scripting (XSS) probe",
+      "incidents": 1,
+      "events": 27
+    },
+    {
+      "type": "Impossible travel",
+      "incidents": 1,
+      "events": 2
+    }
+  ],
+  "incidents": [
+    {
+      "type": "Brute-force login",
+      "severity": "high",
+      "ips": [
+        "185.220.101.47"
+      ],
+      "user": "admin",
+      "start": "2026-10-27T02:12:00+00:00",
+      "end": "2026-10-27T02:32:27.960000+00:00",
+      "events": 380,
+      "detail": "380 failed logins for 'admin' (peak 93 in 5 min)",
+      "rule": ">= 5 failed logins from one IP within 5 minutes",
+      "id": "INC-001"
+    },
+    {
+      "type": "Impossible travel",
+      "severity": "high",
+      "ips": [
+        "95.173.136.70"
+      ],
+      "user": "mchen",
+      "start": "2026-10-28T09:00:00+00:00",
+      "end": "2026-10-28T09:19:48+00:00",
+      "events": 2,
+      "detail": "'mchen' logged in from US then RU 19 min later",
+      "rule": "Successful logins from two countries < 2 h apart",
+      "id": "INC-002"
+    },
+    {
+      "type": "SQL injection probe",
+      "severity": "high",
+      "ips": [
+        "103.152.118.20"
+      ],
+      "user": null,
+      "start": "2026-10-28T11:00:00+00:00",
+      "end": "2026-10-28T11:24:36+00:00",
+      "events": 42,
+      "detail": "42 malicious requests, e.g. /products?id=42' OR '1'='1",
+      "rule": "Signature match: SQL keywords/quotes in URL parameters",
+      "id": "INC-003"
+    },
+    {
+      "type": "Credential stuffing",
+      "severity": "critical",
+      "ips": [
+        "45.155.205.233"
+      ],
+      "user": null,
+      "start": "2026-10-29T03:30:00+00:00",
+      "end": "2026-10-29T04:00:57.600000+00:00",
+      "events": 130,
+      "detail": "130 different usernames tried; 2 succeeded (user052, user017): reset these passwords",
+      "rule": ">= 10 distinct usernames from one IP",
+      "id": "INC-004"
+    },
+    {
+      "type": "Cross-site scripting (XSS) probe",
+      "severity": "medium",
+      "ips": [
+        "91.240.118.172"
+      ],
+      "user": null,
+      "start": "2026-10-30T16:00:00+00:00",
+      "end": "2026-10-30T16:18:43.200000+00:00",
+      "events": 27,
+      "detail": "27 malicious requests, e.g. /search?q=<script>alert(document.cookie)</script>",
+      "rule": "Signature match: script tags / event handlers in URL parameters",
+      "id": "INC-005"
+    },
+    {
+      "type": "HTTP flood (DDoS)",
+      "severity": "critical",
+      "ips": [
+        "198.51.100.1",
+        "198.51.100.10",
+        "198.51.100.11",
+        "198.51.100.12",
+        "198.51.100.13",
+        "198.51.100.14",
+        "198.51.100.15",
+        "198.51.100.16",
+        "198.51.100.17",
+        "198.51.100.18",
+        "198.51.100.19",
+        "198.51.100.2",
+        "198.51.100.20",
+        "198.51.100.21",
+        "198.51.100.22",
+        "198.51.100.23",
+        "198.51.100.24",
+        "198.51.100.25",
+        "198.51.100.26",
+        "198.51.100.27",
+        "198.51.100.28",
+        "198.51.100.29",
+        "198.51.100.3",
+        "198.51.100.30",
+        "198.51.100.4",
+        "198.51.100.5",
+        "198.51.100.6",
+        "198.51.100.7",
+        "198.51.100.8",
+        "198.51.100.9",
+        "203.0.113.1",
+        "203.0.113.10",
+        "203.0.113.11",
+        "203.0.113.12",
+        "203.0.113.13",
+        "203.0.113.14",
+        "203.0.113.15",
+        "203.0.113.16",
+        "203.0.113.17",
+        "203.0.113.18",
+        "203.0.113.19",
+        "203.0.113.2",
+        "203.0.113.20",
+        "203.0.113.21",
+        "203.0.113.22",
+        "203.0.113.23",
+        "203.0.113.24",
+        "203.0.113.25",
+        "203.0.113.26",
+        "203.0.113.27",
+        "203.0.113.28",
+        "203.0.113.29",
+        "203.0.113.3",
+        "203.0.113.30",
+        "203.0.113.31",
+        "203.0.113.32",
+        "203.0.113.33",
+        "203.0.113.34",
+        "203.0.113.35",
+        "203.0.113.36",
+        "203.0.113.37",
+        "203.0.113.38",
+        "203.0.113.39",
+        "203.0.113.4",
+        "203.0.113.40",
+        "203.0.113.41",
+        "203.0.113.42",
+        "203.0.113.43",
+        "203.0.113.44",
+        "203.0.113.45",
+        "203.0.113.46",
+        "203.0.113.47",
+        "203.0.113.48",
+        "203.0.113.49",
+        "203.0.113.5",
+        "203.0.113.50",
+        "203.0.113.51",
+        "203.0.113.52",
+        "203.0.113.53",
+        "203.0.113.54",
+        "203.0.113.55",
+        "203.0.113.56",
+        "203.0.113.57",
+        "203.0.113.58",
+        "203.0.113.59",
+        "203.0.113.6",
+        "203.0.113.60",
+        "203.0.113.7",
+        "203.0.113.8",
+        "203.0.113.9"
+      ],
+      "user": null,
+      "start": "2026-10-31T14:00:00.151525+00:00",
+      "end": "2026-10-31T14:09:59.962225+00:00",
+      "events": 8200,
+      "detail": "8,200 requests from 90 IPs in 10 min; peak 858 req/min vs normal 1.6 (z=33)",
+      "rule": "Per-minute request rate z-score > 4",
+      "id": "INC-006"
+    }
+  ],
+  "top_ips": [
+    {
+      "ip": "185.220.101.47",
+      "country": "RU",
+      "events": 380,
+      "failed_logins": 380,
+      "types": [
+        "Brute-force login"
+      ],
+      "first_seen": "2026-10-27T02:12:00+00:00",
+      "last_seen": "2026-10-27T02:32:27.960000+00:00"
+    },
+    {
+      "ip": "45.155.205.233",
+      "country": "NL",
+      "events": 130,
+      "failed_logins": 128,
+      "types": [
+        "Credential stuffing"
+      ],
+      "first_seen": "2026-10-29T03:30:00+00:00",
+      "last_seen": "2026-10-29T04:00:57.600000+00:00"
+    },
+    {
+      "ip": "103.152.118.20",
+      "country": "CN",
+      "events": 42,
+      "failed_logins": 0,
+      "types": [
+        "SQL injection probe"
+      ],
+      "first_seen": "2026-10-28T11:00:00+00:00",
+      "last_seen": "2026-10-28T11:24:36+00:00"
+    },
+    {
+      "ip": "91.240.118.172",
+      "country": "UA",
+      "events": 27,
+      "failed_logins": 0,
+      "types": [
+        "Cross-site scripting (XSS) probe"
+      ],
+      "first_seen": "2026-10-30T16:00:00+00:00",
+      "last_seen": "2026-10-30T16:18:43.200000+00:00"
+    },
+    {
+      "ip": "95.173.136.70",
+      "country": "RU",
+      "events": 1,
+      "failed_logins": 0,
+      "types": [
+        "Impossible travel"
+      ],
+      "first_seen": "2026-10-28T09:19:48+00:00",
+      "last_seen": "2026-10-28T09:19:48+00:00"
+    },
+    {
+      "ip": "198.51.100.6",
+      "country": "US",
+      "events": 114,
+      "failed_logins": 0,
+      "types": [
+        "HTTP flood (DDoS)"
+      ],
+      "first_seen": "2026-10-31T14:00:00.270045+00:00",
+      "last_seen": "2026-10-31T14:09:55.093137+00:00"
+    },
+    {
+      "ip": "203.0.113.36",
+      "country": "IN",
+      "events": 114,
+      "failed_logins": 0,
+      "types": [
+        "HTTP flood (DDoS)"
+      ],
+      "first_seen": "2026-10-31T14:00:06.627797+00:00",
+      "last_seen": "2026-10-31T14:09:59.491736+00:00"
+    },
+    {
+      "ip": "198.51.100.24",
+      "country": "ID",
+      "events": 113,
+      "failed_logins": 0,
+      "types": [
+        "HTTP flood (DDoS)"
+      ],
+      "first_seen": "2026-10-31T14:00:04.451972+00:00",
+      "last_seen": "2026-10-31T14:09:50.866606+00:00"
+    }
+  ],
+  "comparison": {
+    "normal": {
+      "ips": 84,
+      "events": 10020,
+      "events_per_ip_hour": 1.7,
+      "login_failure_rate": 0.0584,
+      "usernames_per_ip": 1.0,
+      "signature_hits": 0,
+      "night_share": 0.0209,
+      "error_share": 0.0371
+    },
+    "suspicious": {
+      "ips": 95,
+      "events": 8780,
+      "events_per_ip_hour": 91.5,
+      "login_failure_rate": 0.9941,
+      "usernames_per_ip": 44.0,
+      "signature_hits": 69,
+      "night_share": 0.0581,
+      "error_share": 0.3788
+    }
+  },
+  "rules": [
+    {
+      "name": "Brute force",
+      "logic": ">= 5 failed logins from one IP in 5 minutes"
+    },
+    {
+      "name": "Credential stuffing",
+      "logic": ">= 10 distinct usernames from one IP"
+    },
+    {
+      "name": "SQL injection",
+      "logic": "Regex: quotes + OR/AND, UNION SELECT, --, DROP, sleep()"
+    },
+    {
+      "name": "XSS",
+      "logic": "Regex: <script, onerror=, javascript:, <img src"
+    },
+    {
+      "name": "HTTP flood",
+      "logic": "Per-minute request rate z-score > 4"
+    },
+    {
+      "name": "Impossible travel",
+      "logic": "Same user, two countries, < 2 h apart"
+    }
+  ],
+  "sample_lines": [
+    "2026-10-26T22:58:02Z 73.11.182.171 [CA] http user=- \"GET /checkout\" 200",
+    "2026-10-27T02:12:00Z 185.220.101.47 [RU] login_failure user=admin \"POST /login\" 401",
+    "2026-10-28T09:19:48Z 95.173.136.70 [RU] login_success user=mchen \"POST /login\" 200",
+    "2026-10-28T09:32:43Z 73.77.155.76 [US] http user=- \"GET /search?q=headphones\" 404",
+    "2026-10-28T11:00:00Z 103.152.118.20 [CN] http user=- \"GET /products?id=42' OR '1'='1\" 500",
+    "2026-10-29T03:30:00Z 45.155.205.233 [NL] login_failure user=user064 \"POST /login\" 401",
+    "2026-10-30T16:00:00Z 91.240.118.172 [UA] http user=- \"GET /search?q=<script>alert(document.cookie)</script>\" 200",
+    "2026-10-30T18:47:14Z 73.143.193.233 [US] http user=- \"GET /\" 200",
+    "2026-10-31T14:00:00Z 198.51.100.11 [ID] http user=- \"GET /\" 200",
+    "2026-10-31T15:45:29Z 73.146.5.113 [US] login_success user=user062 \"POST /login\" 200"
+  ]
+}

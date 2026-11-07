@@ -1,4 +1,4 @@
-.PHONY: install install-backend install-frontend train ddos snapshot api web dev test lint build
+.PHONY: install install-backend install-frontend train ddos seclog snapshot api web dev test lint build
 
 BACKEND_PORT ?= 8417
 FRONTEND_PORT ?= 3417
@@ -19,6 +19,11 @@ train:
 ## Assignment 7: download CIC-IDS2017 (Friday DDoS), analyse it, and refresh the frontend snapshot.
 ddos:
 	cd backend && uv run python -m ml.ddos
+	$(MAKE) snapshot
+
+## Assignment 8: generate and analyse the synthetic security log for the /monitor dashboard.
+seclog:
+	cd backend && uv run python -m ml.seclog
 	$(MAKE) snapshot
 
 snapshot:
