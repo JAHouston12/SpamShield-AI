@@ -19,12 +19,40 @@ export interface Assignment {
   /** Related pages in this site that implement or extend the assignment. */
   related: { href: string; label: string }[];
   /** Renders a rich in-page write-up instead of a PDF. Keys map to components in the detail page. */
-  body?: "ddos";
+  body?: "ddos" | "assistant";
   /** Embedded movie: a file under `public/` (`src`) or an unlisted YouTube video (`youtubeId`). */
-  video?: { title: string; src?: string; poster?: string; youtubeId?: string; caption?: string };
+  video?: { title: string; heading?: string; src?: string; poster?: string; youtubeId?: string; caption?: string };
 }
 
 export const ASSIGNMENTS: Assignment[] = [
+  {
+    slug: "assignment-8",
+    number: 8,
+    title: "Assignment 8",
+    subtitle: "Intrusion Detection and an AI Assistant for Interactive Website Control",
+    status: "submitted",
+    submitted: "2026-11-07",
+    summary:
+      "A security monitoring dashboard that detects brute force, credential stuffing, SQL injection, XSS, an HTTP flood, and impossible travel in a week of logs, plus Shield: a talking assistant that controls this website by text or voice and answers computer-security questions.",
+    topics: ["Intrusion detection", "Security monitoring", "AI chatbot", "Voice commands", "Digital human", "Security education"],
+    highlights: [
+      { label: "Assistant", value: "Shield: chat + voice + animated avatar, on every page" },
+      { label: "Website control", value: "Background color/image, dark/light mode, text size, music, training video, navigation, reset" },
+      { label: "Security Q&A", value: "TF-IDF retrieval over a curated knowledge base; optional Gemini grounding" },
+      { label: "Monitoring", value: "6 detection rules, threat level, normal vs suspicious analysis" },
+    ],
+    related: [
+      { href: "/monitor", label: "Security Monitor dashboard" },
+      { href: "/assignments/assignment-7", label: "Assignment 7 (training video)" },
+      { href: "/security", label: "Security analysis" },
+    ],
+    body: "assistant",
+    video: {
+      title: "Demo: controlling the website with Shield and asking security questions",
+      heading: "Demonstration video",
+      src: "",
+    },
+  },
   {
     slug: "assignment-7",
     number: 7,

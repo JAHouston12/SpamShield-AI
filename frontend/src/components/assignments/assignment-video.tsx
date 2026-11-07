@@ -8,7 +8,7 @@ export function AssignmentVideo({ video }: { video: NonNullable<Assignment["vide
   return (
     <section id="movie" aria-labelledby="movie-h" className="scroll-mt-24">
       <h2 id="movie-h" className="mb-4 border-b pb-2 text-xl font-semibold tracking-tight">
-        AI movie
+        {video.heading ?? "AI movie"}
       </h2>
       <div className="overflow-hidden rounded-xl border bg-black">
         {video.youtubeId ? (
@@ -27,9 +27,9 @@ export function AssignmentVideo({ video }: { video: NonNullable<Assignment["vide
         ) : (
           <div className="flex aspect-video flex-col items-center justify-center gap-3 bg-card p-6 text-center">
             <Clapperboard className="h-10 w-10 text-muted-foreground" aria-hidden />
-            <p className="font-medium">Movie coming soon</p>
+            <p className="font-medium">{video.heading ?? "Movie"} coming soon</p>
             <p className="max-w-md text-sm text-muted-foreground">
-              The Google Flow movie for this assignment is being produced and will play here once it&apos;s uploaded.
+              The video for this assignment will play here once it&apos;s uploaded.
             </p>
           </div>
         )}

@@ -27,6 +27,7 @@ Requirements: **Python 3.12+** with [uv](https://docs.astral.sh/uv/), **Node.js 
 make install   # backend deps (uv sync) + frontend deps (npm install)
 make train     # download dataset, train 10 models (~45 s), write artifacts + frontend snapshot
 make ddos      # Assignment 7: download CIC-IDS2017 Friday DDoS (~77 MB), analyse, write ddos.json
+make seclog    # Assignment 8: generate + analyse the synthetic security log for /monitor
 make dev       # API → http://127.0.0.1:8417  ·  Web → http://127.0.0.1:3417
 ```
 
@@ -107,6 +108,14 @@ The structure is designed so each kind of update touches one obvious place.
 | **Add an API endpoint** | Add a route module under `backend/app/api/v1/routes/` and include it in `router.py`. Add a test in `backend/tests/`. |
 | **Add a threat signal** | Add one `sig(...)` line in `backend/app/services/signals.py`. |
 | **Refresh the dataset** | Replace `backend/data/spam.csv` with a new Kaggle download and run `make train`. |
+
+## Shield assistant (Assignment 8)
+
+A floating assistant on every page controls the site by text or voice (Chrome/Edge speech recognition) and answers security questions.
+
+- **Commands** are parsed in the browser (`frontend/src/lib/assistant/intents.ts`) into a fixed whitelist of actions: background color/image, dark/light mode, text size, music (Web Audio), the training video, navigation, scrolling, and reset. Test with `cd frontend && npm run test:intents`.
+- **Questions** go to `POST /api/v1/assistant`, which answers from a curated knowledge base (`backend/app/services/knowledge.py`) with TF-IDF retrieval.
+- **Optional Gemini:** set `GEMINI_API_KEY` (and optionally `GEMINI_MODEL`, default `gemini-2.5-flash`) in the backend environment, e.g. Vercel project settings. Answers are then written by Gemini, grounded in the same knowledge base; without a key, or on any error, the local answer is used.
 
 ## Configuration
 

@@ -11,6 +11,7 @@ import {
 
 import { AssignmentMeta } from "@/components/assignments/assignment-meta";
 import { AssignmentVideo } from "@/components/assignments/assignment-video";
+import { AssistantReport } from "@/components/assignments/assistant-report";
 import { DdosReport } from "@/components/assignments/ddos-report";
 import { PageHeader } from "@/components/layout/page-header";
 import { Badge } from "@/components/ui/badge";
@@ -56,7 +57,7 @@ export default function AssignmentPage({ params }: Props) {
             <Button asChild size="sm">
               <a href="#movie">
                 <Clapperboard className="h-4 w-4" aria-hidden />
-                Watch the AI movie
+                Watch the {(a.video.heading ?? "AI movie").toLowerCase()}
               </a>
             </Button>
           )}
@@ -84,6 +85,8 @@ export default function AssignmentPage({ params }: Props) {
           {a.video && <AssignmentVideo video={a.video} />}
           {a.body === "ddos" ? (
             <DdosReport />
+          ) : a.body === "assistant" ? (
+            <AssistantReport />
           ) : (
             <div>
               {a.pdf ? (
