@@ -1,4 +1,4 @@
-.PHONY: install install-backend install-frontend train ddos seclog snapshot api web dev test lint build
+.PHONY: install install-backend install-frontend train ddos seclog kb snapshot api web dev test lint build
 
 BACKEND_PORT ?= 8417
 FRONTEND_PORT ?= 3417
@@ -24,6 +24,11 @@ ddos:
 ## Assignment 8: generate and analyse the synthetic security log for the /monitor dashboard.
 seclog:
 	cd backend && uv run python -m ml.seclog
+	$(MAKE) snapshot
+
+## Export the assistant knowledge base (built from the artifacts above) for the Next.js /api/v1/assistant route.
+kb:
+	cd backend && uv run python -m ml.export_kb
 	$(MAKE) snapshot
 
 snapshot:
