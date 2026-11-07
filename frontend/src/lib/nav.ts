@@ -1,4 +1,5 @@
 import {
+  Activity,
   BarChart3,
   BookOpen,
   BrainCircuit,
@@ -80,6 +81,14 @@ export const NAV_ITEMS: NavItem[] = [
     short: "Security",
     description: "Threats detected, error costs, and real-world deployment.",
     icon: ShieldAlert,
+    group: "Security",
+  },
+  {
+    href: "/monitor",
+    title: "Security Monitor",
+    short: "Security Monitor",
+    description: "Login attempts, suspicious IPs, detected attacks, and threat level.",
+    icon: Activity,
     group: "Security",
   },
   {
