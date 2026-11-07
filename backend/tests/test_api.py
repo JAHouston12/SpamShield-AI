@@ -122,3 +122,26 @@ def test_predict_validation():
 @needs_models
 def test_predict_unknown_model():
     assert client.post("/api/v1/predict", json={"text": "hello", "model": "nope"}).status_code == 404
+
+
+def test_assistant_answers_security_question(monkeypatch):
+    monkeypatch.delenv("GEMINI_API_KEY", raising=False)
+    res = client.post("/api/v1/assistant", json={"question": "What is the difference between DoS and DDoS attacks?"})
+    assert res.status_code == 200, res.text
+    body = res.json()
+    assert body["mode"] == "local"
+    assert body["topic"] == "dos-vs-ddos"
+    assert "botnet" in body["answer"]
+
+
+def test_assistant_follow_up_uses_history(monkeypatch):
+    monkeypatch.delenv("GEMINI_API_KEY", raising=False)
+    history = [{"role": "user", "content": "What is SQL injection?"}, {"role": "assistant", "content": "..."}]
+    body = client.post("/api/v1/assistant", json={"question": "tell me more", "history": history}).json()
+    assert body["topic"] == "sqli"
+    assert "Security Monitor" in body["answer"]
+
+
+def test_assistant_rejects_oversized_question():
+    res = client.post("/api/v1/assistant", json={"question": "x" * 501})
+    assert res.status_code == 422
