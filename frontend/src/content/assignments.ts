@@ -108,6 +108,29 @@ export const ASSIGNMENTS: Assignment[] = [
     ],
   },
   {
+    slug: "lab-2",
+    number: 2,
+    title: "Lab 2",
+    subtitle: "Network Configuration and Connectivity: Name Resolution, DNS, and IPv6",
+    status: "submitted",
+    submitted: "2026-11-12",
+    summary:
+      "Laboratory report for CPS 3498 exploring basic network configuration and connectivity on Windows 11: ipconfig and loopback tests for IPv4/IPv6, localhost and hosts-file name resolution, nslookup and netstat, and IPv6 addressing with netsh.",
+    pdf: "/assignments/lab-2.pdf",
+    pages: 12,
+    topics: ["ipconfig", "hosts file", "DNS / nslookup", "netstat", "IPv6", "netsh"],
+    highlights: [
+      { label: "Course", value: "CPS 3498 · Dr. Bin Hu" },
+      { label: "Lab 2.1 A", value: "Localhost system info, IPv4/IPv6 loopback, hosts file (me / winserv)" },
+      { label: "Lab 2.1 B", value: "nslookup and netstat (DNS server openrg.home; PID/exe options)" },
+      { label: "Lab 2.2", value: "IPv6 addresses via netsh (temporary, public, and link-local)" },
+    ],
+    related: [
+      { href: "/assignments/lab-1", label: "Lab 1 (IP config, ping, tracert, ARP)" },
+      { href: "/security", label: "Threat model and attacks" },
+    ],
+  },
+  {
     slug: "lab-1",
     number: 1,
     title: "Lab 1",
